@@ -1,0 +1,25 @@
+{
+  "name": "music-play-list",
+  "version": "1.0.0",
+  "description": "App for play music",
+  "main": "server.js",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.15.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "socket.io": "^1.7.3",
+    "socket.io-client": "^1.7.3",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "prestart": "webpack",
+    "start": "node server.js"
+  },
+  "author": "Sreang Rathanak",
+  "license": "MIT"
+}
