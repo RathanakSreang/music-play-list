@@ -15,7 +15,11 @@
     "socket.io-client": "^1.7.3",
     "webpack": "^2.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3"
+  },
   "scripts": {
     "prestart": "webpack",
     "start": "node server.js"
