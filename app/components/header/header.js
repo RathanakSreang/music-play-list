@@ -1,17 +1,24 @@
 import React from 'react';
+import NavItem from '../nav_item/nav_item';
 import styles from './styles.scss';
 class Header extends React.Component {
 
   render() {
+    console.log(styles[0]);
     return (
-      <div>
+      <nav className={styles.nav}>
         <ul>
-          <li><a className={'${styles.active}'} href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
+          <NavItem to="apis" activeClassName={styles.active}>
+            <a className={styles.active} href="#home">Home</a>
+          </NavItem>
+          <NavItem to="apis" activeClassName={styles.active}>
+            <a className={'styles.active'} href="#music">All Musics</a>
+          </NavItem>
+          <NavItem to="apis" activeClassName={styles.active} className={styles.right_item}>
+            <a className={'styles.active'} href="#about">About</a>
+          </NavItem>
         </ul>
-      </div>
+      </nav>
     );
   }
 }

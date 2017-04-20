@@ -7,11 +7,11 @@ module.exports = {
     loaders: [
       {
         test: /\.(css|scss)$/,
-        use: [{
-                loader: "css-loader" // translates CSS into CommonJS
-              },{
-                loader: "sass-loader" // compiles Sass to CSS
-              }]
+        loaders: [
+          'style-loader',
+          'css-loader?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'sass-loader'
+        ]
       },
       {
         test: /\.(js|jsx)$/,
