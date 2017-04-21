@@ -1,0 +1,23 @@
+.title {
+  margin: 5px;
+  color: #000;
+  font-size: 1.1em;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uploader_name {
+  margin: 5px;
+  color: #000;
+  font-size: 1em;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.music {
+  width: 50%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid black;
+}

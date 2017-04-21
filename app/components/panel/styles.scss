@@ -2,14 +2,24 @@
   display: inline-block;
   background: #ffffff;
   box-sizing: border-box;
-  border: 1px solid gray;
-  text-align: center;
+  position: relative;
+  // border: 1px solid gray;
+  // text-align: center;
 }
 .panel-playboard {
   width: 65%;
 }
 .panel-playlist {
   width: 35%;
+}
+
+.panel-pd {
+  padding: 15px;
+}
+
+.panel-music-info {
+  width: 100%;
+  margin-left: 70px;
 }
 // .panel1 {
 //     min-width: 100px;
