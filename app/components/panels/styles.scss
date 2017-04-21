@@ -1,0 +1,21 @@
+.panel {
+  display: inline-block;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  text-align: center;
+}
+.panel-playboard {
+  width: 65%;
+}
+.panel-playlist {
+  width: 35%;
+}
+// .panel1 {
+//     min-width: 100px;
+//     width: 100px;
+// }
+// .panel2 {
+//     min-width: 245px;
+//     width: 245px;
+// }

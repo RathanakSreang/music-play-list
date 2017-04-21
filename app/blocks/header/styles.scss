@@ -1,14 +1,14 @@
 .nav {
   font-weight: 300;
+  background-color: #118C4E;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
   ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #118C4E;
-    position: fixed;
-    top: 0;
-    width: 100%;
   }
 
   li {
