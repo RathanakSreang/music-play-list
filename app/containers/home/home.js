@@ -10,6 +10,19 @@ class Home extends Component {
         <Music className={''} />
         <Music className={''} />
         <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
+        <Music className={''} />
       </div>
     );
   }

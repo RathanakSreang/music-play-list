@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 65px;
+  background-color: #e8e8e8;
+  font-size: 18px;
+  color: #333333;
+  font-family: "Hanuman",Arial,serif !important;
 }
 
 .app-container {

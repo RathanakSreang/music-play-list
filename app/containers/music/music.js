@@ -1,26 +1,39 @@
 import React, {Component} from 'react';
 import styles from './styles.scss';
-import Panel from 'components/panel/panel';
 import Image from 'components/image/image';
 
 class Music extends Component {
   render() {
     return (
-      <Panel className={styles.music}>
-        <a href="test">
-          <Image className={'sm-cover'} />
-          <Panel className={'panel-music-info'}>
+      <div className={`${styles.music_container} ${styles.home_container}`}>
+        <div className={styles.music}>
+          <div className={styles.image_section}>
+            <a href="test">
+              <Image />
+            </a>
+          </div>
+          <div className={styles.content}>
             <h3 className={styles.title}>
-              Lorem ipsum dolor sit amet, consectetur
+              <a href="test">
+                Lorem ipsum dolor sit amet, consectetur, Lorem ipsum dolor sit amet,
+                consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor
+                sit amet, consectetur
+              </a>
             </h3>
-            <h3 className={styles.uploader_name}>
-              Rathanak
-            </h3>
-          </Panel>
-        </a>
-      </Panel>
+            <p className={styles.uploader}>
+              <span><a href="f">Rathanak</a></span>
+              <span>1000K</span>
+            </p>
+            <p className={styles.aditional_info}>
+              <span><a href="f">Rathanak</a></span>
+              <span>Rathanak</span>
+            </p>
+          </div>
+        </div>
+      </div>
     );
   }
 }
 
 export default Music;
+
