@@ -5,24 +5,24 @@ class Home extends Component {
   render() {
     return (
       <div className="app-container">
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
-        <Music className={''} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
+        <Music className={'home_container'} />
       </div>
     );
   }

@@ -12932,6 +12932,14 @@ var _panel = __webpack_require__(148);
 
 var _panel2 = _interopRequireDefault(_panel);
 
+var _music = __webpack_require__(149);
+
+var _music2 = _interopRequireDefault(_music);
+
+var _styles = __webpack_require__(381);
+
+var _styles2 = _interopRequireDefault(_styles);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12956,8 +12964,8 @@ var Board = function (_Component) {
         'div',
         { className: 'app-container' },
         _react2.default.createElement(
-          _panel2.default,
-          { className: 'panel-playboard' },
+          'div',
+          { className: _styles2.default.panel_playboard },
           _react2.default.createElement(
             'h1',
             null,
@@ -12965,13 +12973,26 @@ var Board = function (_Component) {
           )
         ),
         _react2.default.createElement(
-          _panel2.default,
-          { className: 'panel-playlist' },
-          _react2.default.createElement(
-            'h1',
-            null,
-            'Play list'
-          )
+          'div',
+          { className: _styles2.default.panel_playlist },
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' }),
+          _react2.default.createElement(_music2.default, { className: '' })
         )
       );
     }
@@ -13026,24 +13047,24 @@ var Home = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'app-container' },
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' }),
-        _react2.default.createElement(_music2.default, { className: '' })
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' }),
+        _react2.default.createElement(_music2.default, { className: 'home_container' })
       );
     }
   }]);
@@ -13266,6 +13287,8 @@ var _image = __webpack_require__(147);
 
 var _image2 = _interopRequireDefault(_image);
 
+var _css_parse = __webpack_require__(84);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13277,10 +13300,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Music = function (_Component) {
   _inherits(Music, _Component);
 
-  function Music() {
+  function Music(props) {
     _classCallCheck(this, Music);
 
-    return _possibleConstructorReturn(this, (Music.__proto__ || Object.getPrototypeOf(Music)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Music.__proto__ || Object.getPrototypeOf(Music)).call(this, props));
+
+    _this.state = {
+      cssClass: (0, _css_parse.css_parse)(_styles2.default, _this.props.className) + ' ' + _styles2.default.music_container
+    };
+    return _this;
   }
 
   _createClass(Music, [{
@@ -13288,7 +13316,7 @@ var Music = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: _styles2.default.music_container + ' ' + _styles2.default.home_container },
+        { className: this.state.cssClass },
         _react2.default.createElement(
           'div',
           { className: _styles2.default.music },
@@ -15332,7 +15360,7 @@ exports = module.exports = __webpack_require__(35)(undefined);
 
 
 // module
-exports.push([module.i, ".app-components-panel-___styles__panel___yjGpI {\n  display: inline-block;\n  background: #ffffff;\n  box-sizing: border-box;\n  position: relative; }\n\n.app-components-panel-___styles__panel-playboard___3qoRs {\n  width: 65%; }\n\n.app-components-panel-___styles__panel-playlist___10nrH {\n  width: 35%; }\n", ""]);
+exports.push([module.i, ".app-components-panel-___styles__panel___yjGpI {\n  display: inline-block;\n  box-sizing: border-box;\n  position: relative; }\n\n.app-components-panel-___styles__panel-playboard___3qoRs {\n  width: 65%; }\n\n.app-components-panel-___styles__panel-playlist___10nrH {\n  width: 35%; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -32854,6 +32882,49 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
+
+/***/ }),
+/* 380 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(35)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".app-containers-board-___styles__panel_playboard___3PGIH {\n  width: 65%;\n  float: left; }\n\n.app-containers-board-___styles__panel_playlist___2TpyD {\n  width: 35%;\n  float: left;\n  background-color: #fff;\n  max-height: 500px;\n  overflow: auto; }\n", ""]);
+
+// exports
+exports.locals = {
+	"panel_playboard": "app-containers-board-___styles__panel_playboard___3PGIH",
+	"panel_playlist": "app-containers-board-___styles__panel_playlist___2TpyD"
+};
+
+/***/ }),
+/* 381 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(380);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(52)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../../node_modules/sass-loader/lib/loader.js!./styles.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../../node_modules/sass-loader/lib/loader.js!./styles.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

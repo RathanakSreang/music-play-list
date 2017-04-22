@@ -1,11 +1,19 @@
 import React, {Component} from 'react';
 import styles from './styles.scss';
 import Image from 'components/image/image';
+import { css_parse } from 'util/css_parse';
 
 class Music extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cssClass: `${css_parse(styles, this.props.className)} ${styles.music_container}`
+    };
+  }
+
   render() {
     return (
-      <div className={`${styles.music_container} ${styles.home_container}`}>
+      <div className={this.state.cssClass}>
         <div className={styles.music}>
           <div className={styles.image_section}>
             <a href="test">
