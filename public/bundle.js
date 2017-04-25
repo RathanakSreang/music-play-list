@@ -13093,21 +13093,21 @@ var Board = function (_Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Board.__proto__ || Object.getPrototypeOf(Board)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      width: 500
+      width: 0
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Board, [{
-    key: 'updateDimensions',
-    value: function updateDimensions() {
-      // var cassette_player = document.getElementById('cassette_player'),
-      //   width = cassette_player.innerWidth,
-      //   height = cassette_player.innerHeight;
-
+    key: 'updateStateValue',
+    value: function updateStateValue() {
       if (this.refs.cassettePlayer) {
         this.setState({ width: this.refs.cassettePlayer.offsetWidth });
-        // console.log(this.refs.cassettePlayer.offsetWidth);
       }
+    }
+  }, {
+    key: 'updateDimensions',
+    value: function updateDimensions() {
+      this.updateStateValue();
     }
   }, {
     key: 'componentWillMount',
@@ -13117,6 +13117,7 @@ var Board = function (_Component) {
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
+      this.updateStateValue();
       window.addEventListener("resize", this.updateDimensions.bind(this));
     }
   }, {
@@ -13339,33 +13340,17 @@ var CassettePlayer = function (_Component) {
   _inherits(CassettePlayer, _Component);
 
   function CassettePlayer() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
     _classCallCheck(this, CassettePlayer);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CassettePlayer.__proto__ || Object.getPrototypeOf(CassettePlayer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      p_width: _this.props.width
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    return _possibleConstructorReturn(this, (CassettePlayer.__proto__ || Object.getPrototypeOf(CassettePlayer)).apply(this, arguments));
   }
 
   _createClass(CassettePlayer, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      console.log(this.refs);
-    }
-  }, {
     key: 'render',
     value: function render() {
       var vc_tape = {
         width: '586px',
-        height: '379px',
-        margin: '30px auto 0'
+        height: '379px'
       };
 
       var vc_tape_wheel = {
@@ -13396,7 +13381,7 @@ var CassettePlayer = function (_Component) {
         _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_left), className: '' + _style2.default.vc_tape_wheel }),
         _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_right), className: '' + _style2.default.vc_tape_wheel }),
         _react2.default.createElement('img', { src: front, className: _style2.default.vc_tape_front }),
-        this.state.p_width
+        this.props.width
       );
     }
   }]);
@@ -15477,7 +15462,7 @@ exports = module.exports = __webpack_require__(23)(undefined);
 
 
 // module
-exports.push([module.i, ".app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  position: relative;\n  -webkit-transition: all .4s ease-in-out;\n  -moz-transition: all .4s ease-in-out;\n  -o-transition: all .4s ease-in-out;\n  -ms-transition: all .4s ease-in-out;\n  transition: all .4s ease-in-out; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n", ""]);
+exports.push([module.i, ".app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  margin: 0 auto;\n  position: relative;\n  -webkit-transition: all .4s ease-in-out;\n  -moz-transition: all .4s ease-in-out;\n  -o-transition: all .4s ease-in-out;\n  -ms-transition: all .4s ease-in-out;\n  transition: all .4s ease-in-out; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n", ""]);
 
 // exports
 exports.locals = {

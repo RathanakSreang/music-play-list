@@ -5,18 +5,10 @@ const front = require('assets/images/cs_front.png');
 const back = require('assets/images/cs_back.png');
 const wheel = require('assets/images/cs_wheel.png');
 export default class CassettePlayer extends Component {
-  state = {
-    p_width: this.props.width
-  }
-
-  componentDidMount() {
-    console.log(this.refs);
-  }
   render() {
     var vc_tape = {
       width: '586px',
       height: '379px',
-      margin: '30px auto 0',
     };
 
     var vc_tape_wheel = {
@@ -46,7 +38,7 @@ export default class CassettePlayer extends Component {
         <img src={wheel} style={Object.assign({}, vc_tape_wheel, vc_tape_wheel_left)} className={`${styles.vc_tape_wheel}`} />
         <img src={wheel} style={Object.assign({}, vc_tape_wheel, vc_tape_wheel_right)} className={`${styles.vc_tape_wheel}`} />
         <img src={front} className={styles.vc_tape_front} />
-        {this.state.p_width}
+        {this.props.width}
       </div>
     );
   }

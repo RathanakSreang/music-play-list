@@ -6,22 +6,21 @@ import styles from './styles.scss';
 
 class Board extends Component {
   state = {
-    width: 500
+    width: 0
   }
-  updateDimensions() {
-    // var cassette_player = document.getElementById('cassette_player'),
-    //   width = cassette_player.innerWidth,
-    //   height = cassette_player.innerHeight;
-
+  updateStateValue() {
     if(this.refs.cassettePlayer) {
       this.setState({width: this.refs.cassettePlayer.offsetWidth});
-      // console.log(this.refs.cassettePlayer.offsetWidth);
     }
+  }
+  updateDimensions() {
+    this.updateStateValue()
   }
   componentWillMount() {
     this.updateDimensions();
   }
   componentDidMount() {
+    this.updateStateValue()
     window.addEventListener("resize", this.updateDimensions.bind(this));
   }
   componentWillUnmount() {
