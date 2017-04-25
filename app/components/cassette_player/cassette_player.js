@@ -5,6 +5,18 @@ const front = require('assets/images/cs_front.png');
 const back = require('assets/images/cs_back.png');
 const wheel = require('assets/images/cs_wheel.png');
 export default class CassettePlayer extends Component {
+  state = {
+      isPlaying: false,
+      isPause: false,
+      isLoading: false,
+      currentSongIndex: -1,
+      volume: 0.5,
+  }
+
+  componentWillMount() {
+
+  }
+
   render() {
     var vc_tape_w = 586,
       vc_tape_h = 379,
