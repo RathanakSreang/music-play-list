@@ -6,7 +6,7 @@ import styles from './styles.scss';
 
 class Board extends Component {
   state = {
-    width: 0
+    width: 600
   }
   updateStateValue() {
     if(this.refs.cassettePlayer) {

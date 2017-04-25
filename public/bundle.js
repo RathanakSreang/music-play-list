@@ -13093,7 +13093,7 @@ var Board = function (_Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Board.__proto__ || Object.getPrototypeOf(Board)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      width: 0
+      width: 600
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
@@ -13348,15 +13348,33 @@ var CassettePlayer = function (_Component) {
   _createClass(CassettePlayer, [{
     key: 'render',
     value: function render() {
+      var vc_tape_w = 586,
+          vc_tape_h = 379,
+          wheel_w_h = 125,
+          wheel_top = 110,
+          wheel_left = 109,
+          wheel_right = 113,
+          wheel_max_shadow = 90;
+
+      if (this.props.width < 600) {
+        var s = this.props.width / 600;
+        vc_tape_w = vc_tape_w * s;
+        vc_tape_h = vc_tape_h * s;
+        wheel_w_h = wheel_w_h * s;
+        wheel_top = wheel_top * s;
+        wheel_left = wheel_left * s;
+        wheel_right = wheel_right * s;
+        wheel_max_shadow = wheel_max_shadow * s;
+      }
       var vc_tape = {
-        width: '586px',
-        height: '379px'
+        width: vc_tape_w + 'px',
+        height: vc_tape_h + 'px'
       };
 
       var vc_tape_wheel = {
-        width: '125px',
-        height: '125px',
-        top: '110px',
+        width: wheel_w_h + 'px',
+        height: wheel_w_h + 'px',
+        top: wheel_top + 'px',
         animationName: 'rotateLeft',
         animationIterationCount: 'infinite',
         animationTimingFunction: 'linear',
@@ -13365,13 +13383,13 @@ var CassettePlayer = function (_Component) {
       };
 
       var vc_tape_wheel_left = {
-        left: '109px',
-        boxShadow: '0 0 0 70px #000'
+        left: wheel_left + 'px',
+        boxShadow: '0 0 0 ' + wheel_max_shadow + 'px #000'
       };
 
       var vc_tape_wheel_right = {
-        right: '113px',
-        boxShadow: '0 0 0 10px #000'
+        right: wheel_right + 'px',
+        boxShadow: '0 0 0 ' + 10 + 'px #000'
       };
 
       return _react2.default.createElement(
@@ -15462,7 +15480,7 @@ exports = module.exports = __webpack_require__(23)(undefined);
 
 
 // module
-exports.push([module.i, ".app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  margin: 0 auto;\n  position: relative;\n  -webkit-transition: all .4s ease-in-out;\n  -moz-transition: all .4s ease-in-out;\n  -o-transition: all .4s ease-in-out;\n  -ms-transition: all .4s ease-in-out;\n  transition: all .4s ease-in-out; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n", ""]);
+exports.push([module.i, ".app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  margin: 0 auto;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n", ""]);
 
 // exports
 exports.locals = {
