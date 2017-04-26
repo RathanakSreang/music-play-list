@@ -1,74 +1,275 @@
 import React, {Component} from 'react';
 import styles from './style.scss';
+import Cassette from './cassette.js';
+import { Howl } from 'howler';
 
-const front = require('assets/images/cs_front.png');
-const back = require('assets/images/cs_back.png');
-const wheel = require('assets/images/cs_wheel.png');
 export default class CassettePlayer extends Component {
-  state = {
-      isPlaying: false,
-      isPause: false,
-      isLoading: false,
-      currentSongIndex: -1,
-      volume: 0.5,
+  constructor(props) {
+    super(props);
+    // this.props = { songs: [] };
+    this.state = {
+        isPlaying: false,
+        isPause: false,
+        isLoading: false,
+        currentSongIndex: -1,
+        totalSong: 0,
+        volume: 0.5,
+        speed: 0.0,
+        rotation: 'rotateLeft',
+        percentage: 1,
+    };
+    this._onPlayBtnClick = this._onPlayBtnClick.bind(this);
+    this._onPauseBtnClick = this._onPauseBtnClick.bind(this);
+    this._onPrevBtnClick = this._onPrevBtnClick.bind(this);
+    this._onNextBtnClick = this._onNextBtnClick.bind(this);
+    this._seekTo = this._seekTo.bind(this);
+    this._updateCurrentDuration = this._updateCurrentDuration.bind(this);
+    this._adjustVolumeTo = this._adjustVolumeTo.bind(this);
+    this._initSoundObjectCompleted = this._initSoundObjectCompleted.bind(this);
+    this._playEnd = this._playEnd.bind(this);
+    this._onSongItemClick = this._onSongItemClick.bind(this);
   }
 
   componentWillMount() {
+    const { dataUrl, songs } = this.props;
 
+    if (dataUrl) {
+      $.ajax({
+        dataType: 'json',
+        url: this.props.dataUrl,
+        success: response => {
+          this.setState({
+            songs: response.songs,
+            currentSongIndex: 0,
+            totalSong: response.songs.length,
+          });
+        },
+      });
+    } else if(this.props.songs){
+      this.setState({
+        songs: this.props.songs,
+        currentSongIndex: 0,
+        totalSong: this.props.songs.length,
+      });
+    } else {
+      throw Error('no data');
+    }
+  }
+
+  componentDidMount() {
+    // this.play();
+  }
+
+  componentDidUpdate(prevProps, prevState, prevContext) {
+    const { isPlaying, currentSongIndex } = this.state;
+    if (isPlaying && currentSongIndex != prevState.currentSongIndex) {
+      this._initSoundObject();
+    }
+  }
+
+  _onPlayBtnClick() {
+    if (this.state.isPlaying && !this.state.isPause) {
+      return;
+    };
+    this.play();
+  }
+
+  _onPauseBtnClick() {
+    const isPause = !this.state.isPause;
+    this.setState({ isPause: isPause });
+    isPause ? this._pause() : this._play();
+  }
+
+  _onPrevBtnClick() {
+    this._prev();
+  }
+
+  _onNextBtnClick() {
+    this._next();
+  }
+
+  _onSongItemClick(songIndex) {
+    const { currentSongIndex, isPause, isPlaying } = this.state;
+    // handle pause/playing state.
+    if (currentSongIndex == songIndex) {
+      if (isPause) {
+        this._onPauseBtnClick();
+      } else if (!isPlaying) {
+        this._onPlayBtnClick();
+      }
+      return;
+    }
+
+    // handle index change state, it must change to play.
+    this._stop();
+    this._clearSoundObject();
+    this.setState({
+                    currentSongIndex: songIndex,
+                    duration: 0,
+                    isPlaying: true,
+                    isPause: false
+                  });
+  }
+
+  play() {
+    this.setState({ isPlaying: true, isPause: false });
+
+    if (!this.howler) {
+      this._initSoundObject();
+    } else {
+      const songUrl = this.state.songs[this.state.currentSongIndex].url;
+      if (songUrl != this.howler._src) {
+        this._initSoundObject();
+      } else {
+        this._play();
+      }
+    }
+  }
+
+  _initSoundObject() {
+    this._clearSoundObject();
+    this.setState({ isLoading: true });
+
+    const song = this.state.songs[this.state.currentSongIndex];
+    this.howler = new Howl({
+      src: song.url,
+      volume: this.state.volume,
+      onload: this._initSoundObjectCompleted,
+      onend: this._playEnd,
+    });
+  }
+
+  _clearSoundObject() {
+    if (this.howler) {
+      this.howler.stop();
+      this.howler = null;
+    }
+  }
+
+  _initSoundObjectCompleted() {
+    this._play();
+    this.setState({
+      duration: this.howler.duration(),
+      isLoading: false,
+    });
+  }
+
+  _play() {
+    this.setState({
+      speed: 2.0,
+      rotation: 'rotateLeft',
+    });
+
+    this.howler.play();
+    this._stopUpdateCurrentDuration();
+    this._updateCurrentDuration();
+    this.interval = setInterval(this._updateCurrentDuration, 1000);
+  }
+
+  _playEnd() {
+    this.setState({
+      speed: 0,
+    });
+    if(this.state.currentSongIndex == this.state.songs.length - 1) {
+      this._stop();
+    } else {
+      this._next();
+    }
+  }
+
+  _stop() {
+    this.setState({
+      speed: 0,
+    });
+    this._stopUpdateCurrentDuration();
+    this.setState({ seek: 0, isPlaying: false });
+  }
+
+  _pause() {
+    this.setState({
+      speed: 0,
+    });
+    this.howler.pause();
+    this._stopUpdateCurrentDuration();
+  }
+
+  _prev() {
+    this._seekTo(0);
+    if (this.state.currentSongIndex > 0) {
+      this._updateSongIndex(this.state.currentSongIndex - 1);
+    }
+  }
+
+  _next() {
+    let lastSongIndex = this.state.totalSong -1;
+    this._seekTo(0);
+    if (this.state.currentSongIndex < lastSongIndex) {
+      this._updateSongIndex(this.state.currentSongIndex + 1);
+    }
+  }
+
+  _updateSongIndex(index) {
+    this.setState({
+      currentSongIndex: index,
+      duration: 0,
+    });
+    if (this.state.isPause) {
+      this._stop();
+      this._clearSoundObject();
+    } else {
+      this._stopUpdateCurrentDuration();
+    }
+  }
+
+  _updateCurrentDuration() {
+    this.setState({ seek: this.howler.seek() });
+  }
+
+  _stopUpdateCurrentDuration() {
+    clearInterval(this.interval);
+  }
+
+  _seekTo(percent) {
+    const seek = this.state.duration * percent;
+    this.howler.seek(seek);
+    this.setState({ seek: seek });
+  }
+
+  _adjustVolumeTo(percent) {
+    this.setState({ volume: percent });
+    if (this.howler) {
+      this.howler.volume(percent);
+    }
+  }
+
+  songCount() {
+    return this.state.songs ? this.state.songs.length : 0;
+  }
+
+  getCurrentSongName() {
+    if (this.state.currentSongIndex < 0) return '';
+    const song = this.state.songs[this.state.currentSongIndex];
+    return this.getSongName(song);
   }
 
   render() {
-    var vc_tape_w = 586,
-      vc_tape_h = 379,
-      wheel_w_h = 125,
-      wheel_top = 110,
-      wheel_left = 109,
-      wheel_right = 113,
-      wheel_max_shadow = 90;
-
-    if(this.props.width < 600) {
-      var s = this.props.width / 600;
-      vc_tape_w = vc_tape_w * s;
-      vc_tape_h = vc_tape_h * s;
-      wheel_w_h = wheel_w_h * s;
-      wheel_top = wheel_top * s;
-      wheel_left = wheel_left * s;
-      wheel_right = wheel_right * s;
-      wheel_max_shadow = wheel_max_shadow * s;
-    }
-    var vc_tape = {
-      width: vc_tape_w + 'px',
-      height: vc_tape_h + 'px',
-    };
-
-    var vc_tape_wheel = {
-      width: wheel_w_h + 'px',
-      height: wheel_w_h + 'px',
-      top: wheel_top + 'px',
-      animationName: 'rotateLeft',
-      animationIterationCount: 'infinite',
-      animationTimingFunction: 'linear',
-      animationDuration: '3s',
-      animationFillMode: 'forwards',
-    };
-
-    var vc_tape_wheel_left = {
-      left: wheel_left + 'px',
-      boxShadow: '0 0 0 ' + wheel_max_shadow + 'px #000',
-    };
-
-    var vc_tape_wheel_right = {
-      right: wheel_right + 'px',
-      boxShadow: '0 0 0 ' + 10 + 'px #000',
+    const songCount = this.songCount();
+    const { seek, duration, volume,
+            isPlaying, isPause, isLoading, currentSongIndex } = this.state;
+    let percent = 0;
+    if (seek && duration) {
+      percent = seek / duration;
     }
 
     return(
-      <div style={vc_tape} className={styles.vc_tape}>
-        <img src={back} className={styles.vc_tape_back} />
-        <img src={wheel} style={Object.assign({}, vc_tape_wheel, vc_tape_wheel_left)} className={`${styles.vc_tape_wheel}`} />
-        <img src={wheel} style={Object.assign({}, vc_tape_wheel, vc_tape_wheel_right)} className={`${styles.vc_tape_wheel}`} />
-        <img src={front} className={styles.vc_tape_front} />
-        {this.props.width}
+      <div>
+        <Cassette width={this.props.width} speed={this.state.speed} rotation={this.state.rotation} percentage={this.state.percentage} />
+        <ul className={styles.vc_controls}>
+          <li onClick={this._onPlayBtnClick}>Play<span></span></li>
+          <li onClick={this._onPrevBtnClick}>REW<span></span></li>
+          <li onClick={this._onNextBtnClick}>FF<span></span></li>
+          <li onClick={this._onPauseBtnClick}>STOP<span></span></li>
+        </ul>
       </div>
     );
   }

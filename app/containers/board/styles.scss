@@ -1,10 +1,29 @@
-.panel_playboard {
-  width: 65%;
-  float: left;
+
+
+$break_point: 850px;
+
+@media (min-width: #{$break_point}) {
+  .panel_playboard {
+    width: 65%;
+    float: left;
+  }
+  .panel_playlist {
+    width: 35%;
+    float: left;
+    background-color: #fff;
+    overflow: auto;
+  }
 }
-.panel_playlist {
-  width: 35%;
-  float: left;
-  background-color: #fff;
-  overflow: auto;
+
+@media (max-width: #{$break_point}) {
+  .panel_playboard {
+    width: 100%;
+    float: left;
+  }
+  .panel_playlist {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    overflow: auto;
+  }
 }

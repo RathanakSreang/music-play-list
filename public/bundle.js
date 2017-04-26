@@ -558,7 +558,7 @@ module.exports = __webpack_require__(29);
 var _prodInvariant = __webpack_require__(3);
 
 var DOMProperty = __webpack_require__(18);
-var ReactDOMComponentFlags = __webpack_require__(116);
+var ReactDOMComponentFlags = __webpack_require__(117);
 
 var invariant = __webpack_require__(1);
 
@@ -1192,7 +1192,7 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(111)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(112)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -1242,7 +1242,7 @@ module.exports = { debugTool: debugTool };
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_1__Prompt__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Redirect__ = __webpack_require__(356);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_2__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(136);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__Router__["a"]; });
@@ -1293,9 +1293,9 @@ module.exports = { debugTool: debugTool };
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(114);
+var CallbackQueue = __webpack_require__(115);
 var PooledClass = __webpack_require__(19);
-var ReactFeatureFlags = __webpack_require__(119);
+var ReactFeatureFlags = __webpack_require__(120);
 var ReactReconciler = __webpack_require__(28);
 var Transaction = __webpack_require__(49);
 
@@ -1570,7 +1570,7 @@ module.exports = ReactCurrentOwner;
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(98);
+var freeGlobal = __webpack_require__(99);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -2246,7 +2246,7 @@ var warning = __webpack_require__(2);
 var canDefineProperty = __webpack_require__(52);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(136);
+var REACT_ELEMENT_TYPE = __webpack_require__(137);
 
 var RESERVED_PROPS = {
   key: true,
@@ -2875,7 +2875,7 @@ var DOMNamespaces = __webpack_require__(66);
 var setInnerHTML = __webpack_require__(51);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(73);
-var setTextContent = __webpack_require__(132);
+var setTextContent = __webpack_require__(133);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -3170,16 +3170,16 @@ module.exports = ReactReconciler;
 
 var _assign = __webpack_require__(4);
 
-var ReactChildren = __webpack_require__(363);
+var ReactChildren = __webpack_require__(364);
 var ReactComponent = __webpack_require__(82);
-var ReactPureComponent = __webpack_require__(368);
-var ReactClass = __webpack_require__(364);
-var ReactDOMFactories = __webpack_require__(365);
+var ReactPureComponent = __webpack_require__(369);
+var ReactClass = __webpack_require__(365);
+var ReactDOMFactories = __webpack_require__(366);
 var ReactElement = __webpack_require__(20);
-var ReactPropTypes = __webpack_require__(366);
-var ReactVersion = __webpack_require__(369);
+var ReactPropTypes = __webpack_require__(367);
+var ReactVersion = __webpack_require__(370);
 
-var onlyChild = __webpack_require__(372);
+var onlyChild = __webpack_require__(373);
 var warning = __webpack_require__(2);
 
 var createElement = ReactElement.createElement;
@@ -3188,7 +3188,7 @@ var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
   var canDefineProperty = __webpack_require__(52);
-  var ReactElementValidator = __webpack_require__(137);
+  var ReactElementValidator = __webpack_require__(138);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -3299,7 +3299,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(375);
+	fixUrls = __webpack_require__(376);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -3671,8 +3671,8 @@ var EventPluginRegistry = __webpack_require__(46);
 var EventPluginUtils = __webpack_require__(67);
 var ReactErrorUtils = __webpack_require__(71);
 
-var accumulateInto = __webpack_require__(126);
-var forEachAccumulated = __webpack_require__(127);
+var accumulateInto = __webpack_require__(127);
+var forEachAccumulated = __webpack_require__(128);
 var invariant = __webpack_require__(1);
 
 /**
@@ -3952,8 +3952,8 @@ module.exports = EventPluginHub;
 var EventPluginHub = __webpack_require__(33);
 var EventPluginUtils = __webpack_require__(67);
 
-var accumulateInto = __webpack_require__(126);
-var forEachAccumulated = __webpack_require__(127);
+var accumulateInto = __webpack_require__(127);
+var forEachAccumulated = __webpack_require__(128);
 var warning = __webpack_require__(2);
 
 var getListener = EventPluginHub.getListener;
@@ -4392,7 +4392,7 @@ module.exports = toKey;
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(107),
+var isFunction = __webpack_require__(108),
     isLength = __webpack_require__(62);
 
 /**
@@ -4746,7 +4746,7 @@ var _assign = __webpack_require__(4);
 
 var EventPluginRegistry = __webpack_require__(46);
 var ReactEventEmitterMixin = __webpack_require__(304);
-var ViewportMetrics = __webpack_require__(125);
+var ViewportMetrics = __webpack_require__(126);
 
 var getVendorPrefixedEventName = __webpack_require__(339);
 var isEventSupported = __webpack_require__(77);
@@ -5076,7 +5076,7 @@ module.exports = ReactBrowserEventEmitter;
 
 
 var SyntheticUIEvent = __webpack_require__(36);
-var ViewportMetrics = __webpack_require__(125);
+var ViewportMetrics = __webpack_require__(126);
 
 var getEventModifierState = __webpack_require__(75);
 
@@ -5649,7 +5649,7 @@ var _split2 = __webpack_require__(267);
 
 var _split3 = _interopRequireDefault(_split2);
 
-var _hasIn2 = __webpack_require__(104);
+var _hasIn2 = __webpack_require__(105);
 
 var _hasIn3 = _interopRequireDefault(_hasIn2);
 
@@ -5747,11 +5747,11 @@ exports.locationsAreEqual = exports.createLocation = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _resolvePathname = __webpack_require__(374);
+var _resolvePathname = __webpack_require__(375);
 
 var _resolvePathname2 = _interopRequireDefault(_resolvePathname);
 
-var _valueEqual = __webpack_require__(385);
+var _valueEqual = __webpack_require__(386);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
@@ -6195,7 +6195,7 @@ var ReactInstrumentation = __webpack_require__(11);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(73);
 var setInnerHTML = __webpack_require__(51);
-var setTextContent = __webpack_require__(132);
+var setTextContent = __webpack_require__(133);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -6742,8 +6742,8 @@ module.exports = KeyEscapeUtils;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(124);
-var propTypesFactory = __webpack_require__(110);
+var ReactPropTypesSecret = __webpack_require__(125);
+var propTypesFactory = __webpack_require__(111);
 
 var React = __webpack_require__(29);
 var PropTypes = propTypesFactory(React.isValidElement);
@@ -8042,7 +8042,7 @@ Router.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(361);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -8340,6 +8340,33 @@ module.exports = ReactNoopUpdateQueue;
 
 /***/ }),
 /* 84 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8348,7 +8375,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(343);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(135);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(344);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
@@ -8398,7 +8425,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8414,7 +8441,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styles = __webpack_require__(381);
+var _styles = __webpack_require__(382);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -8524,7 +8551,7 @@ var Music = function (_Component) {
 exports.default = Music;
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8614,7 +8641,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8646,7 +8673,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8690,7 +8717,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8751,7 +8778,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(38),
@@ -8784,7 +8811,7 @@ module.exports = Stack;
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports) {
 
 /**
@@ -8811,10 +8838,10 @@ module.exports = arrayMap;
 
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var castPath = __webpack_require__(96),
+var castPath = __webpack_require__(97),
     toKey = __webpack_require__(43);
 
 /**
@@ -8841,7 +8868,7 @@ module.exports = baseGet;
 
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsEqualDeep = __webpack_require__(198),
@@ -8875,11 +8902,11 @@ module.exports = baseIsEqual;
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(39),
-    arrayMap = __webpack_require__(91),
+    arrayMap = __webpack_require__(92),
     isArray = __webpack_require__(16),
     isSymbol = __webpack_require__(63);
 
@@ -8918,7 +8945,7 @@ module.exports = baseToString;
 
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports) {
 
 /**
@@ -8938,13 +8965,13 @@ module.exports = baseUnary;
 
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(16),
     isKey = __webpack_require__(60),
     stringToPath = __webpack_require__(259),
-    toString = __webpack_require__(109);
+    toString = __webpack_require__(110);
 
 /**
  * Casts `value` to a path array if it's not one.
@@ -8965,7 +8992,7 @@ module.exports = castPath;
 
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var SetCache = __webpack_require__(184),
@@ -9054,7 +9081,7 @@ module.exports = equalArrays;
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -9062,10 +9089,10 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 module.exports = freeGlobal;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(140)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(84)))
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports) {
 
 /** Used to compose unicode character classes. */
@@ -9097,7 +9124,7 @@ module.exports = hasUnicode;
 
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(45);
@@ -9118,7 +9145,7 @@ module.exports = isStrictComparable;
 
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports) {
 
 /**
@@ -9144,10 +9171,10 @@ module.exports = matchesStrictComparable;
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(98);
+/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(99);
 
 /** Detect free variable `exports`. */
 var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -9173,7 +9200,7 @@ module.exports = nodeUtil;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(141)(module)))
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -9205,7 +9232,7 @@ module.exports = toSource;
 
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseHasIn = __webpack_require__(196),
@@ -9245,7 +9272,7 @@ module.exports = hasIn;
 
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsArguments = __webpack_require__(197),
@@ -9287,7 +9314,7 @@ module.exports = isArguments;
 
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(15),
@@ -9332,7 +9359,7 @@ module.exports = isBuffer;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(141)(module)))
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(24),
@@ -9375,12 +9402,12 @@ module.exports = isFunction;
 
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsTypedArray = __webpack_require__(202),
-    baseUnary = __webpack_require__(95),
-    nodeUtil = __webpack_require__(102);
+    baseUnary = __webpack_require__(96),
+    nodeUtil = __webpack_require__(103);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -9408,10 +9435,10 @@ module.exports = isTypedArray;
 
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(94);
+var baseToString = __webpack_require__(95);
 
 /**
  * Converts `value` to a string. An empty string is returned for `null`
@@ -9442,7 +9469,7 @@ module.exports = toString;
 
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9461,7 +9488,7 @@ module.exports = toString;
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(111);
+var factory = __webpack_require__(112);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -9470,7 +9497,7 @@ module.exports = function(isValidElement) {
 
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9489,7 +9516,7 @@ var emptyFunction = __webpack_require__(9);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(112);
+var ReactPropTypesSecret = __webpack_require__(113);
 var checkPropTypes = __webpack_require__(270);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
@@ -9956,7 +9983,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9977,7 +10004,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10130,7 +10157,7 @@ var CSSProperty = {
 module.exports = CSSProperty;
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10255,7 +10282,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10498,7 +10525,7 @@ module.exports = DOMPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10521,7 +10548,7 @@ var ReactDOMComponentFlags = {
 module.exports = ReactDOMComponentFlags;
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10727,7 +10754,7 @@ module.exports = ReactDOMSelect;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10762,7 +10789,7 @@ ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 module.exports = ReactEmptyComponent;
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10789,7 +10816,7 @@ var ReactFeatureFlags = {
 module.exports = ReactFeatureFlags;
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10863,7 +10890,7 @@ module.exports = ReactHostComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10881,9 +10908,9 @@ module.exports = ReactHostComponent;
 
 var ReactDOMSelection = __webpack_require__(295);
 
-var containsNode = __webpack_require__(162);
-var focusNode = __webpack_require__(87);
-var getActiveElement = __webpack_require__(88);
+var containsNode = __webpack_require__(161);
+var focusNode = __webpack_require__(88);
+var getActiveElement = __webpack_require__(89);
 
 function isInDocument(node) {
   return containsNode(document.documentElement, node);
@@ -10992,7 +11019,7 @@ var ReactInputSelection = {
 module.exports = ReactInputSelection;
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11018,7 +11045,7 @@ var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(287);
 var ReactDOMFeatureFlags = __webpack_require__(289);
-var ReactFeatureFlags = __webpack_require__(119);
+var ReactFeatureFlags = __webpack_require__(120);
 var ReactInstanceMap = __webpack_require__(35);
 var ReactInstrumentation = __webpack_require__(11);
 var ReactMarkupChecksum = __webpack_require__(309);
@@ -11027,7 +11054,7 @@ var ReactUpdateQueue = __webpack_require__(72);
 var ReactUpdates = __webpack_require__(13);
 
 var emptyObject = __webpack_require__(31);
-var instantiateReactComponent = __webpack_require__(130);
+var instantiateReactComponent = __webpack_require__(131);
 var invariant = __webpack_require__(1);
 var setInnerHTML = __webpack_require__(51);
 var shouldUpdateReactComponent = __webpack_require__(78);
@@ -11536,7 +11563,7 @@ module.exports = ReactMount;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11582,7 +11609,7 @@ module.exports = ReactNodeTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11604,7 +11631,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11636,7 +11663,7 @@ var ViewportMetrics = {
 module.exports = ViewportMetrics;
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11700,7 +11727,7 @@ module.exports = accumulateInto;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11736,7 +11763,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11752,7 +11779,7 @@ module.exports = forEachAccumulated;
 
 
 
-var ReactNodeTypes = __webpack_require__(123);
+var ReactNodeTypes = __webpack_require__(124);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -11771,7 +11798,7 @@ function getHostComponentFromComposite(inst) {
 module.exports = getHostComponentFromComposite;
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11809,7 +11836,7 @@ function getTextContentAccessor() {
 module.exports = getTextContentAccessor;
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11829,10 +11856,10 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var ReactCompositeComponent = __webpack_require__(284);
-var ReactEmptyComponent = __webpack_require__(118);
-var ReactHostComponent = __webpack_require__(120);
+var ReactEmptyComponent = __webpack_require__(119);
+var ReactHostComponent = __webpack_require__(121);
 
-var getNextDebugID = __webpack_require__(371);
+var getNextDebugID = __webpack_require__(372);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -11944,7 +11971,7 @@ module.exports = instantiateReactComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12000,7 +12027,7 @@ function isTextInputElement(elem) {
 module.exports = isTextInputElement;
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12057,7 +12084,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setTextContent;
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12239,7 +12266,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12342,7 +12369,7 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12486,7 +12513,7 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12511,7 +12538,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12538,10 +12565,10 @@ var ReactCurrentOwner = __webpack_require__(14);
 var ReactComponentTreeHook = __webpack_require__(8);
 var ReactElement = __webpack_require__(20);
 
-var checkReactTypeSpec = __webpack_require__(370);
+var checkReactTypeSpec = __webpack_require__(371);
 
 var canDefineProperty = __webpack_require__(52);
-var getIteratorFn = __webpack_require__(139);
+var getIteratorFn = __webpack_require__(140);
 var warning = __webpack_require__(2);
 
 function getDeclarationErrorAddendum() {
@@ -12770,7 +12797,7 @@ module.exports = ReactElementValidator;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12801,7 +12828,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12845,33 +12872,6 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
-
-/***/ }),
-/* 140 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
 
 /***/ }),
 /* 141 */
@@ -12968,9 +12968,9 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(84);
+var _reactRouterDom = __webpack_require__(85);
 
-var _styles = __webpack_require__(376);
+var _styles = __webpack_require__(377);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -13058,7 +13058,7 @@ var _panel = __webpack_require__(150);
 
 var _panel2 = _interopRequireDefault(_panel);
 
-var _music = __webpack_require__(85);
+var _music = __webpack_require__(86);
 
 var _music2 = _interopRequireDefault(_music);
 
@@ -13066,7 +13066,7 @@ var _cassette_player = __webpack_require__(148);
 
 var _cassette_player2 = _interopRequireDefault(_cassette_player);
 
-var _styles = __webpack_require__(380);
+var _styles = __webpack_require__(381);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -13128,13 +13128,14 @@ var Board = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
+      var songs = [{ url: 'mp3/like.mp3' }, { url: 'mp3/BlankKyt_RSPN.ogg' }, { url: 'mp3/BlankKytt_ThursdaySnowReprise.mp3' }, { url: 'mp3/BlueDucks_FourFlossFiveSix.mp3' }];
       return _react2.default.createElement(
         'div',
         { className: 'app-container', ref: 'cassetteBoard' },
         _react2.default.createElement(
           'div',
           { className: _styles2.default.panel_playboard, ref: 'cassettePlayer' },
-          _react2.default.createElement(_cassette_player2.default, { width: this.state.width })
+          _react2.default.createElement(_cassette_player2.default, { width: this.state.width, songs: songs })
         ),
         _react2.default.createElement(
           'div',
@@ -13184,7 +13185,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _music = __webpack_require__(85);
+var _music = __webpack_require__(86);
 
 var _music2 = _interopRequireDefault(_music);
 
@@ -13263,7 +13264,7 @@ var _reactDom = __webpack_require__(146);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(84);
+var _reactRouterDom = __webpack_require__(85);
 
 var _header = __webpack_require__(143);
 
@@ -13320,9 +13321,15 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _style = __webpack_require__(377);
+var _style = __webpack_require__(378);
 
 var _style2 = _interopRequireDefault(_style);
+
+var _cassette = __webpack_require__(389);
+
+var _cassette2 = _interopRequireDefault(_cassette);
+
+var _howler = __webpack_require__(177);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13332,91 +13339,348 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var front = __webpack_require__(383);
-var back = __webpack_require__(382);
-var wheel = __webpack_require__(384);
-
 var CassettePlayer = function (_Component) {
   _inherits(CassettePlayer, _Component);
 
-  function CassettePlayer() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
+  function CassettePlayer(props) {
     _classCallCheck(this, CassettePlayer);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    // this.props = { songs: [] };
+    var _this = _possibleConstructorReturn(this, (CassettePlayer.__proto__ || Object.getPrototypeOf(CassettePlayer)).call(this, props));
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CassettePlayer.__proto__ || Object.getPrototypeOf(CassettePlayer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+    _this.state = {
       isPlaying: false,
       isPause: false,
       isLoading: false,
       currentSongIndex: -1,
-      volume: 0.5
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+      totalSong: 0,
+      volume: 0.5,
+      speed: 0.0,
+      rotation: 'rotateLeft',
+      percentage: 1
+    };
+    _this._onPlayBtnClick = _this._onPlayBtnClick.bind(_this);
+    _this._onPauseBtnClick = _this._onPauseBtnClick.bind(_this);
+    _this._onPrevBtnClick = _this._onPrevBtnClick.bind(_this);
+    _this._onNextBtnClick = _this._onNextBtnClick.bind(_this);
+    _this._seekTo = _this._seekTo.bind(_this);
+    _this._updateCurrentDuration = _this._updateCurrentDuration.bind(_this);
+    _this._adjustVolumeTo = _this._adjustVolumeTo.bind(_this);
+    _this._initSoundObjectCompleted = _this._initSoundObjectCompleted.bind(_this);
+    _this._playEnd = _this._playEnd.bind(_this);
+    _this._onSongItemClick = _this._onSongItemClick.bind(_this);
+    return _this;
   }
 
   _createClass(CassettePlayer, [{
     key: 'componentWillMount',
-    value: function componentWillMount() {}
+    value: function componentWillMount() {
+      var _this2 = this;
+
+      var _props = this.props,
+          dataUrl = _props.dataUrl,
+          songs = _props.songs;
+
+
+      if (dataUrl) {
+        $.ajax({
+          dataType: 'json',
+          url: this.props.dataUrl,
+          success: function success(response) {
+            _this2.setState({
+              songs: response.songs,
+              currentSongIndex: 0,
+              totalSong: response.songs.length
+            });
+          }
+        });
+      } else if (this.props.songs) {
+        this.setState({
+          songs: this.props.songs,
+          currentSongIndex: 0,
+          totalSong: this.props.songs.length
+        });
+      } else {
+        throw Error('no data');
+      }
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      // this.play();
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState, prevContext) {
+      var _state = this.state,
+          isPlaying = _state.isPlaying,
+          currentSongIndex = _state.currentSongIndex;
+
+      if (isPlaying && currentSongIndex != prevState.currentSongIndex) {
+        this._initSoundObject();
+      }
+    }
+  }, {
+    key: '_onPlayBtnClick',
+    value: function _onPlayBtnClick() {
+      if (this.state.isPlaying && !this.state.isPause) {
+        return;
+      };
+      this.play();
+    }
+  }, {
+    key: '_onPauseBtnClick',
+    value: function _onPauseBtnClick() {
+      var isPause = !this.state.isPause;
+      this.setState({ isPause: isPause });
+      isPause ? this._pause() : this._play();
+    }
+  }, {
+    key: '_onPrevBtnClick',
+    value: function _onPrevBtnClick() {
+      this._prev();
+    }
+  }, {
+    key: '_onNextBtnClick',
+    value: function _onNextBtnClick() {
+      this._next();
+    }
+  }, {
+    key: '_onSongItemClick',
+    value: function _onSongItemClick(songIndex) {
+      var _state2 = this.state,
+          currentSongIndex = _state2.currentSongIndex,
+          isPause = _state2.isPause,
+          isPlaying = _state2.isPlaying;
+      // handle pause/playing state.
+
+      if (currentSongIndex == songIndex) {
+        if (isPause) {
+          this._onPauseBtnClick();
+        } else if (!isPlaying) {
+          this._onPlayBtnClick();
+        }
+        return;
+      }
+
+      // handle index change state, it must change to play.
+      this._stop();
+      this._clearSoundObject();
+      this.setState({
+        currentSongIndex: songIndex,
+        duration: 0,
+        isPlaying: true,
+        isPause: false
+      });
+    }
+  }, {
+    key: 'play',
+    value: function play() {
+      this.setState({ isPlaying: true, isPause: false });
+
+      if (!this.howler) {
+        this._initSoundObject();
+      } else {
+        var songUrl = this.state.songs[this.state.currentSongIndex].url;
+        if (songUrl != this.howler._src) {
+          this._initSoundObject();
+        } else {
+          this._play();
+        }
+      }
+    }
+  }, {
+    key: '_initSoundObject',
+    value: function _initSoundObject() {
+      this._clearSoundObject();
+      this.setState({ isLoading: true });
+
+      var song = this.state.songs[this.state.currentSongIndex];
+      this.howler = new _howler.Howl({
+        src: song.url,
+        volume: this.state.volume,
+        onload: this._initSoundObjectCompleted,
+        onend: this._playEnd
+      });
+    }
+  }, {
+    key: '_clearSoundObject',
+    value: function _clearSoundObject() {
+      if (this.howler) {
+        this.howler.stop();
+        this.howler = null;
+      }
+    }
+  }, {
+    key: '_initSoundObjectCompleted',
+    value: function _initSoundObjectCompleted() {
+      this._play();
+      this.setState({
+        duration: this.howler.duration(),
+        isLoading: false
+      });
+    }
+  }, {
+    key: '_play',
+    value: function _play() {
+      this.setState({
+        speed: 2.0,
+        rotation: 'rotateLeft'
+      });
+
+      this.howler.play();
+      this._stopUpdateCurrentDuration();
+      this._updateCurrentDuration();
+      this.interval = setInterval(this._updateCurrentDuration, 1000);
+    }
+  }, {
+    key: '_playEnd',
+    value: function _playEnd() {
+      this.setState({
+        speed: 0
+      });
+      if (this.state.currentSongIndex == this.state.songs.length - 1) {
+        this._stop();
+      } else {
+        this._next();
+      }
+    }
+  }, {
+    key: '_stop',
+    value: function _stop() {
+      this.setState({
+        speed: 0
+      });
+      this._stopUpdateCurrentDuration();
+      this.setState({ seek: 0, isPlaying: false });
+    }
+  }, {
+    key: '_pause',
+    value: function _pause() {
+      this.setState({
+        speed: 0
+      });
+      this.howler.pause();
+      this._stopUpdateCurrentDuration();
+    }
+  }, {
+    key: '_prev',
+    value: function _prev() {
+      this._seekTo(0);
+      if (this.state.currentSongIndex > 0) {
+        this._updateSongIndex(this.state.currentSongIndex - 1);
+      }
+    }
+  }, {
+    key: '_next',
+    value: function _next() {
+      var lastSongIndex = this.state.totalSong - 1;
+      this._seekTo(0);
+      if (this.state.currentSongIndex < lastSongIndex) {
+        this._updateSongIndex(this.state.currentSongIndex + 1);
+      }
+    }
+  }, {
+    key: '_updateSongIndex',
+    value: function _updateSongIndex(index) {
+      this.setState({
+        currentSongIndex: index,
+        duration: 0
+      });
+      if (this.state.isPause) {
+        this._stop();
+        this._clearSoundObject();
+      } else {
+        this._stopUpdateCurrentDuration();
+      }
+    }
+  }, {
+    key: '_updateCurrentDuration',
+    value: function _updateCurrentDuration() {
+      this.setState({ seek: this.howler.seek() });
+    }
+  }, {
+    key: '_stopUpdateCurrentDuration',
+    value: function _stopUpdateCurrentDuration() {
+      clearInterval(this.interval);
+    }
+  }, {
+    key: '_seekTo',
+    value: function _seekTo(percent) {
+      var seek = this.state.duration * percent;
+      this.howler.seek(seek);
+      this.setState({ seek: seek });
+    }
+  }, {
+    key: '_adjustVolumeTo',
+    value: function _adjustVolumeTo(percent) {
+      this.setState({ volume: percent });
+      if (this.howler) {
+        this.howler.volume(percent);
+      }
+    }
+  }, {
+    key: 'songCount',
+    value: function songCount() {
+      return this.state.songs ? this.state.songs.length : 0;
+    }
+  }, {
+    key: 'getCurrentSongName',
+    value: function getCurrentSongName() {
+      if (this.state.currentSongIndex < 0) return '';
+      var song = this.state.songs[this.state.currentSongIndex];
+      return this.getSongName(song);
+    }
   }, {
     key: 'render',
     value: function render() {
-      var vc_tape_w = 586,
-          vc_tape_h = 379,
-          wheel_w_h = 125,
-          wheel_top = 110,
-          wheel_left = 109,
-          wheel_right = 113,
-          wheel_max_shadow = 90;
+      var songCount = this.songCount();
+      var _state3 = this.state,
+          seek = _state3.seek,
+          duration = _state3.duration,
+          volume = _state3.volume,
+          isPlaying = _state3.isPlaying,
+          isPause = _state3.isPause,
+          isLoading = _state3.isLoading,
+          currentSongIndex = _state3.currentSongIndex;
 
-      if (this.props.width < 600) {
-        var s = this.props.width / 600;
-        vc_tape_w = vc_tape_w * s;
-        vc_tape_h = vc_tape_h * s;
-        wheel_w_h = wheel_w_h * s;
-        wheel_top = wheel_top * s;
-        wheel_left = wheel_left * s;
-        wheel_right = wheel_right * s;
-        wheel_max_shadow = wheel_max_shadow * s;
+      var percent = 0;
+      if (seek && duration) {
+        percent = seek / duration;
       }
-      var vc_tape = {
-        width: vc_tape_w + 'px',
-        height: vc_tape_h + 'px'
-      };
-
-      var vc_tape_wheel = {
-        width: wheel_w_h + 'px',
-        height: wheel_w_h + 'px',
-        top: wheel_top + 'px',
-        animationName: 'rotateLeft',
-        animationIterationCount: 'infinite',
-        animationTimingFunction: 'linear',
-        animationDuration: '3s',
-        animationFillMode: 'forwards'
-      };
-
-      var vc_tape_wheel_left = {
-        left: wheel_left + 'px',
-        boxShadow: '0 0 0 ' + wheel_max_shadow + 'px #000'
-      };
-
-      var vc_tape_wheel_right = {
-        right: wheel_right + 'px',
-        boxShadow: '0 0 0 ' + 10 + 'px #000'
-      };
 
       return _react2.default.createElement(
         'div',
-        { style: vc_tape, className: _style2.default.vc_tape },
-        _react2.default.createElement('img', { src: back, className: _style2.default.vc_tape_back }),
-        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_left), className: '' + _style2.default.vc_tape_wheel }),
-        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_right), className: '' + _style2.default.vc_tape_wheel }),
-        _react2.default.createElement('img', { src: front, className: _style2.default.vc_tape_front }),
-        this.props.width
+        null,
+        _react2.default.createElement(_cassette2.default, { width: this.props.width, speed: this.state.speed, rotation: this.state.rotation, percentage: this.state.percentage }),
+        _react2.default.createElement(
+          'ul',
+          { className: _style2.default.vc_controls },
+          _react2.default.createElement(
+            'li',
+            { onClick: this._onPlayBtnClick },
+            'Play',
+            _react2.default.createElement('span', null)
+          ),
+          _react2.default.createElement(
+            'li',
+            { onClick: this._onPrevBtnClick },
+            'REW',
+            _react2.default.createElement('span', null)
+          ),
+          _react2.default.createElement(
+            'li',
+            { onClick: this._onNextBtnClick },
+            'FF',
+            _react2.default.createElement('span', null)
+          ),
+          _react2.default.createElement(
+            'li',
+            { onClick: this._onPauseBtnClick },
+            'STOP',
+            _react2.default.createElement('span', null)
+          )
+        )
       );
     }
   }]);
@@ -13446,7 +13710,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styles = __webpack_require__(378);
+var _styles = __webpack_require__(379);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -13503,7 +13767,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styles = __webpack_require__(379);
+var _styles = __webpack_require__(380);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -13690,7 +13954,7 @@ function fromByteArray (uint8) {
 
 var base64 = __webpack_require__(151)
 var ieee754 = __webpack_require__(178)
-var isArray = __webpack_require__(153)
+var isArray = __webpack_require__(179)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -15468,21 +15732,10 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(140)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(84)))
 
 /***/ }),
 /* 153 */
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = Array.isArray || function (arr) {
-  return toString.call(arr) == '[object Array]';
-};
-
-
-/***/ }),
-/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(23)(undefined);
@@ -15500,7 +15753,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 155 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(23)(undefined);
@@ -15508,7 +15761,7 @@ exports = module.exports = __webpack_require__(23)(undefined);
 
 
 // module
-exports.push([module.i, ".app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  margin: 0 auto;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n.app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  margin: 0 auto;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n\n.app-components-cassette_player-___style__vc_controls___1bqfv {\n  list-style: none;\n  padding: 0;\n  width: 440px;\n  position: absolute;\n  bottom: 18px;\n  left: 50%;\n  margin: 0 0 0 -170px;\n  background: -moz-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(170, 170, 170, 0.35)), color-stop(50%, rgba(255, 255, 255, 0.44)), color-stop(100%, rgba(255, 255, 255, 0.53)));\n  background: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -o-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -ms-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: linear-gradient(to bottom, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59aaaaaa', endColorstr='#87ffffff',GradientType=0 );\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  border-bottom-color: rgba(255, 255, 255, 0.6);\n  padding: 8px;\n  height: 54px;\n  box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.8), 0 -1px 0 rgba(255, 255, 255, 0.4), inset 0 2px 19px rgba(0, 0, 0, 0.05), 0 2px 1px rgba(0, 0, 0, 0.06);\n  -webkit-box-sizing: content-box;\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  border-radius: 12px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li {\n    display: block;\n    float: left;\n    width: 80px;\n    height: 50px;\n    line-height: 55px;\n    text-align: left;\n    padding: 10px;\n    margin: 0;\n    cursor: pointer;\n    background: #ddd url(" + __webpack_require__(387) + ") no-repeat center top;\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -6px 5px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.3), 0 4px 1px rgba(0, 0, 0, 0.5);\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:first-child {\n    border-radius: 8px 0 0 8px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:last-child {\n    border-radius: 0px 8px 8px 0px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-play___2ShHc {\n    width: 120px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-pause___1QHP2 span:before {\n    content: 'P'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-fforward___3XyS8 span:before {\n    content: '\\23E9'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-rewind___3a_zu span:before {\n    content: '\\23EA'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-stop___2mqtR span:before {\n    content: '\\25AA'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-play___2ShHc span:before {\n    content: 'p'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-off___1A3AP span:before {\n    content: '\\F0\\178\\201D\\2021'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-down___37BWn span:before {\n    content: '\\F0\\178\\201D\\2030'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-up___3l0rf span:before {\n    content: '\\F0\\178\\201D\\160'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li span:before {\n    font-size: 16px;\n    line-height: 50px;\n    text-align: center;\n    float: left;\n    color: #444;\n    font-family: 'playericons';\n    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);\n    font-style: normal;\n    font-weight: normal;\n    text-transform: none;\n    speak: none;\n    display: inline-block;\n    text-decoration: inherit;\n    width: 1em;\n    margin-right: 0.2em;\n    text-align: center; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:hover {\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -10px 15px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.3), 0 4px 1px rgba(0, 0, 0, 0.5); }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-active___3rqiQ {\n    height: 50px;\n    margin-top: 2px;\n    background-image: url(" + __webpack_require__(388) + ");\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18), inset 0 0 1px 2px rgba(255, 255, 255, 0.5), inset 0 -6px 5px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.3), 0 2px 1px rgba(0, 0, 0, 0.5); }\n", ""]);
 
 // exports
 exports.locals = {
@@ -15518,11 +15771,21 @@ exports.locals = {
 	"vc_tape_back": "app-components-cassette_player-___style__vc_tape_back___2rqfO",
 	"vc_tape_wheel": "app-components-cassette_player-___style__vc_tape_wheel___vayZY",
 	"vc_tape_front": "app-components-cassette_player-___style__vc_tape_front___2sQ1Q",
-	"vc_tape_side_b": "app-components-cassette_player-___style__vc_tape_side_b___GR7Cp"
+	"vc_tape_side_b": "app-components-cassette_player-___style__vc_tape_side_b___GR7Cp",
+	"vc_controls": "app-components-cassette_player-___style__vc_controls___1bqfv",
+	"vc-control-play": "app-components-cassette_player-___style__vc-control-play___2ShHc",
+	"vc-control-pause": "app-components-cassette_player-___style__vc-control-pause___1QHP2",
+	"vc-control-fforward": "app-components-cassette_player-___style__vc-control-fforward___3XyS8",
+	"vc-control-rewind": "app-components-cassette_player-___style__vc-control-rewind___3a_zu",
+	"vc-control-stop": "app-components-cassette_player-___style__vc-control-stop___2mqtR",
+	"vc-control-volume-off": "app-components-cassette_player-___style__vc-control-volume-off___1A3AP",
+	"vc-control-volume-down": "app-components-cassette_player-___style__vc-control-volume-down___37BWn",
+	"vc-control-volume-up": "app-components-cassette_player-___style__vc-control-volume-up___3l0rf",
+	"vc-control-active": "app-components-cassette_player-___style__vc-control-active___3rqiQ"
 };
 
 /***/ }),
-/* 156 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(23)(undefined);
@@ -15538,7 +15801,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 157 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(23)(undefined);
@@ -15556,7 +15819,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 158 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(23)(undefined);
@@ -15564,7 +15827,7 @@ exports = module.exports = __webpack_require__(23)(undefined);
 
 
 // module
-exports.push([module.i, ".app-containers-board-___styles__panel_playboard___3PGIH {\n  width: 65%;\n  float: left; }\n\n.app-containers-board-___styles__panel_playlist___2TpyD {\n  width: 35%;\n  float: left;\n  background-color: #fff;\n  overflow: auto; }\n", ""]);
+exports.push([module.i, "@media (min-width: 850px) {\n  .app-containers-board-___styles__panel_playboard___3PGIH {\n    width: 65%;\n    float: left; }\n  .app-containers-board-___styles__panel_playlist___2TpyD {\n    width: 35%;\n    float: left;\n    background-color: #fff;\n    overflow: auto; } }\n\n@media (max-width: 850px) {\n  .app-containers-board-___styles__panel_playboard___3PGIH {\n    width: 100%;\n    float: left; }\n  .app-containers-board-___styles__panel_playlist___2TpyD {\n    width: 100%;\n    float: left;\n    background-color: #fff;\n    overflow: auto; } }\n", ""]);
 
 // exports
 exports.locals = {
@@ -15573,7 +15836,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 159 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(23)(undefined);
@@ -15597,7 +15860,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 160 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15634,7 +15897,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 161 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15651,7 +15914,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(160);
+var camelize = __webpack_require__(159);
 
 var msPattern = /^-ms-/;
 
@@ -15679,7 +15942,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 162 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15696,7 +15959,7 @@ module.exports = camelizeStyleName;
  * 
  */
 
-var isTextNode = __webpack_require__(170);
+var isTextNode = __webpack_require__(169);
 
 /*eslint-disable no-bitwise */
 
@@ -15724,7 +15987,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 163 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15857,7 +16120,7 @@ module.exports = createArrayFromMixed;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 164 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15878,8 +16141,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(7);
 
-var createArrayFromMixed = __webpack_require__(163);
-var getMarkupWrap = __webpack_require__(165);
+var createArrayFromMixed = __webpack_require__(162);
+var getMarkupWrap = __webpack_require__(164);
 var invariant = __webpack_require__(1);
 
 /**
@@ -15947,7 +16210,7 @@ module.exports = createNodesFromMarkup;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 165 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16048,7 +16311,7 @@ module.exports = getMarkupWrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 166 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16092,7 +16355,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ }),
-/* 167 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16130,7 +16393,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16147,7 +16410,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(167);
+var hyphenate = __webpack_require__(166);
 
 var msPattern = /^ms-/;
 
@@ -16174,7 +16437,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16204,7 +16467,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16221,7 +16484,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(169);
+var isNode = __webpack_require__(168);
 
 /**
  * @param {*} object The object to check.
@@ -16234,7 +16497,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16269,7 +16532,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16297,7 +16560,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16314,7 +16577,7 @@ module.exports = performance || {};
  * @typechecks
  */
 
-var performance = __webpack_require__(172);
+var performance = __webpack_require__(171);
 
 var performanceNow;
 
@@ -16336,7 +16599,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16364,7 +16627,7 @@ var _createTransitionManager = __webpack_require__(56);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(89);
+var _DOMUtils = __webpack_require__(90);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16650,7 +16913,7 @@ var createBrowserHistory = function createBrowserHistory() {
 exports.default = createBrowserHistory;
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16676,7 +16939,7 @@ var _createTransitionManager = __webpack_require__(56);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(89);
+var _DOMUtils = __webpack_require__(90);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16978,7 +17241,7 @@ var createHashHistory = function createHashHistory() {
 exports.default = createHashHistory;
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17154,7 +17417,7 @@ var createMemoryHistory = function createMemoryHistory() {
 exports.default = createMemoryHistory;
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17209,6 +17472,2789 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
     return targetComponent;
 };
 
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ *  howler.js v2.0.3
+ *  howlerjs.com
+ *
+ *  (c) 2013-2017, James Simpson of GoldFire Studios
+ *  goldfirestudios.com
+ *
+ *  MIT License
+ */
+
+(function() {
+
+  'use strict';
+
+  /** Global Methods **/
+  /***************************************************************************/
+
+  /**
+   * Create the global controller. All contained methods and properties apply
+   * to all sounds that are currently playing or will be in the future.
+   */
+  var HowlerGlobal = function() {
+    this.init();
+  };
+  HowlerGlobal.prototype = {
+    /**
+     * Initialize the global Howler object.
+     * @return {Howler}
+     */
+    init: function() {
+      var self = this || Howler;
+
+      // Create a global ID counter.
+      self._counter = 0;
+
+      // Internal properties.
+      self._codecs = {};
+      self._howls = [];
+      self._muted = false;
+      self._volume = 1;
+      self._canPlayEvent = 'canplaythrough';
+      self._navigator = (typeof window !== 'undefined' && window.navigator) ? window.navigator : null;
+
+      // Public properties.
+      self.masterGain = null;
+      self.noAudio = false;
+      self.usingWebAudio = true;
+      self.autoSuspend = true;
+      self.ctx = null;
+
+      // Set to false to disable the auto iOS enabler.
+      self.mobileAutoEnable = true;
+
+      // Setup the various state values for global tracking.
+      self._setup();
+
+      return self;
+    },
+
+    /**
+     * Get/set the global volume for all sounds.
+     * @param  {Float} vol Volume from 0.0 to 1.0.
+     * @return {Howler/Float}     Returns self or current volume.
+     */
+    volume: function(vol) {
+      var self = this || Howler;
+      vol = parseFloat(vol);
+
+      // If we don't have an AudioContext created yet, run the setup.
+      if (!self.ctx) {
+        setupAudioContext();
+      }
+
+      if (typeof vol !== 'undefined' && vol >= 0 && vol <= 1) {
+        self._volume = vol;
+
+        // Don't update any of the nodes if we are muted.
+        if (self._muted) {
+          return self;
+        }
+
+        // When using Web Audio, we just need to adjust the master gain.
+        if (self.usingWebAudio) {
+          self.masterGain.gain.value = vol;
+        }
+
+        // Loop through and change volume for all HTML5 audio nodes.
+        for (var i=0; i<self._howls.length; i++) {
+          if (!self._howls[i]._webAudio) {
+            // Get all of the sounds in this Howl group.
+            var ids = self._howls[i]._getSoundIds();
+
+            // Loop through all sounds and change the volumes.
+            for (var j=0; j<ids.length; j++) {
+              var sound = self._howls[i]._soundById(ids[j]);
+
+              if (sound && sound._node) {
+                sound._node.volume = sound._volume * vol;
+              }
+            }
+          }
+        }
+
+        return self;
+      }
+
+      return self._volume;
+    },
+
+    /**
+     * Handle muting and unmuting globally.
+     * @param  {Boolean} muted Is muted or not.
+     */
+    mute: function(muted) {
+      var self = this || Howler;
+
+      // If we don't have an AudioContext created yet, run the setup.
+      if (!self.ctx) {
+        setupAudioContext();
+      }
+
+      self._muted = muted;
+
+      // With Web Audio, we just need to mute the master gain.
+      if (self.usingWebAudio) {
+        self.masterGain.gain.value = muted ? 0 : self._volume;
+      }
+
+      // Loop through and mute all HTML5 Audio nodes.
+      for (var i=0; i<self._howls.length; i++) {
+        if (!self._howls[i]._webAudio) {
+          // Get all of the sounds in this Howl group.
+          var ids = self._howls[i]._getSoundIds();
+
+          // Loop through all sounds and mark the audio node as muted.
+          for (var j=0; j<ids.length; j++) {
+            var sound = self._howls[i]._soundById(ids[j]);
+
+            if (sound && sound._node) {
+              sound._node.muted = (muted) ? true : sound._muted;
+            }
+          }
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Unload and destroy all currently loaded Howl objects.
+     * @return {Howler}
+     */
+    unload: function() {
+      var self = this || Howler;
+
+      for (var i=self._howls.length-1; i>=0; i--) {
+        self._howls[i].unload();
+      }
+
+      // Create a new AudioContext to make sure it is fully reset.
+      if (self.usingWebAudio && self.ctx && typeof self.ctx.close !== 'undefined') {
+        self.ctx.close();
+        self.ctx = null;
+        setupAudioContext();
+      }
+
+      return self;
+    },
+
+    /**
+     * Check for codec support of specific extension.
+     * @param  {String} ext Audio file extention.
+     * @return {Boolean}
+     */
+    codecs: function(ext) {
+      return (this || Howler)._codecs[ext.replace(/^x-/, '')];
+    },
+
+    /**
+     * Setup various state values for global tracking.
+     * @return {Howler}
+     */
+    _setup: function() {
+      var self = this || Howler;
+
+      // Keeps track of the suspend/resume state of the AudioContext.
+      self.state = self.ctx ? self.ctx.state || 'running' : 'running';
+
+      // Automatically begin the 30-second suspend process
+      self._autoSuspend();
+
+      // Check if audio is available.
+      if (!self.usingWebAudio) {
+        // No audio is available on this system if noAudio is set to true.
+        if (typeof Audio !== 'undefined') {
+          try {
+            var test = new Audio();
+
+            // Check if the canplaythrough event is available.
+            if (typeof test.oncanplaythrough === 'undefined') {
+              self._canPlayEvent = 'canplay';
+            }
+          } catch(e) {
+            self.noAudio = true;
+          }
+        } else {
+          self.noAudio = true;
+        }
+      }
+
+      // Test to make sure audio isn't disabled in Internet Explorer.
+      try {
+        var test = new Audio();
+        if (test.muted) {
+          self.noAudio = true;
+        }
+      } catch (e) {}
+
+      // Check for supported codecs.
+      if (!self.noAudio) {
+        self._setupCodecs();
+      }
+
+      return self;
+    },
+
+    /**
+     * Check for browser support for various codecs and cache the results.
+     * @return {Howler}
+     */
+    _setupCodecs: function() {
+      var self = this || Howler;
+      var audioTest = null;
+
+      // Must wrap in a try/catch because IE11 in server mode throws an error.
+      try {
+        audioTest = (typeof Audio !== 'undefined') ? new Audio() : null;
+      } catch (err) {
+        return self;
+      }
+
+      if (!audioTest || typeof audioTest.canPlayType !== 'function') {
+        return self;
+      }
+
+      var mpegTest = audioTest.canPlayType('audio/mpeg;').replace(/^no$/, '');
+
+      // Opera version <33 has mixed MP3 support, so we need to check for and block it.
+      var checkOpera = self._navigator && self._navigator.userAgent.match(/OPR\/([0-6].)/g);
+      var isOldOpera = (checkOpera && parseInt(checkOpera[0].split('/')[1], 10) < 33);
+
+      self._codecs = {
+        mp3: !!(!isOldOpera && (mpegTest || audioTest.canPlayType('audio/mp3;').replace(/^no$/, ''))),
+        mpeg: !!mpegTest,
+        opus: !!audioTest.canPlayType('audio/ogg; codecs="opus"').replace(/^no$/, ''),
+        ogg: !!audioTest.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, ''),
+        oga: !!audioTest.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, ''),
+        wav: !!audioTest.canPlayType('audio/wav; codecs="1"').replace(/^no$/, ''),
+        aac: !!audioTest.canPlayType('audio/aac;').replace(/^no$/, ''),
+        caf: !!audioTest.canPlayType('audio/x-caf;').replace(/^no$/, ''),
+        m4a: !!(audioTest.canPlayType('audio/x-m4a;') || audioTest.canPlayType('audio/m4a;') || audioTest.canPlayType('audio/aac;')).replace(/^no$/, ''),
+        mp4: !!(audioTest.canPlayType('audio/x-mp4;') || audioTest.canPlayType('audio/mp4;') || audioTest.canPlayType('audio/aac;')).replace(/^no$/, ''),
+        weba: !!audioTest.canPlayType('audio/webm; codecs="vorbis"').replace(/^no$/, ''),
+        webm: !!audioTest.canPlayType('audio/webm; codecs="vorbis"').replace(/^no$/, ''),
+        dolby: !!audioTest.canPlayType('audio/mp4; codecs="ec-3"').replace(/^no$/, ''),
+        flac: !!(audioTest.canPlayType('audio/x-flac;') || audioTest.canPlayType('audio/flac;')).replace(/^no$/, '')
+      };
+
+      return self;
+    },
+
+    /**
+     * Mobile browsers will only allow audio to be played after a user interaction.
+     * Attempt to automatically unlock audio on the first user interaction.
+     * Concept from: http://paulbakaus.com/tutorials/html5/web-audio-on-ios/
+     * @return {Howler}
+     */
+    _enableMobileAudio: function() {
+      var self = this || Howler;
+
+      // Only run this on mobile devices if audio isn't already eanbled.
+      var isMobile = /iPhone|iPad|iPod|Android|BlackBerry|BB10|Silk|Mobi/i.test(self._navigator && self._navigator.userAgent);
+      var isTouch = !!(('ontouchend' in window) || (self._navigator && self._navigator.maxTouchPoints > 0) || (self._navigator && self._navigator.msMaxTouchPoints > 0));
+      if (self._mobileEnabled || !self.ctx || (!isMobile && !isTouch)) {
+        return;
+      }
+
+      self._mobileEnabled = false;
+
+      // Some mobile devices/platforms have distortion issues when opening/closing tabs and/or web views.
+      // Bugs in the browser (especially Mobile Safari) can cause the sampleRate to change from 44100 to 48000.
+      // By calling Howler.unload(), we create a new AudioContext with the correct sampleRate.
+      if (!self._mobileUnloaded && self.ctx.sampleRate !== 44100) {
+        self._mobileUnloaded = true;
+        self.unload();
+      }
+
+      // Scratch buffer for enabling iOS to dispose of web audio buffers correctly, as per:
+      // http://stackoverflow.com/questions/24119684
+      self._scratchBuffer = self.ctx.createBuffer(1, 1, 22050);
+
+      // Call this method on touch start to create and play a buffer,
+      // then check if the audio actually played to determine if
+      // audio has now been unlocked on iOS, Android, etc.
+      var unlock = function() {
+        // Create an empty buffer.
+        var source = self.ctx.createBufferSource();
+        source.buffer = self._scratchBuffer;
+        source.connect(self.ctx.destination);
+
+        // Play the empty buffer.
+        if (typeof source.start === 'undefined') {
+          source.noteOn(0);
+        } else {
+          source.start(0);
+        }
+
+        // Setup a timeout to check that we are unlocked on the next event loop.
+        source.onended = function() {
+          source.disconnect(0);
+
+          // Update the unlocked state and prevent this check from happening again.
+          self._mobileEnabled = true;
+          self.mobileAutoEnable = false;
+
+          // Remove the touch start listener.
+          document.removeEventListener('touchend', unlock, true);
+        };
+      };
+
+      // Setup a touch start listener to attempt an unlock in.
+      document.addEventListener('touchend', unlock, true);
+
+      return self;
+    },
+
+    /**
+     * Automatically suspend the Web Audio AudioContext after no sound has played for 30 seconds.
+     * This saves processing/energy and fixes various browser-specific bugs with audio getting stuck.
+     * @return {Howler}
+     */
+    _autoSuspend: function() {
+      var self = this;
+
+      if (!self.autoSuspend || !self.ctx || typeof self.ctx.suspend === 'undefined' || !Howler.usingWebAudio) {
+        return;
+      }
+
+      // Check if any sounds are playing.
+      for (var i=0; i<self._howls.length; i++) {
+        if (self._howls[i]._webAudio) {
+          for (var j=0; j<self._howls[i]._sounds.length; j++) {
+            if (!self._howls[i]._sounds[j]._paused) {
+              return self;
+            }
+          }
+        }
+      }
+
+      if (self._suspendTimer) {
+        clearTimeout(self._suspendTimer);
+      }
+
+      // If no sound has played after 30 seconds, suspend the context.
+      self._suspendTimer = setTimeout(function() {
+        if (!self.autoSuspend) {
+          return;
+        }
+
+        self._suspendTimer = null;
+        self.state = 'suspending';
+        self.ctx.suspend().then(function() {
+          self.state = 'suspended';
+
+          if (self._resumeAfterSuspend) {
+            delete self._resumeAfterSuspend;
+            self._autoResume();
+          }
+        });
+      }, 30000);
+
+      return self;
+    },
+
+    /**
+     * Automatically resume the Web Audio AudioContext when a new sound is played.
+     * @return {Howler}
+     */
+    _autoResume: function() {
+      var self = this;
+
+      if (!self.ctx || typeof self.ctx.resume === 'undefined' || !Howler.usingWebAudio) {
+        return;
+      }
+
+      if (self.state === 'running' && self._suspendTimer) {
+        clearTimeout(self._suspendTimer);
+        self._suspendTimer = null;
+      } else if (self.state === 'suspended') {
+        self.state = 'resuming';
+        self.ctx.resume().then(function() {
+          self.state = 'running';
+
+          // Emit to all Howls that the audio has resumed.
+          for (var i=0; i<self._howls.length; i++) {
+            self._howls[i]._emit('resume');
+          }
+        });
+
+        if (self._suspendTimer) {
+          clearTimeout(self._suspendTimer);
+          self._suspendTimer = null;
+        }
+      } else if (self.state === 'suspending') {
+        self._resumeAfterSuspend = true;
+      }
+
+      return self;
+    }
+  };
+
+  // Setup the global audio controller.
+  var Howler = new HowlerGlobal();
+
+  /** Group Methods **/
+  /***************************************************************************/
+
+  /**
+   * Create an audio group controller.
+   * @param {Object} o Passed in properties for this group.
+   */
+  var Howl = function(o) {
+    var self = this;
+
+    // Throw an error if no source is provided.
+    if (!o.src || o.src.length === 0) {
+      console.error('An array of source files must be passed with any new Howl.');
+      return;
+    }
+
+    self.init(o);
+  };
+  Howl.prototype = {
+    /**
+     * Initialize a new Howl group object.
+     * @param  {Object} o Passed in properties for this group.
+     * @return {Howl}
+     */
+    init: function(o) {
+      var self = this;
+
+      // If we don't have an AudioContext created yet, run the setup.
+      if (!Howler.ctx) {
+        setupAudioContext();
+      }
+
+      // Setup user-defined default properties.
+      self._autoplay = o.autoplay || false;
+      self._format = (typeof o.format !== 'string') ? o.format : [o.format];
+      self._html5 = o.html5 || false;
+      self._muted = o.mute || false;
+      self._loop = o.loop || false;
+      self._pool = o.pool || 5;
+      self._preload = (typeof o.preload === 'boolean') ? o.preload : true;
+      self._rate = o.rate || 1;
+      self._sprite = o.sprite || {};
+      self._src = (typeof o.src !== 'string') ? o.src : [o.src];
+      self._volume = o.volume !== undefined ? o.volume : 1;
+
+      // Setup all other default properties.
+      self._duration = 0;
+      self._state = 'unloaded';
+      self._sounds = [];
+      self._endTimers = {};
+      self._queue = [];
+
+      // Setup event listeners.
+      self._onend = o.onend ? [{fn: o.onend}] : [];
+      self._onfade = o.onfade ? [{fn: o.onfade}] : [];
+      self._onload = o.onload ? [{fn: o.onload}] : [];
+      self._onloaderror = o.onloaderror ? [{fn: o.onloaderror}] : [];
+      self._onpause = o.onpause ? [{fn: o.onpause}] : [];
+      self._onplay = o.onplay ? [{fn: o.onplay}] : [];
+      self._onstop = o.onstop ? [{fn: o.onstop}] : [];
+      self._onmute = o.onmute ? [{fn: o.onmute}] : [];
+      self._onvolume = o.onvolume ? [{fn: o.onvolume}] : [];
+      self._onrate = o.onrate ? [{fn: o.onrate}] : [];
+      self._onseek = o.onseek ? [{fn: o.onseek}] : [];
+      self._onresume = [];
+
+      // Web Audio or HTML5 Audio?
+      self._webAudio = Howler.usingWebAudio && !self._html5;
+
+      // Automatically try to enable audio on iOS.
+      if (typeof Howler.ctx !== 'undefined' && Howler.ctx && Howler.mobileAutoEnable) {
+        Howler._enableMobileAudio();
+      }
+
+      // Keep track of this Howl group in the global controller.
+      Howler._howls.push(self);
+
+      // If they selected autoplay, add a play event to the load queue.
+      if (self._autoplay) {
+        self._queue.push({
+          event: 'play',
+          action: function() {
+            self.play();
+          }
+        });
+      }
+
+      // Load the source file unless otherwise specified.
+      if (self._preload) {
+        self.load();
+      }
+
+      return self;
+    },
+
+    /**
+     * Load the audio file.
+     * @return {Howler}
+     */
+    load: function() {
+      var self = this;
+      var url = null;
+
+      // If no audio is available, quit immediately.
+      if (Howler.noAudio) {
+        self._emit('loaderror', null, 'No audio support.');
+        return;
+      }
+
+      // Make sure our source is in an array.
+      if (typeof self._src === 'string') {
+        self._src = [self._src];
+      }
+
+      // Loop through the sources and pick the first one that is compatible.
+      for (var i=0; i<self._src.length; i++) {
+        var ext, str;
+
+        if (self._format && self._format[i]) {
+          // If an extension was specified, use that instead.
+          ext = self._format[i];
+        } else {
+          // Make sure the source is a string.
+          str = self._src[i];
+          if (typeof str !== 'string') {
+            self._emit('loaderror', null, 'Non-string found in selected audio sources - ignoring.');
+            continue;
+          }
+
+          // Extract the file extension from the URL or base64 data URI.
+          ext = /^data:audio\/([^;,]+);/i.exec(str);
+          if (!ext) {
+            ext = /\.([^.]+)$/.exec(str.split('?', 1)[0]);
+          }
+
+          if (ext) {
+            ext = ext[1].toLowerCase();
+          }
+        }
+
+        // Log a warning if no extension was found.
+        if (!ext) {
+          console.warn('No file extension was found. Consider using the "format" property or specify an extension.');
+        }
+
+        // Check if this extension is available.
+        if (ext && Howler.codecs(ext)) {
+          url = self._src[i];
+          break;
+        }
+      }
+
+      if (!url) {
+        self._emit('loaderror', null, 'No codec support for selected audio sources.');
+        return;
+      }
+
+      self._src = url;
+      self._state = 'loading';
+
+      // If the hosting page is HTTPS and the source isn't,
+      // drop down to HTML5 Audio to avoid Mixed Content errors.
+      if (window.location.protocol === 'https:' && url.slice(0, 5) === 'http:') {
+        self._html5 = true;
+        self._webAudio = false;
+      }
+
+      // Create a new sound object and add it to the pool.
+      new Sound(self);
+
+      // Load and decode the audio data for playback.
+      if (self._webAudio) {
+        loadBuffer(self);
+      }
+
+      return self;
+    },
+
+    /**
+     * Play a sound or resume previous playback.
+     * @param  {String/Number} sprite   Sprite name for sprite playback or sound id to continue previous.
+     * @param  {Boolean} internal Internal Use: true prevents event firing.
+     * @return {Number}          Sound ID.
+     */
+    play: function(sprite, internal) {
+      var self = this;
+      var id = null;
+
+      // Determine if a sprite, sound id or nothing was passed
+      if (typeof sprite === 'number') {
+        id = sprite;
+        sprite = null;
+      } else if (typeof sprite === 'string' && self._state === 'loaded' && !self._sprite[sprite]) {
+        // If the passed sprite doesn't exist, do nothing.
+        return null;
+      } else if (typeof sprite === 'undefined') {
+        // Use the default sound sprite (plays the full audio length).
+        sprite = '__default';
+
+        // Check if there is a single paused sound that isn't ended.
+        // If there is, play that sound. If not, continue as usual.
+        var num = 0;
+        for (var i=0; i<self._sounds.length; i++) {
+          if (self._sounds[i]._paused && !self._sounds[i]._ended) {
+            num++;
+            id = self._sounds[i]._id;
+          }
+        }
+
+        if (num === 1) {
+          sprite = null;
+        } else {
+          id = null;
+        }
+      }
+
+      // Get the selected node, or get one from the pool.
+      var sound = id ? self._soundById(id) : self._inactiveSound();
+
+      // If the sound doesn't exist, do nothing.
+      if (!sound) {
+        return null;
+      }
+
+      // Select the sprite definition.
+      if (id && !sprite) {
+        sprite = sound._sprite || '__default';
+      }
+
+      // If we have no sprite and the sound hasn't loaded, we must wait
+      // for the sound to load to get our audio's duration.
+      if (self._state !== 'loaded' && !self._sprite[sprite]) {
+        self._queue.push({
+          event: 'play',
+          action: function() {
+            self.play(self._soundById(sound._id) ? sound._id : undefined);
+          }
+        });
+
+        return sound._id;
+      }
+
+      // Don't play the sound if an id was passed and it is already playing.
+      if (id && !sound._paused) {
+        // Trigger the play event, in order to keep iterating through queue.
+        if (!internal) {
+          setTimeout(function() {
+            self._emit('play', sound._id);
+          }, 0);
+        }
+
+        return sound._id;
+      }
+
+      // Make sure the AudioContext isn't suspended, and resume it if it is.
+      if (self._webAudio) {
+        Howler._autoResume();
+      }
+
+      // Determine how long to play for and where to start playing.
+      var seek = Math.max(0, sound._seek > 0 ? sound._seek : self._sprite[sprite][0] / 1000);
+      var duration = Math.max(0, ((self._sprite[sprite][0] + self._sprite[sprite][1]) / 1000) - seek);
+      var timeout = (duration * 1000) / Math.abs(sound._rate);
+
+      // Update the parameters of the sound
+      sound._paused = false;
+      sound._ended = false;
+      sound._sprite = sprite;
+      sound._seek = seek;
+      sound._start = self._sprite[sprite][0] / 1000;
+      sound._stop = (self._sprite[sprite][0] + self._sprite[sprite][1]) / 1000;
+      sound._loop = !!(sound._loop || self._sprite[sprite][2]);
+
+      // Begin the actual playback.
+      var node = sound._node;
+      if (self._webAudio) {
+        // Fire this when the sound is ready to play to begin Web Audio playback.
+        var playWebAudio = function() {
+          self._refreshBuffer(sound);
+
+          // Setup the playback params.
+          var vol = (sound._muted || self._muted) ? 0 : sound._volume;
+          node.gain.setValueAtTime(vol, Howler.ctx.currentTime);
+          sound._playStart = Howler.ctx.currentTime;
+
+          // Play the sound using the supported method.
+          if (typeof node.bufferSource.start === 'undefined') {
+            sound._loop ? node.bufferSource.noteGrainOn(0, seek, 86400) : node.bufferSource.noteGrainOn(0, seek, duration);
+          } else {
+            sound._loop ? node.bufferSource.start(0, seek, 86400) : node.bufferSource.start(0, seek, duration);
+          }
+
+          // Start a new timer if none is present.
+          if (timeout !== Infinity) {
+            self._endTimers[sound._id] = setTimeout(self._ended.bind(self, sound), timeout);
+          }
+
+          if (!internal) {
+            setTimeout(function() {
+              self._emit('play', sound._id);
+            }, 0);
+          }
+        };
+
+        var isRunning = (Howler.state === 'running');
+        if (self._state === 'loaded' && isRunning) {
+          playWebAudio();
+        } else {
+          // Wait for the audio to load and then begin playback.
+          var event = !isRunning && self._state === 'loaded' ? 'resume' : 'load';
+          self.once(event, playWebAudio, isRunning ? sound._id : null);
+
+          // Cancel the end timer.
+          self._clearTimer(sound._id);
+        }
+      } else {
+        // Fire this when the sound is ready to play to begin HTML5 Audio playback.
+        var playHtml5 = function() {
+          node.currentTime = seek;
+          node.muted = sound._muted || self._muted || Howler._muted || node.muted;
+          node.volume = sound._volume * Howler.volume();
+          node.playbackRate = sound._rate;
+          node.play();
+
+          // Setup the new end timer.
+          if (timeout !== Infinity) {
+            self._endTimers[sound._id] = setTimeout(self._ended.bind(self, sound), timeout);
+          }
+
+          if (!internal) {
+            self._emit('play', sound._id);
+          }
+        };
+
+        // Play immediately if ready, or wait for the 'canplaythrough'e vent.
+        var loadedNoReadyState = (self._state === 'loaded' && (window && window.ejecta || !node.readyState && Howler._navigator.isCocoonJS));
+        if (node.readyState === 4 || loadedNoReadyState) {
+          playHtml5();
+        } else {
+          var listener = function() {
+            // Begin playback.
+            playHtml5();
+
+            // Clear this listener.
+            node.removeEventListener(Howler._canPlayEvent, listener, false);
+          };
+          node.addEventListener(Howler._canPlayEvent, listener, false);
+
+          // Cancel the end timer.
+          self._clearTimer(sound._id);
+        }
+      }
+
+      return sound._id;
+    },
+
+    /**
+     * Pause playback and save current position.
+     * @param  {Number} id The sound ID (empty to pause all in group).
+     * @return {Howl}
+     */
+    pause: function(id) {
+      var self = this;
+
+      // If the sound hasn't loaded, add it to the load queue to pause when capable.
+      if (self._state !== 'loaded') {
+        self._queue.push({
+          event: 'pause',
+          action: function() {
+            self.pause(id);
+          }
+        });
+
+        return self;
+      }
+
+      // If no id is passed, get all ID's to be paused.
+      var ids = self._getSoundIds(id);
+
+      for (var i=0; i<ids.length; i++) {
+        // Clear the end timer.
+        self._clearTimer(ids[i]);
+
+        // Get the sound.
+        var sound = self._soundById(ids[i]);
+
+        if (sound && !sound._paused) {
+          // Reset the seek position.
+          sound._seek = self.seek(ids[i]);
+          sound._rateSeek = 0;
+          sound._paused = true;
+
+          // Stop currently running fades.
+          self._stopFade(ids[i]);
+
+          if (sound._node) {
+            if (self._webAudio) {
+              // make sure the sound has been created
+              if (!sound._node.bufferSource) {
+                return self;
+              }
+
+              if (typeof sound._node.bufferSource.stop === 'undefined') {
+                sound._node.bufferSource.noteOff(0);
+              } else {
+                sound._node.bufferSource.stop(0);
+              }
+
+              // Clean up the buffer source.
+              self._cleanBuffer(sound._node);
+            } else if (!isNaN(sound._node.duration) || sound._node.duration === Infinity) {
+              sound._node.pause();
+            }
+          }
+        }
+
+        // Fire the pause event, unless `true` is passed as the 2nd argument.
+        if (!arguments[1]) {
+          self._emit('pause', sound ? sound._id : null);
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Stop playback and reset to start.
+     * @param  {Number} id The sound ID (empty to stop all in group).
+     * @param  {Boolean} internal Internal Use: true prevents event firing.
+     * @return {Howl}
+     */
+    stop: function(id, internal) {
+      var self = this;
+
+      // If the sound hasn't loaded, add it to the load queue to stop when capable.
+      if (self._state !== 'loaded') {
+        self._queue.push({
+          event: 'stop',
+          action: function() {
+            self.stop(id);
+          }
+        });
+
+        return self;
+      }
+
+      // If no id is passed, get all ID's to be stopped.
+      var ids = self._getSoundIds(id);
+
+      for (var i=0; i<ids.length; i++) {
+        // Clear the end timer.
+        self._clearTimer(ids[i]);
+
+        // Get the sound.
+        var sound = self._soundById(ids[i]);
+
+        if (sound) {
+          // Reset the seek position.
+          sound._seek = sound._start || 0;
+          sound._rateSeek = 0;
+          sound._paused = true;
+          sound._ended = true;
+
+          // Stop currently running fades.
+          self._stopFade(ids[i]);
+
+          if (sound._node) {
+            if (self._webAudio) {
+              // make sure the sound has been created
+              if (!sound._node.bufferSource) {
+                if (!internal) {
+                  self._emit('stop', sound._id);
+                }
+
+                return self;
+              }
+
+              if (typeof sound._node.bufferSource.stop === 'undefined') {
+                sound._node.bufferSource.noteOff(0);
+              } else {
+                sound._node.bufferSource.stop(0);
+              }
+
+              // Clean up the buffer source.
+              self._cleanBuffer(sound._node);
+            } else if (!isNaN(sound._node.duration) || sound._node.duration === Infinity) {
+              sound._node.currentTime = sound._start || 0;
+              sound._node.pause();
+            }
+          }
+        }
+
+        if (sound && !internal) {
+          self._emit('stop', sound._id);
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Mute/unmute a single sound or all sounds in this Howl group.
+     * @param  {Boolean} muted Set to true to mute and false to unmute.
+     * @param  {Number} id    The sound ID to update (omit to mute/unmute all).
+     * @return {Howl}
+     */
+    mute: function(muted, id) {
+      var self = this;
+
+      // If the sound hasn't loaded, add it to the load queue to mute when capable.
+      if (self._state !== 'loaded') {
+        self._queue.push({
+          event: 'mute',
+          action: function() {
+            self.mute(muted, id);
+          }
+        });
+
+        return self;
+      }
+
+      // If applying mute/unmute to all sounds, update the group's value.
+      if (typeof id === 'undefined') {
+        if (typeof muted === 'boolean') {
+          self._muted = muted;
+        } else {
+          return self._muted;
+        }
+      }
+
+      // If no id is passed, get all ID's to be muted.
+      var ids = self._getSoundIds(id);
+
+      for (var i=0; i<ids.length; i++) {
+        // Get the sound.
+        var sound = self._soundById(ids[i]);
+
+        if (sound) {
+          sound._muted = muted;
+
+          if (self._webAudio && sound._node) {
+            sound._node.gain.setValueAtTime(muted ? 0 : sound._volume, Howler.ctx.currentTime);
+          } else if (sound._node) {
+            sound._node.muted = Howler._muted ? true : muted;
+          }
+
+          self._emit('mute', sound._id);
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Get/set the volume of this sound or of the Howl group. This method can optionally take 0, 1 or 2 arguments.
+     *   volume() -> Returns the group's volume value.
+     *   volume(id) -> Returns the sound id's current volume.
+     *   volume(vol) -> Sets the volume of all sounds in this Howl group.
+     *   volume(vol, id) -> Sets the volume of passed sound id.
+     * @return {Howl/Number} Returns self or current volume.
+     */
+    volume: function() {
+      var self = this;
+      var args = arguments;
+      var vol, id;
+
+      // Determine the values based on arguments.
+      if (args.length === 0) {
+        // Return the value of the groups' volume.
+        return self._volume;
+      } else if (args.length === 1 || args.length === 2 && typeof args[1] === 'undefined') {
+        // First check if this is an ID, and if not, assume it is a new volume.
+        var ids = self._getSoundIds();
+        var index = ids.indexOf(args[0]);
+        if (index >= 0) {
+          id = parseInt(args[0], 10);
+        } else {
+          vol = parseFloat(args[0]);
+        }
+      } else if (args.length >= 2) {
+        vol = parseFloat(args[0]);
+        id = parseInt(args[1], 10);
+      }
+
+      // Update the volume or return the current volume.
+      var sound;
+      if (typeof vol !== 'undefined' && vol >= 0 && vol <= 1) {
+        // If the sound hasn't loaded, add it to the load queue to change volume when capable.
+        if (self._state !== 'loaded') {
+          self._queue.push({
+            event: 'volume',
+            action: function() {
+              self.volume.apply(self, args);
+            }
+          });
+
+          return self;
+        }
+
+        // Set the group volume.
+        if (typeof id === 'undefined') {
+          self._volume = vol;
+        }
+
+        // Update one or all volumes.
+        id = self._getSoundIds(id);
+        for (var i=0; i<id.length; i++) {
+          // Get the sound.
+          sound = self._soundById(id[i]);
+
+          if (sound) {
+            sound._volume = vol;
+
+            // Stop currently running fades.
+            if (!args[2]) {
+              self._stopFade(id[i]);
+            }
+
+            if (self._webAudio && sound._node && !sound._muted) {
+              sound._node.gain.setValueAtTime(vol, Howler.ctx.currentTime);
+            } else if (sound._node && !sound._muted) {
+              sound._node.volume = vol * Howler.volume();
+            }
+
+            self._emit('volume', sound._id);
+          }
+        }
+      } else {
+        sound = id ? self._soundById(id) : self._sounds[0];
+        return sound ? sound._volume : 0;
+      }
+
+      return self;
+    },
+
+    /**
+     * Fade a currently playing sound between two volumes (if no id is passsed, all sounds will fade).
+     * @param  {Number} from The value to fade from (0.0 to 1.0).
+     * @param  {Number} to   The volume to fade to (0.0 to 1.0).
+     * @param  {Number} len  Time in milliseconds to fade.
+     * @param  {Number} id   The sound id (omit to fade all sounds).
+     * @return {Howl}
+     */
+    fade: function(from, to, len, id) {
+      var self = this;
+      var diff = Math.abs(from - to);
+      var dir = from > to ? 'out' : 'in';
+      var steps = diff / 0.01;
+      var stepLen = (steps > 0) ? len / steps : len;
+
+      // Since browsers clamp timeouts to 4ms, we need to clamp our steps to that too.
+      if (stepLen < 4) {
+        steps = Math.ceil(steps / (4 / stepLen));
+        stepLen = 4;
+      }
+
+      // If the sound hasn't loaded, add it to the load queue to fade when capable.
+      if (self._state !== 'loaded') {
+        self._queue.push({
+          event: 'fade',
+          action: function() {
+            self.fade(from, to, len, id);
+          }
+        });
+
+        return self;
+      }
+
+      // Set the volume to the start position.
+      self.volume(from, id);
+
+      // Fade the volume of one or all sounds.
+      var ids = self._getSoundIds(id);
+      for (var i=0; i<ids.length; i++) {
+        // Get the sound.
+        var sound = self._soundById(ids[i]);
+
+        // Create a linear fade or fall back to timeouts with HTML5 Audio.
+        if (sound) {
+          // Stop the previous fade if no sprite is being used (otherwise, volume handles this).
+          if (!id) {
+            self._stopFade(ids[i]);
+          }
+
+          // If we are using Web Audio, let the native methods do the actual fade.
+          if (self._webAudio && !sound._muted) {
+            var currentTime = Howler.ctx.currentTime;
+            var end = currentTime + (len / 1000);
+            sound._volume = from;
+            sound._node.gain.setValueAtTime(from, currentTime);
+            sound._node.gain.linearRampToValueAtTime(to, end);
+          }
+
+          var vol = from;
+          sound._interval = setInterval(function(soundId, sound) {
+            // Update the volume amount, but only if the volume should change.
+            if (steps > 0) {
+              vol += (dir === 'in' ? 0.01 : -0.01);
+            }
+
+            // Make sure the volume is in the right bounds.
+            vol = Math.max(0, vol);
+            vol = Math.min(1, vol);
+
+            // Round to within 2 decimal points.
+            vol = Math.round(vol * 100) / 100;
+
+            // Change the volume.
+            if (self._webAudio) {
+              if (typeof id === 'undefined') {
+                self._volume = vol;
+              }
+
+              sound._volume = vol;
+            } else {
+              self.volume(vol, soundId, true);
+            }
+
+            // When the fade is complete, stop it and fire event.
+            if ((to < from && vol <= to) || (to > from && vol >= to)) {
+              clearInterval(sound._interval);
+              sound._interval = null;
+              self.volume(to, soundId);
+              self._emit('fade', soundId);
+            }
+          }.bind(self, ids[i], sound), stepLen);
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Internal method that stops the currently playing fade when
+     * a new fade starts, volume is changed or the sound is stopped.
+     * @param  {Number} id The sound id.
+     * @return {Howl}
+     */
+    _stopFade: function(id) {
+      var self = this;
+      var sound = self._soundById(id);
+
+      if (sound && sound._interval) {
+        if (self._webAudio) {
+          sound._node.gain.cancelScheduledValues(Howler.ctx.currentTime);
+        }
+
+        clearInterval(sound._interval);
+        sound._interval = null;
+        self._emit('fade', id);
+      }
+
+      return self;
+    },
+
+    /**
+     * Get/set the loop parameter on a sound. This method can optionally take 0, 1 or 2 arguments.
+     *   loop() -> Returns the group's loop value.
+     *   loop(id) -> Returns the sound id's loop value.
+     *   loop(loop) -> Sets the loop value for all sounds in this Howl group.
+     *   loop(loop, id) -> Sets the loop value of passed sound id.
+     * @return {Howl/Boolean} Returns self or current loop value.
+     */
+    loop: function() {
+      var self = this;
+      var args = arguments;
+      var loop, id, sound;
+
+      // Determine the values for loop and id.
+      if (args.length === 0) {
+        // Return the grou's loop value.
+        return self._loop;
+      } else if (args.length === 1) {
+        if (typeof args[0] === 'boolean') {
+          loop = args[0];
+          self._loop = loop;
+        } else {
+          // Return this sound's loop value.
+          sound = self._soundById(parseInt(args[0], 10));
+          return sound ? sound._loop : false;
+        }
+      } else if (args.length === 2) {
+        loop = args[0];
+        id = parseInt(args[1], 10);
+      }
+
+      // If no id is passed, get all ID's to be looped.
+      var ids = self._getSoundIds(id);
+      for (var i=0; i<ids.length; i++) {
+        sound = self._soundById(ids[i]);
+
+        if (sound) {
+          sound._loop = loop;
+          if (self._webAudio && sound._node && sound._node.bufferSource) {
+            sound._node.bufferSource.loop = loop;
+            if (loop) {
+              sound._node.bufferSource.loopStart = sound._start || 0;
+              sound._node.bufferSource.loopEnd = sound._stop;
+            }
+          }
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Get/set the playback rate of a sound. This method can optionally take 0, 1 or 2 arguments.
+     *   rate() -> Returns the first sound node's current playback rate.
+     *   rate(id) -> Returns the sound id's current playback rate.
+     *   rate(rate) -> Sets the playback rate of all sounds in this Howl group.
+     *   rate(rate, id) -> Sets the playback rate of passed sound id.
+     * @return {Howl/Number} Returns self or the current playback rate.
+     */
+    rate: function() {
+      var self = this;
+      var args = arguments;
+      var rate, id;
+
+      // Determine the values based on arguments.
+      if (args.length === 0) {
+        // We will simply return the current rate of the first node.
+        id = self._sounds[0]._id;
+      } else if (args.length === 1) {
+        // First check if this is an ID, and if not, assume it is a new rate value.
+        var ids = self._getSoundIds();
+        var index = ids.indexOf(args[0]);
+        if (index >= 0) {
+          id = parseInt(args[0], 10);
+        } else {
+          rate = parseFloat(args[0]);
+        }
+      } else if (args.length === 2) {
+        rate = parseFloat(args[0]);
+        id = parseInt(args[1], 10);
+      }
+
+      // Update the playback rate or return the current value.
+      var sound;
+      if (typeof rate === 'number') {
+        // If the sound hasn't loaded, add it to the load queue to change playback rate when capable.
+        if (self._state !== 'loaded') {
+          self._queue.push({
+            event: 'rate',
+            action: function() {
+              self.rate.apply(self, args);
+            }
+          });
+
+          return self;
+        }
+
+        // Set the group rate.
+        if (typeof id === 'undefined') {
+          self._rate = rate;
+        }
+
+        // Update one or all volumes.
+        id = self._getSoundIds(id);
+        for (var i=0; i<id.length; i++) {
+          // Get the sound.
+          sound = self._soundById(id[i]);
+
+          if (sound) {
+            // Keep track of our position when the rate changed and update the playback
+            // start position so we can properly adjust the seek position for time elapsed.
+            sound._rateSeek = self.seek(id[i]);
+            sound._playStart = self._webAudio ? Howler.ctx.currentTime : sound._playStart;
+            sound._rate = rate;
+
+            // Change the playback rate.
+            if (self._webAudio && sound._node && sound._node.bufferSource) {
+              sound._node.bufferSource.playbackRate.value = rate;
+            } else if (sound._node) {
+              sound._node.playbackRate = rate;
+            }
+
+            // Reset the timers.
+            var seek = self.seek(id[i]);
+            var duration = ((self._sprite[sound._sprite][0] + self._sprite[sound._sprite][1]) / 1000) - seek;
+            var timeout = (duration * 1000) / Math.abs(sound._rate);
+
+            // Start a new end timer if sound is already playing.
+            if (self._endTimers[id[i]] || !sound._paused) {
+              self._clearTimer(id[i]);
+              self._endTimers[id[i]] = setTimeout(self._ended.bind(self, sound), timeout);
+            }
+
+            self._emit('rate', sound._id);
+          }
+        }
+      } else {
+        sound = self._soundById(id);
+        return sound ? sound._rate : self._rate;
+      }
+
+      return self;
+    },
+
+    /**
+     * Get/set the seek position of a sound. This method can optionally take 0, 1 or 2 arguments.
+     *   seek() -> Returns the first sound node's current seek position.
+     *   seek(id) -> Returns the sound id's current seek position.
+     *   seek(seek) -> Sets the seek position of the first sound node.
+     *   seek(seek, id) -> Sets the seek position of passed sound id.
+     * @return {Howl/Number} Returns self or the current seek position.
+     */
+    seek: function() {
+      var self = this;
+      var args = arguments;
+      var seek, id;
+
+      // Determine the values based on arguments.
+      if (args.length === 0) {
+        // We will simply return the current position of the first node.
+        id = self._sounds[0]._id;
+      } else if (args.length === 1) {
+        // First check if this is an ID, and if not, assume it is a new seek position.
+        var ids = self._getSoundIds();
+        var index = ids.indexOf(args[0]);
+        if (index >= 0) {
+          id = parseInt(args[0], 10);
+        } else {
+          id = self._sounds[0]._id;
+          seek = parseFloat(args[0]);
+        }
+      } else if (args.length === 2) {
+        seek = parseFloat(args[0]);
+        id = parseInt(args[1], 10);
+      }
+
+      // If there is no ID, bail out.
+      if (typeof id === 'undefined') {
+        return self;
+      }
+
+      // If the sound hasn't loaded, add it to the load queue to seek when capable.
+      if (self._state !== 'loaded') {
+        self._queue.push({
+          event: 'seek',
+          action: function() {
+            self.seek.apply(self, args);
+          }
+        });
+
+        return self;
+      }
+
+      // Get the sound.
+      var sound = self._soundById(id);
+
+      if (sound) {
+        if (typeof seek === 'number' && seek >= 0) {
+          // Pause the sound and update position for restarting playback.
+          var playing = self.playing(id);
+          if (playing) {
+            self.pause(id, true);
+          }
+
+          // Move the position of the track and cancel timer.
+          sound._seek = seek;
+          sound._ended = false;
+          self._clearTimer(id);
+
+          // Restart the playback if the sound was playing.
+          if (playing) {
+            self.play(id, true);
+          }
+
+          // Update the seek position for HTML5 Audio.
+          if (!self._webAudio && sound._node) {
+            sound._node.currentTime = seek;
+          }
+
+          self._emit('seek', id);
+        } else {
+          if (self._webAudio) {
+            var realTime = self.playing(id) ? Howler.ctx.currentTime - sound._playStart : 0;
+            var rateSeek = sound._rateSeek ? sound._rateSeek - sound._seek : 0;
+            return sound._seek + (rateSeek + realTime * Math.abs(sound._rate));
+          } else {
+            return sound._node.currentTime;
+          }
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Check if a specific sound is currently playing or not (if id is provided), or check if at least one of the sounds in the group is playing or not.
+     * @param  {Number}  id The sound id to check. If none is passed, the whole sound group is checked.
+     * @return {Boolean} True if playing and false if not.
+     */
+    playing: function(id) {
+      var self = this;
+
+      // Check the passed sound ID (if any).
+      if (typeof id === 'number') {
+        var sound = self._soundById(id);
+        return sound ? !sound._paused : false;
+      }
+
+      // Otherwise, loop through all sounds and check if any are playing.
+      for (var i=0; i<self._sounds.length; i++) {
+        if (!self._sounds[i]._paused) {
+          return true;
+        }
+      }
+
+      return false;
+    },
+
+    /**
+     * Get the duration of this sound. Passing a sound id will return the sprite duration.
+     * @param  {Number} id The sound id to check. If none is passed, return full source duration.
+     * @return {Number} Audio duration in seconds.
+     */
+    duration: function(id) {
+      var self = this;
+      var duration = self._duration;
+
+      // If we pass an ID, get the sound and return the sprite length.
+      var sound = self._soundById(id);
+      if (sound) {
+        duration = self._sprite[sound._sprite][1] / 1000;
+      }
+
+      return duration;
+    },
+
+    /**
+     * Returns the current loaded state of this Howl.
+     * @return {String} 'unloaded', 'loading', 'loaded'
+     */
+    state: function() {
+      return this._state;
+    },
+
+    /**
+     * Unload and destroy the current Howl object.
+     * This will immediately stop all sound instances attached to this group.
+     */
+    unload: function() {
+      var self = this;
+
+      // Stop playing any active sounds.
+      var sounds = self._sounds;
+      for (var i=0; i<sounds.length; i++) {
+        // Stop the sound if it is currently playing.
+        if (!sounds[i]._paused) {
+          self.stop(sounds[i]._id);
+        }
+
+        // Remove the source or disconnect.
+        if (!self._webAudio) {
+          // Set the source to 0-second silence to stop any downloading.
+          sounds[i]._node.src = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
+
+          // Remove any event listeners.
+          sounds[i]._node.removeEventListener('error', sounds[i]._errorFn, false);
+          sounds[i]._node.removeEventListener(Howler._canPlayEvent, sounds[i]._loadFn, false);
+        }
+
+        // Empty out all of the nodes.
+        delete sounds[i]._node;
+
+        // Make sure all timers are cleared out.
+        self._clearTimer(sounds[i]._id);
+
+        // Remove the references in the global Howler object.
+        var index = Howler._howls.indexOf(self);
+        if (index >= 0) {
+          Howler._howls.splice(index, 1);
+        }
+      }
+
+      // Delete this sound from the cache (if no other Howl is using it).
+      var remCache = true;
+      for (i=0; i<Howler._howls.length; i++) {
+        if (Howler._howls[i]._src === self._src) {
+          remCache = false;
+          break;
+        }
+      }
+
+      if (cache && remCache) {
+        delete cache[self._src];
+      }
+
+      // Clear global errors.
+      Howler.noAudio = false;
+
+      // Clear out `self`.
+      self._state = 'unloaded';
+      self._sounds = [];
+      self = null;
+
+      return null;
+    },
+
+    /**
+     * Listen to a custom event.
+     * @param  {String}   event Event name.
+     * @param  {Function} fn    Listener to call.
+     * @param  {Number}   id    (optional) Only listen to events for this sound.
+     * @param  {Number}   once  (INTERNAL) Marks event to fire only once.
+     * @return {Howl}
+     */
+    on: function(event, fn, id, once) {
+      var self = this;
+      var events = self['_on' + event];
+
+      if (typeof fn === 'function') {
+        events.push(once ? {id: id, fn: fn, once: once} : {id: id, fn: fn});
+      }
+
+      return self;
+    },
+
+    /**
+     * Remove a custom event. Call without parameters to remove all events.
+     * @param  {String}   event Event name.
+     * @param  {Function} fn    Listener to remove. Leave empty to remove all.
+     * @param  {Number}   id    (optional) Only remove events for this sound.
+     * @return {Howl}
+     */
+    off: function(event, fn, id) {
+      var self = this;
+      var events = self['_on' + event];
+      var i = 0;
+
+      if (fn) {
+        // Loop through event store and remove the passed function.
+        for (i=0; i<events.length; i++) {
+          if (fn === events[i].fn && id === events[i].id) {
+            events.splice(i, 1);
+            break;
+          }
+        }
+      } else if (event) {
+        // Clear out all events of this type.
+        self['_on' + event] = [];
+      } else {
+        // Clear out all events of every type.
+        var keys = Object.keys(self);
+        for (i=0; i<keys.length; i++) {
+          if ((keys[i].indexOf('_on') === 0) && Array.isArray(self[keys[i]])) {
+            self[keys[i]] = [];
+          }
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Listen to a custom event and remove it once fired.
+     * @param  {String}   event Event name.
+     * @param  {Function} fn    Listener to call.
+     * @param  {Number}   id    (optional) Only listen to events for this sound.
+     * @return {Howl}
+     */
+    once: function(event, fn, id) {
+      var self = this;
+
+      // Setup the event listener.
+      self.on(event, fn, id, 1);
+
+      return self;
+    },
+
+    /**
+     * Emit all events of a specific type and pass the sound id.
+     * @param  {String} event Event name.
+     * @param  {Number} id    Sound ID.
+     * @param  {Number} msg   Message to go with event.
+     * @return {Howl}
+     */
+    _emit: function(event, id, msg) {
+      var self = this;
+      var events = self['_on' + event];
+
+      // Loop through event store and fire all functions.
+      for (var i=events.length-1; i>=0; i--) {
+        if (!events[i].id || events[i].id === id || event === 'load') {
+          setTimeout(function(fn) {
+            fn.call(this, id, msg);
+          }.bind(self, events[i].fn), 0);
+
+          // If this event was setup with `once`, remove it.
+          if (events[i].once) {
+            self.off(event, events[i].fn, events[i].id);
+          }
+        }
+      }
+
+      return self;
+    },
+
+    /**
+     * Queue of actions initiated before the sound has loaded.
+     * These will be called in sequence, with the next only firing
+     * after the previous has finished executing (even if async like play).
+     * @return {Howl}
+     */
+    _loadQueue: function() {
+      var self = this;
+
+      if (self._queue.length > 0) {
+        var task = self._queue[0];
+
+        // don't move onto the next task until this one is done
+        self.once(task.event, function() {
+          self._queue.shift();
+          self._loadQueue();
+        });
+
+        task.action();
+      }
+
+      return self;
+    },
+
+    /**
+     * Fired when playback ends at the end of the duration.
+     * @param  {Sound} sound The sound object to work with.
+     * @return {Howl}
+     */
+    _ended: function(sound) {
+      var self = this;
+      var sprite = sound._sprite;
+
+      // Should this sound loop?
+      var loop = !!(sound._loop || self._sprite[sprite][2]);
+
+      // Fire the ended event.
+      self._emit('end', sound._id);
+
+      // Restart the playback for HTML5 Audio loop.
+      if (!self._webAudio && loop) {
+        self.stop(sound._id, true).play(sound._id);
+      }
+
+      // Restart this timer if on a Web Audio loop.
+      if (self._webAudio && loop) {
+        self._emit('play', sound._id);
+        sound._seek = sound._start || 0;
+        sound._rateSeek = 0;
+        sound._playStart = Howler.ctx.currentTime;
+
+        var timeout = ((sound._stop - sound._start) * 1000) / Math.abs(sound._rate);
+        self._endTimers[sound._id] = setTimeout(self._ended.bind(self, sound), timeout);
+      }
+
+      // Mark the node as paused.
+      if (self._webAudio && !loop) {
+        sound._paused = true;
+        sound._ended = true;
+        sound._seek = sound._start || 0;
+        sound._rateSeek = 0;
+        self._clearTimer(sound._id);
+
+        // Clean up the buffer source.
+        self._cleanBuffer(sound._node);
+
+        // Attempt to auto-suspend AudioContext if no sounds are still playing.
+        Howler._autoSuspend();
+      }
+
+      // When using a sprite, end the track.
+      if (!self._webAudio && !loop) {
+        self.stop(sound._id);
+      }
+
+      return self;
+    },
+
+    /**
+     * Clear the end timer for a sound playback.
+     * @param  {Number} id The sound ID.
+     * @return {Howl}
+     */
+    _clearTimer: function(id) {
+      var self = this;
+
+      if (self._endTimers[id]) {
+        clearTimeout(self._endTimers[id]);
+        delete self._endTimers[id];
+      }
+
+      return self;
+    },
+
+    /**
+     * Return the sound identified by this ID, or return null.
+     * @param  {Number} id Sound ID
+     * @return {Object}    Sound object or null.
+     */
+    _soundById: function(id) {
+      var self = this;
+
+      // Loop through all sounds and find the one with this ID.
+      for (var i=0; i<self._sounds.length; i++) {
+        if (id === self._sounds[i]._id) {
+          return self._sounds[i];
+        }
+      }
+
+      return null;
+    },
+
+    /**
+     * Return an inactive sound from the pool or create a new one.
+     * @return {Sound} Sound playback object.
+     */
+    _inactiveSound: function() {
+      var self = this;
+
+      self._drain();
+
+      // Find the first inactive node to recycle.
+      for (var i=0; i<self._sounds.length; i++) {
+        if (self._sounds[i]._ended) {
+          return self._sounds[i].reset();
+        }
+      }
+
+      // If no inactive node was found, create a new one.
+      return new Sound(self);
+    },
+
+    /**
+     * Drain excess inactive sounds from the pool.
+     */
+    _drain: function() {
+      var self = this;
+      var limit = self._pool;
+      var cnt = 0;
+      var i = 0;
+
+      // If there are less sounds than the max pool size, we are done.
+      if (self._sounds.length < limit) {
+        return;
+      }
+
+      // Count the number of inactive sounds.
+      for (i=0; i<self._sounds.length; i++) {
+        if (self._sounds[i]._ended) {
+          cnt++;
+        }
+      }
+
+      // Remove excess inactive sounds, going in reverse order.
+      for (i=self._sounds.length - 1; i>=0; i--) {
+        if (cnt <= limit) {
+          return;
+        }
+
+        if (self._sounds[i]._ended) {
+          // Disconnect the audio source when using Web Audio.
+          if (self._webAudio && self._sounds[i]._node) {
+            self._sounds[i]._node.disconnect(0);
+          }
+
+          // Remove sounds until we have the pool size.
+          self._sounds.splice(i, 1);
+          cnt--;
+        }
+      }
+    },
+
+    /**
+     * Get all ID's from the sounds pool.
+     * @param  {Number} id Only return one ID if one is passed.
+     * @return {Array}    Array of IDs.
+     */
+    _getSoundIds: function(id) {
+      var self = this;
+
+      if (typeof id === 'undefined') {
+        var ids = [];
+        for (var i=0; i<self._sounds.length; i++) {
+          ids.push(self._sounds[i]._id);
+        }
+
+        return ids;
+      } else {
+        return [id];
+      }
+    },
+
+    /**
+     * Load the sound back into the buffer source.
+     * @param  {Sound} sound The sound object to work with.
+     * @return {Howl}
+     */
+    _refreshBuffer: function(sound) {
+      var self = this;
+
+      // Setup the buffer source for playback.
+      sound._node.bufferSource = Howler.ctx.createBufferSource();
+      sound._node.bufferSource.buffer = cache[self._src];
+
+      // Connect to the correct node.
+      if (sound._panner) {
+        sound._node.bufferSource.connect(sound._panner);
+      } else {
+        sound._node.bufferSource.connect(sound._node);
+      }
+
+      // Setup looping and playback rate.
+      sound._node.bufferSource.loop = sound._loop;
+      if (sound._loop) {
+        sound._node.bufferSource.loopStart = sound._start || 0;
+        sound._node.bufferSource.loopEnd = sound._stop;
+      }
+      sound._node.bufferSource.playbackRate.value = sound._rate;
+
+      return self;
+    },
+
+    /**
+     * Prevent memory leaks by cleaning up the buffer source after playback.
+     * @param  {Object} node Sound's audio node containing the buffer source.
+     * @return {Howl}
+     */
+    _cleanBuffer: function(node) {
+      var self = this;
+
+      if (self._scratchBuffer) {
+        node.bufferSource.onended = null;
+        node.bufferSource.disconnect(0);
+        try { node.bufferSource.buffer = self._scratchBuffer; } catch(e) {}
+      }
+      node.bufferSource = null;
+
+      return self;
+    }
+  };
+
+  /** Single Sound Methods **/
+  /***************************************************************************/
+
+  /**
+   * Setup the sound object, which each node attached to a Howl group is contained in.
+   * @param {Object} howl The Howl parent group.
+   */
+  var Sound = function(howl) {
+    this._parent = howl;
+    this.init();
+  };
+  Sound.prototype = {
+    /**
+     * Initialize a new Sound object.
+     * @return {Sound}
+     */
+    init: function() {
+      var self = this;
+      var parent = self._parent;
+
+      // Setup the default parameters.
+      self._muted = parent._muted;
+      self._loop = parent._loop;
+      self._volume = parent._volume;
+      self._muted = parent._muted;
+      self._rate = parent._rate;
+      self._seek = 0;
+      self._paused = true;
+      self._ended = true;
+      self._sprite = '__default';
+
+      // Generate a unique ID for this sound.
+      self._id = ++Howler._counter;
+
+      // Add itself to the parent's pool.
+      parent._sounds.push(self);
+
+      // Create the new node.
+      self.create();
+
+      return self;
+    },
+
+    /**
+     * Create and setup a new sound object, whether HTML5 Audio or Web Audio.
+     * @return {Sound}
+     */
+    create: function() {
+      var self = this;
+      var parent = self._parent;
+      var volume = (Howler._muted || self._muted || self._parent._muted) ? 0 : self._volume;
+
+      if (parent._webAudio) {
+        // Create the gain node for controlling volume (the source will connect to this).
+        self._node = (typeof Howler.ctx.createGain === 'undefined') ? Howler.ctx.createGainNode() : Howler.ctx.createGain();
+        self._node.gain.setValueAtTime(volume, Howler.ctx.currentTime);
+        self._node.paused = true;
+        self._node.connect(Howler.masterGain);
+      } else {
+        self._node = new Audio();
+
+        // Listen for errors (http://dev.w3.org/html5/spec-author-view/spec.html#mediaerror).
+        self._errorFn = self._errorListener.bind(self);
+        self._node.addEventListener('error', self._errorFn, false);
+
+        // Listen for 'canplaythrough' event to let us know the sound is ready.
+        self._loadFn = self._loadListener.bind(self);
+        self._node.addEventListener(Howler._canPlayEvent, self._loadFn, false);
+
+        // Setup the new audio node.
+        self._node.src = parent._src;
+        self._node.preload = 'auto';
+        self._node.volume = volume * Howler.volume();
+
+        // Begin loading the source.
+        self._node.load();
+      }
+
+      return self;
+    },
+
+    /**
+     * Reset the parameters of this sound to the original state (for recycle).
+     * @return {Sound}
+     */
+    reset: function() {
+      var self = this;
+      var parent = self._parent;
+
+      // Reset all of the parameters of this sound.
+      self._muted = parent._muted;
+      self._loop = parent._loop;
+      self._volume = parent._volume;
+      self._muted = parent._muted;
+      self._rate = parent._rate;
+      self._seek = 0;
+      self._rateSeek = 0;
+      self._paused = true;
+      self._ended = true;
+      self._sprite = '__default';
+
+      // Generate a new ID so that it isn't confused with the previous sound.
+      self._id = ++Howler._counter;
+
+      return self;
+    },
+
+    /**
+     * HTML5 Audio error listener callback.
+     */
+    _errorListener: function() {
+      var self = this;
+
+      // Fire an error event and pass back the code.
+      self._parent._emit('loaderror', self._id, self._node.error ? self._node.error.code : 0);
+
+      // Clear the event listener.
+      self._node.removeEventListener('error', self._errorListener, false);
+    },
+
+    /**
+     * HTML5 Audio canplaythrough listener callback.
+     */
+    _loadListener: function() {
+      var self = this;
+      var parent = self._parent;
+
+      // Round up the duration to account for the lower precision in HTML5 Audio.
+      parent._duration = Math.ceil(self._node.duration * 10) / 10;
+
+      // Setup a sprite if none is defined.
+      if (Object.keys(parent._sprite).length === 0) {
+        parent._sprite = {__default: [0, parent._duration * 1000]};
+      }
+
+      if (parent._state !== 'loaded') {
+        parent._state = 'loaded';
+        parent._emit('load');
+        parent._loadQueue();
+      }
+
+      // Clear the event listener.
+      self._node.removeEventListener(Howler._canPlayEvent, self._loadFn, false);
+    }
+  };
+
+  /** Helper Methods **/
+  /***************************************************************************/
+
+  var cache = {};
+
+  /**
+   * Buffer a sound from URL, Data URI or cache and decode to audio source (Web Audio API).
+   * @param  {Howl} self
+   */
+  var loadBuffer = function(self) {
+    var url = self._src;
+
+    // Check if the buffer has already been cached and use it instead.
+    if (cache[url]) {
+      // Set the duration from the cache.
+      self._duration = cache[url].duration;
+
+      // Load the sound into this Howl.
+      loadSound(self);
+
+      return;
+    }
+
+    if (/^data:[^;]+;base64,/.test(url)) {
+      // Decode the base64 data URI without XHR, since some browsers don't support it.
+      var data = atob(url.split(',')[1]);
+      var dataView = new Uint8Array(data.length);
+      for (var i=0; i<data.length; ++i) {
+        dataView[i] = data.charCodeAt(i);
+      }
+
+      decodeAudioData(dataView.buffer, self);
+    } else {
+      // Load the buffer from the URL.
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.responseType = 'arraybuffer';
+      xhr.onload = function() {
+        // Make sure we get a successful response back.
+        var code = (xhr.status + '')[0];
+        if (code !== '0' && code !== '2' && code !== '3') {
+          self._emit('loaderror', null, 'Failed loading audio file with status: ' + xhr.status + '.');
+          return;
+        }
+
+        decodeAudioData(xhr.response, self);
+      };
+      xhr.onerror = function() {
+        // If there is an error, switch to HTML5 Audio.
+        if (self._webAudio) {
+          self._html5 = true;
+          self._webAudio = false;
+          self._sounds = [];
+          delete cache[url];
+          self.load();
+        }
+      };
+      safeXhrSend(xhr);
+    }
+  };
+
+  /**
+   * Send the XHR request wrapped in a try/catch.
+   * @param  {Object} xhr XHR to send.
+   */
+  var safeXhrSend = function(xhr) {
+    try {
+      xhr.send();
+    } catch (e) {
+      xhr.onerror();
+    }
+  };
+
+  /**
+   * Decode audio data from an array buffer.
+   * @param  {ArrayBuffer} arraybuffer The audio data.
+   * @param  {Howl}        self
+   */
+  var decodeAudioData = function(arraybuffer, self) {
+    // Decode the buffer into an audio source.
+    Howler.ctx.decodeAudioData(arraybuffer, function(buffer) {
+      if (buffer && self._sounds.length > 0) {
+        cache[self._src] = buffer;
+        loadSound(self, buffer);
+      }
+    }, function() {
+      self._emit('loaderror', null, 'Decoding audio data failed.');
+    });
+  };
+
+  /**
+   * Sound is now loaded, so finish setting everything up and fire the loaded event.
+   * @param  {Howl} self
+   * @param  {Object} buffer The decoded buffer sound source.
+   */
+  var loadSound = function(self, buffer) {
+    // Set the duration.
+    if (buffer && !self._duration) {
+      self._duration = buffer.duration;
+    }
+
+    // Setup a sprite if none is defined.
+    if (Object.keys(self._sprite).length === 0) {
+      self._sprite = {__default: [0, self._duration * 1000]};
+    }
+
+    // Fire the loaded event.
+    if (self._state !== 'loaded') {
+      self._state = 'loaded';
+      self._emit('load');
+      self._loadQueue();
+    }
+  };
+
+  /**
+   * Setup the audio context when available, or switch to HTML5 Audio mode.
+   */
+  var setupAudioContext = function() {
+    // Check if we are using Web Audio and setup the AudioContext if we are.
+    try {
+      if (typeof AudioContext !== 'undefined') {
+        Howler.ctx = new AudioContext();
+      } else if (typeof webkitAudioContext !== 'undefined') {
+        Howler.ctx = new webkitAudioContext();
+      } else {
+        Howler.usingWebAudio = false;
+      }
+    } catch(e) {
+      Howler.usingWebAudio = false;
+    }
+
+    // Check if a webview is being used on iOS8 or earlier (rather than the browser).
+    // If it is, disable Web Audio as it causes crashing.
+    var iOS = (/iP(hone|od|ad)/.test(Howler._navigator && Howler._navigator.platform));
+    var appVersion = Howler._navigator && Howler._navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);
+    var version = appVersion ? parseInt(appVersion[1], 10) : null;
+    if (iOS && version && version < 9) {
+      var safari = /safari/.test(Howler._navigator && Howler._navigator.userAgent.toLowerCase());
+      if (Howler._navigator && Howler._navigator.standalone && !safari || Howler._navigator && !Howler._navigator.standalone && !safari) {
+        Howler.usingWebAudio = false;
+      }
+    }
+
+    // Create and expose the master GainNode when using Web Audio (useful for plugins or advanced usage).
+    if (Howler.usingWebAudio) {
+      Howler.masterGain = (typeof Howler.ctx.createGain === 'undefined') ? Howler.ctx.createGainNode() : Howler.ctx.createGain();
+      Howler.masterGain.gain.value = 1;
+      Howler.masterGain.connect(Howler.ctx.destination);
+    }
+
+    // Re-run the setup on Howler.
+    Howler._setup();
+  };
+
+  // Add support for AMD (Asynchronous Module Definition) libraries such as require.js.
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+      return {
+        Howler: Howler,
+        Howl: Howl
+      };
+    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  }
+
+  // Add support for CommonJS libraries such as browserify.
+  if (true) {
+    exports.Howler = Howler;
+    exports.Howl = Howl;
+  }
+
+  // Define globally in case AMD is not available or unused.
+  if (typeof window !== 'undefined') {
+    window.HowlerGlobal = HowlerGlobal;
+    window.Howler = Howler;
+    window.Howl = Howl;
+    window.Sound = Sound;
+  } else if (typeof global !== 'undefined') { // Add to global in Node.js (for testing, etc).
+    global.HowlerGlobal = HowlerGlobal;
+    global.Howler = Howler;
+    global.Howl = Howl;
+    global.Sound = Sound;
+  }
+})();
+
+
+/*!
+ *  Spatial Plugin - Adds support for stereo and 3D audio where Web Audio is supported.
+ *  
+ *  howler.js v2.0.3
+ *  howlerjs.com
+ *
+ *  (c) 2013-2017, James Simpson of GoldFire Studios
+ *  goldfirestudios.com
+ *
+ *  MIT License
+ */
+
+(function() {
+
+  'use strict';
+
+  // Setup default properties.
+  HowlerGlobal.prototype._pos = [0, 0, 0];
+  HowlerGlobal.prototype._orientation = [0, 0, -1, 0, 1, 0];
+  
+  /** Global Methods **/
+  /***************************************************************************/
+
+  /**
+   * Helper method to update the stereo panning position of all current Howls.
+   * Future Howls will not use this value unless explicitly set.
+   * @param  {Number} pan A value of -1.0 is all the way left and 1.0 is all the way right.
+   * @return {Howler/Number}     Self or current stereo panning value.
+   */
+  HowlerGlobal.prototype.stereo = function(pan) {
+    var self = this;
+
+    // Stop right here if not using Web Audio.
+    if (!self.ctx || !self.ctx.listener) {
+      return self;
+    }
+
+    // Loop through all Howls and update their stereo panning.
+    for (var i=self._howls.length-1; i>=0; i--) {
+      self._howls[i].stereo(pan);
+    }
+
+    return self;
+  };
+
+  /**
+   * Get/set the position of the listener in 3D cartesian space. Sounds using
+   * 3D position will be relative to the listener's position.
+   * @param  {Number} x The x-position of the listener.
+   * @param  {Number} y The y-position of the listener.
+   * @param  {Number} z The z-position of the listener.
+   * @return {Howler/Array}   Self or current listener position.
+   */
+  HowlerGlobal.prototype.pos = function(x, y, z) {
+    var self = this;
+
+    // Stop right here if not using Web Audio.
+    if (!self.ctx || !self.ctx.listener) {
+      return self;
+    }
+
+    // Set the defaults for optional 'y' & 'z'.
+    y = (typeof y !== 'number') ? self._pos[1] : y;
+    z = (typeof z !== 'number') ? self._pos[2] : z;
+
+    if (typeof x === 'number') {
+      self._pos = [x, y, z];
+      self.ctx.listener.setPosition(self._pos[0], self._pos[1], self._pos[2]);
+    } else {
+      return self._pos;
+    }
+
+    return self;
+  };
+
+  /**
+   * Get/set the direction the listener is pointing in the 3D cartesian space.
+   * A front and up vector must be provided. The front is the direction the
+   * face of the listener is pointing, and up is the direction the top of the
+   * listener is pointing. Thus, these values are expected to be at right angles
+   * from each other.
+   * @param  {Number} x   The x-orientation of the listener.
+   * @param  {Number} y   The y-orientation of the listener.
+   * @param  {Number} z   The z-orientation of the listener.
+   * @param  {Number} xUp The x-orientation of the top of the listener.
+   * @param  {Number} yUp The y-orientation of the top of the listener.
+   * @param  {Number} zUp The z-orientation of the top of the listener.
+   * @return {Howler/Array}     Returns self or the current orientation vectors.
+   */
+  HowlerGlobal.prototype.orientation = function(x, y, z, xUp, yUp, zUp) {
+    var self = this;
+
+    // Stop right here if not using Web Audio.
+    if (!self.ctx || !self.ctx.listener) {
+      return self;
+    }
+
+    // Set the defaults for optional 'y' & 'z'.
+    var or = self._orientation;
+    y = (typeof y !== 'number') ? or[1] : y;
+    z = (typeof z !== 'number') ? or[2] : z;
+    xUp = (typeof xUp !== 'number') ? or[3] : xUp;
+    yUp = (typeof yUp !== 'number') ? or[4] : yUp;
+    zUp = (typeof zUp !== 'number') ? or[5] : zUp;
+
+    if (typeof x === 'number') {
+      self._orientation = [x, y, z, xUp, yUp, zUp];
+      self.ctx.listener.setOrientation(x, y, z, xUp, yUp, zUp);
+    } else {
+      return or;
+    }
+
+    return self;
+  };
+
+  /** Group Methods **/
+  /***************************************************************************/
+
+  /**
+   * Add new properties to the core init.
+   * @param  {Function} _super Core init method.
+   * @return {Howl}
+   */
+  Howl.prototype.init = (function(_super) {
+    return function(o) {
+      var self = this;
+
+      // Setup user-defined default properties.
+      self._orientation = o.orientation || [1, 0, 0];
+      self._stereo = o.stereo || null;
+      self._pos = o.pos || null;
+      self._pannerAttr = {
+        coneInnerAngle: typeof o.coneInnerAngle !== 'undefined' ? o.coneInnerAngle : 360,
+        coneOuterAngle: typeof o.coneOuterAngle !== 'undefined' ? o.coneOuterAngle : 360,
+        coneOuterGain: typeof o.coneOuterGain !== 'undefined' ? o.coneOuterGain : 0,
+        distanceModel: typeof o.distanceModel !== 'undefined' ? o.distanceModel : 'inverse',
+        maxDistance: typeof o.maxDistance !== 'undefined' ? o.maxDistance : 10000,
+        panningModel: typeof o.panningModel !== 'undefined' ? o.panningModel : 'HRTF',
+        refDistance: typeof o.refDistance !== 'undefined' ? o.refDistance : 1,
+        rolloffFactor: typeof o.rolloffFactor !== 'undefined' ? o.rolloffFactor : 1
+      };
+
+      // Setup event listeners.
+      self._onstereo = o.onstereo ? [{fn: o.onstereo}] : [];
+      self._onpos = o.onpos ? [{fn: o.onpos}] : [];
+      self._onorientation = o.onorientation ? [{fn: o.onorientation}] : [];
+
+      // Complete initilization with howler.js core's init function.
+      return _super.call(this, o);
+    };
+  })(Howl.prototype.init);
+
+  /**
+   * Get/set the stereo panning of the audio source for this sound or all in the group.
+   * @param  {Number} pan  A value of -1.0 is all the way left and 1.0 is all the way right.
+   * @param  {Number} id (optional) The sound ID. If none is passed, all in group will be updated.
+   * @return {Howl/Number}    Returns self or the current stereo panning value.
+   */
+  Howl.prototype.stereo = function(pan, id) {
+    var self = this;
+
+    // Stop right here if not using Web Audio.
+    if (!self._webAudio) {
+      return self;
+    }
+
+    // If the sound hasn't loaded, add it to the load queue to change stereo pan when capable.
+    if (self._state !== 'loaded') {
+      self._queue.push({
+        event: 'stereo',
+        action: function() {
+          self.stereo(pan, id);
+        }
+      });
+
+      return self;
+    }
+
+    // Check for PannerStereoNode support and fallback to PannerNode if it doesn't exist.
+    var pannerType = (typeof Howler.ctx.createStereoPanner === 'undefined') ? 'spatial' : 'stereo';
+
+    // Setup the group's stereo panning if no ID is passed.
+    if (typeof id === 'undefined') {
+      // Return the group's stereo panning if no parameters are passed.
+      if (typeof pan === 'number') {
+        self._stereo = pan;
+        self._pos = [pan, 0, 0];
+      } else {
+        return self._stereo;
+      }
+    }
+
+    // Change the streo panning of one or all sounds in group.
+    var ids = self._getSoundIds(id);
+    for (var i=0; i<ids.length; i++) {
+      // Get the sound.
+      var sound = self._soundById(ids[i]);
+
+      if (sound) {
+        if (typeof pan === 'number') {
+          sound._stereo = pan;
+          sound._pos = [pan, 0, 0];
+
+          if (sound._node) {
+            // If we are falling back, make sure the panningModel is equalpower.
+            sound._pannerAttr.panningModel = 'equalpower';
+
+            // Check if there is a panner setup and create a new one if not.
+            if (!sound._panner || !sound._panner.pan) {
+              setupPanner(sound, pannerType);
+            }
+
+            if (pannerType === 'spatial') {
+              sound._panner.setPosition(pan, 0, 0);
+            } else {
+              sound._panner.pan.value = pan;
+            }
+          }
+
+          self._emit('stereo', sound._id);
+        } else {
+          return sound._stereo;
+        }
+      }
+    }
+
+    return self;
+  };
+
+  /**
+   * Get/set the 3D spatial position of the audio source for this sound or
+   * all in the group. The most common usage is to set the 'x' position for
+   * left/right panning. Setting any value higher than 1.0 will begin to
+   * decrease the volume of the sound as it moves further away.
+   * @param  {Number} x  The x-position of the audio from -1000.0 to 1000.0.
+   * @param  {Number} y  The y-position of the audio from -1000.0 to 1000.0.
+   * @param  {Number} z  The z-position of the audio from -1000.0 to 1000.0.
+   * @param  {Number} id (optional) The sound ID. If none is passed, all in group will be updated.
+   * @return {Howl/Array}    Returns self or the current 3D spatial position: [x, y, z].
+   */
+  Howl.prototype.pos = function(x, y, z, id) {
+    var self = this;
+
+    // Stop right here if not using Web Audio.
+    if (!self._webAudio) {
+      return self;
+    }
+
+    // If the sound hasn't loaded, add it to the load queue to change position when capable.
+    if (self._state !== 'loaded') {
+      self._queue.push({
+        event: 'pos',
+        action: function() {
+          self.pos(x, y, z, id);
+        }
+      });
+
+      return self;
+    }
+
+    // Set the defaults for optional 'y' & 'z'.
+    y = (typeof y !== 'number') ? 0 : y;
+    z = (typeof z !== 'number') ? -0.5 : z;
+
+    // Setup the group's spatial position if no ID is passed.
+    if (typeof id === 'undefined') {
+      // Return the group's spatial position if no parameters are passed.
+      if (typeof x === 'number') {
+        self._pos = [x, y, z];
+      } else {
+        return self._pos;
+      }
+    }
+
+    // Change the spatial position of one or all sounds in group.
+    var ids = self._getSoundIds(id);
+    for (var i=0; i<ids.length; i++) {
+      // Get the sound.
+      var sound = self._soundById(ids[i]);
+
+      if (sound) {
+        if (typeof x === 'number') {
+          sound._pos = [x, y, z];
+
+          if (sound._node) {
+            // Check if there is a panner setup and create a new one if not.
+            if (!sound._panner || sound._panner.pan) {
+              setupPanner(sound, 'spatial');
+            }
+
+            sound._panner.setPosition(x, y, z);
+          }
+
+          self._emit('pos', sound._id);
+        } else {
+          return sound._pos;
+        }
+      }
+    }
+
+    return self;
+  };
+
+  /**
+   * Get/set the direction the audio source is pointing in the 3D cartesian coordinate
+   * space. Depending on how direction the sound is, based on the `cone` attributes,
+   * a sound pointing away from the listener can be quiet or silent.
+   * @param  {Number} x  The x-orientation of the source.
+   * @param  {Number} y  The y-orientation of the source.
+   * @param  {Number} z  The z-orientation of the source.
+   * @param  {Number} id (optional) The sound ID. If none is passed, all in group will be updated.
+   * @return {Howl/Array}    Returns self or the current 3D spatial orientation: [x, y, z].
+   */
+  Howl.prototype.orientation = function(x, y, z, id) {
+    var self = this;
+
+    // Stop right here if not using Web Audio.
+    if (!self._webAudio) {
+      return self;
+    }
+
+    // If the sound hasn't loaded, add it to the load queue to change orientation when capable.
+    if (self._state !== 'loaded') {
+      self._queue.push({
+        event: 'orientation',
+        action: function() {
+          self.orientation(x, y, z, id);
+        }
+      });
+
+      return self;
+    }
+
+    // Set the defaults for optional 'y' & 'z'.
+    y = (typeof y !== 'number') ? self._orientation[1] : y;
+    z = (typeof z !== 'number') ? self._orientation[2] : z;
+
+    // Setup the group's spatial orientation if no ID is passed.
+    if (typeof id === 'undefined') {
+      // Return the group's spatial orientation if no parameters are passed.
+      if (typeof x === 'number') {
+        self._orientation = [x, y, z];
+      } else {
+        return self._orientation;
+      }
+    }
+
+    // Change the spatial orientation of one or all sounds in group.
+    var ids = self._getSoundIds(id);
+    for (var i=0; i<ids.length; i++) {
+      // Get the sound.
+      var sound = self._soundById(ids[i]);
+
+      if (sound) {
+        if (typeof x === 'number') {
+          sound._orientation = [x, y, z];
+
+          if (sound._node) {
+            // Check if there is a panner setup and create a new one if not.
+            if (!sound._panner) {
+              // Make sure we have a position to setup the node with.
+              if (!sound._pos) {
+                sound._pos = self._pos || [0, 0, -0.5];
+              }
+
+              setupPanner(sound, 'spatial');
+            }
+
+            sound._panner.setOrientation(x, y, z);
+          }
+
+          self._emit('orientation', sound._id);
+        } else {
+          return sound._orientation;
+        }
+      }
+    }
+
+    return self;
+  };
+
+  /**
+   * Get/set the panner node's attributes for a sound or group of sounds.
+   * This method can optionall take 0, 1 or 2 arguments.
+   *   pannerAttr() -> Returns the group's values.
+   *   pannerAttr(id) -> Returns the sound id's values.
+   *   pannerAttr(o) -> Set's the values of all sounds in this Howl group.
+   *   pannerAttr(o, id) -> Set's the values of passed sound id.
+   *
+   *   Attributes:
+   *     coneInnerAngle - (360 by default) There will be no volume reduction inside this angle.
+   *     coneOuterAngle - (360 by default) The volume will be reduced to a constant value of
+   *                      `coneOuterGain` outside this angle.
+   *     coneOuterGain - (0 by default) The amount of volume reduction outside of `coneOuterAngle`.
+   *     distanceModel - ('inverse' by default) Determines algorithm to use to reduce volume as audio moves
+   *                      away from listener. Can be `linear`, `inverse` or `exponential`.
+   *     maxDistance - (10000 by default) Volume won't reduce between source/listener beyond this distance.
+   *     panningModel - ('HRTF' by default) Determines which spatialization algorithm is used to position audio.
+   *                     Can be `HRTF` or `equalpower`.
+   *     refDistance - (1 by default) A reference distance for reducing volume as the source
+   *                    moves away from the listener.
+   *     rolloffFactor - (1 by default) How quickly the volume reduces as source moves from listener.
+   * 
+   * @return {Howl/Object} Returns self or current panner attributes.
+   */
+  Howl.prototype.pannerAttr = function() {
+    var self = this;
+    var args = arguments;
+    var o, id, sound;
+
+    // Stop right here if not using Web Audio.
+    if (!self._webAudio) {
+      return self;
+    }
+
+    // Determine the values based on arguments.
+    if (args.length === 0) {
+      // Return the group's panner attribute values.
+      return self._pannerAttr;
+    } else if (args.length === 1) {
+      if (typeof args[0] === 'object') {
+        o = args[0];
+
+        // Set the grou's panner attribute values.
+        if (typeof id === 'undefined') {
+          self._pannerAttr = {
+            coneInnerAngle: typeof o.coneInnerAngle !== 'undefined' ? o.coneInnerAngle : self._coneInnerAngle,
+            coneOuterAngle: typeof o.coneOuterAngle !== 'undefined' ? o.coneOuterAngle : self._coneOuterAngle,
+            coneOuterGain: typeof o.coneOuterGain !== 'undefined' ? o.coneOuterGain : self._coneOuterGain,
+            distanceModel: typeof o.distanceModel !== 'undefined' ? o.distanceModel : self._distanceModel,
+            maxDistance: typeof o.maxDistance !== 'undefined' ? o.maxDistance : self._maxDistance,
+            panningModel: typeof o.panningModel !== 'undefined' ? o.panningModel : self._panningModel,
+            refDistance: typeof o.refDistance !== 'undefined' ? o.refDistance : self._refDistance,
+            rolloffFactor: typeof o.rolloffFactor !== 'undefined' ? o.rolloffFactor : self._rolloffFactor
+          };
+        }
+      } else {
+        // Return this sound's panner attribute values.
+        sound = self._soundById(parseInt(args[0], 10));
+        return sound ? sound._pannerAttr : self._pannerAttr;
+      }
+    } else if (args.length === 2) {
+      o = args[0];
+      id = parseInt(args[1], 10);
+    }
+
+    // Update the values of the specified sounds.
+    var ids = self._getSoundIds(id);
+    for (var i=0; i<ids.length; i++) {
+      sound = self._soundById(ids[i]);
+
+      if (sound) {
+        // Merge the new values into the sound.
+        var pa = sound._pannerAttr;
+        pa = {
+          coneInnerAngle: typeof o.coneInnerAngle !== 'undefined' ? o.coneInnerAngle : pa.coneInnerAngle,
+          coneOuterAngle: typeof o.coneOuterAngle !== 'undefined' ? o.coneOuterAngle : pa.coneOuterAngle,
+          coneOuterGain: typeof o.coneOuterGain !== 'undefined' ? o.coneOuterGain : pa.coneOuterGain,
+          distanceModel: typeof o.distanceModel !== 'undefined' ? o.distanceModel : pa.distanceModel,
+          maxDistance: typeof o.maxDistance !== 'undefined' ? o.maxDistance : pa.maxDistance,
+          panningModel: typeof o.panningModel !== 'undefined' ? o.panningModel : pa.panningModel,
+          refDistance: typeof o.refDistance !== 'undefined' ? o.refDistance : pa.refDistance,
+          rolloffFactor: typeof o.rolloffFactor !== 'undefined' ? o.rolloffFactor : pa.rolloffFactor
+        };
+
+        // Update the panner values or create a new panner if none exists.
+        var panner = sound._panner;
+        if (panner) {
+          panner.coneInnerAngle = pa.coneInnerAngle;
+          panner.coneOuterAngle = pa.coneOuterAngle;
+          panner.coneOuterGain = pa.coneOuterGain;
+          panner.distanceModel = pa.distanceModel;
+          panner.maxDistance = pa.maxDistance;
+          panner.panningModel = pa.panningModel;
+          panner.refDistance = pa.refDistance;
+          panner.rolloffFactor = pa.rolloffFactor;
+        } else {
+          // Make sure we have a position to setup the node with.
+          if (!sound._pos) {
+            sound._pos = self._pos || [0, 0, -0.5];
+          }
+
+          // Create a new panner node.
+          setupPanner(sound, 'spatial');
+        }
+      }
+    }
+
+    return self;
+  };
+
+  /** Single Sound Methods **/
+  /***************************************************************************/
+
+  /**
+   * Add new properties to the core Sound init.
+   * @param  {Function} _super Core Sound init method.
+   * @return {Sound}
+   */
+  Sound.prototype.init = (function(_super) {
+    return function() {
+      var self = this;
+      var parent = self._parent;
+
+      // Setup user-defined default properties.
+      self._orientation = parent._orientation;
+      self._stereo = parent._stereo;
+      self._pos = parent._pos;
+      self._pannerAttr = parent._pannerAttr;
+
+      // Complete initilization with howler.js core Sound's init function.
+      _super.call(this);
+
+      // If a stereo or position was specified, set it up.
+      if (self._stereo) {
+        parent.stereo(self._stereo);
+      } else if (self._pos) {
+        parent.pos(self._pos[0], self._pos[1], self._pos[2], self._id);
+      }
+    };
+  })(Sound.prototype.init);
+
+  /**
+   * Override the Sound.reset method to clean up properties from the spatial plugin.
+   * @param  {Function} _super Sound reset method.
+   * @return {Sound}
+   */
+  Sound.prototype.reset = (function(_super) {
+    return function() {
+      var self = this;
+      var parent = self._parent;
+
+      // Reset all spatial plugin properties on this sound.
+      self._orientation = parent._orientation;
+      self._pos = parent._pos;
+      self._pannerAttr = parent._pannerAttr;
+
+      // Complete resetting of the sound.
+      return _super.call(this);
+    };
+  })(Sound.prototype.reset);
+
+  /** Helper Methods **/
+  /***************************************************************************/
+
+  /**
+   * Create a new panner node and save it on the sound.
+   * @param  {Sound} sound Specific sound to setup panning on.
+   * @param {String} type Type of panner to create: 'stereo' or 'spatial'.
+   */
+  var setupPanner = function(sound, type) {
+    type = type || 'spatial';
+
+    // Create the new panner node.
+    if (type === 'spatial') {
+      sound._panner = Howler.ctx.createPanner();
+      sound._panner.coneInnerAngle = sound._pannerAttr.coneInnerAngle;
+      sound._panner.coneOuterAngle = sound._pannerAttr.coneOuterAngle;
+      sound._panner.coneOuterGain = sound._pannerAttr.coneOuterGain;
+      sound._panner.distanceModel = sound._pannerAttr.distanceModel;
+      sound._panner.maxDistance = sound._pannerAttr.maxDistance;
+      sound._panner.panningModel = sound._pannerAttr.panningModel;
+      sound._panner.refDistance = sound._pannerAttr.refDistance;
+      sound._panner.rolloffFactor = sound._pannerAttr.rolloffFactor;
+      sound._panner.setPosition(sound._pos[0], sound._pos[1], sound._pos[2]);
+      sound._panner.setOrientation(sound._orientation[0], sound._orientation[1], sound._orientation[2]);
+    } else {
+      sound._panner = Howler.ctx.createStereoPanner();
+      sound._panner.pan.value = sound._stereo;
+    }
+
+    sound._panner.connect(sound._node);
+
+    // Update the connections.
+    if (!sound._paused) {
+      sound._parent.pause(sound._id, true).play(sound._id);
+    }
+  };
+})();
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(84)))
 
 /***/ }),
 /* 178 */
@@ -17304,8 +20350,10 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 /* 179 */
 /***/ (function(module, exports) {
 
+var toString = {}.toString;
+
 module.exports = Array.isArray || function (arr) {
-  return Object.prototype.toString.call(arr) == '[object Array]';
+  return toString.call(arr) == '[object Array]';
 };
 
 
@@ -17480,11 +20528,11 @@ module.exports = arrayFilter;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseTimes = __webpack_require__(211),
-    isArguments = __webpack_require__(105),
+    isArguments = __webpack_require__(106),
     isArray = __webpack_require__(16),
-    isBuffer = __webpack_require__(106),
+    isBuffer = __webpack_require__(107),
     isIndex = __webpack_require__(59),
-    isTypedArray = __webpack_require__(108);
+    isTypedArray = __webpack_require__(109);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -17740,14 +20788,14 @@ module.exports = baseIsArguments;
 /* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(90),
-    equalArrays = __webpack_require__(97),
+var Stack = __webpack_require__(91),
+    equalArrays = __webpack_require__(98),
     equalByTag = __webpack_require__(217),
     equalObjects = __webpack_require__(218),
     getTag = __webpack_require__(223),
     isArray = __webpack_require__(16),
-    isBuffer = __webpack_require__(106),
-    isTypedArray = __webpack_require__(108);
+    isBuffer = __webpack_require__(107),
+    isTypedArray = __webpack_require__(109);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -17829,8 +20877,8 @@ module.exports = baseIsEqualDeep;
 /* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(90),
-    baseIsEqual = __webpack_require__(93);
+var Stack = __webpack_require__(91),
+    baseIsEqual = __webpack_require__(94);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -17897,10 +20945,10 @@ module.exports = baseIsMatch;
 /* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(107),
+var isFunction = __webpack_require__(108),
     isMasked = __webpack_require__(233),
     isObject = __webpack_require__(45),
-    toSource = __webpack_require__(103);
+    toSource = __webpack_require__(104);
 
 /**
  * Used to match `RegExp`
@@ -18143,7 +21191,7 @@ module.exports = baseMap;
 
 var baseIsMatch = __webpack_require__(199),
     getMatchData = __webpack_require__(220),
-    matchesStrictComparable = __webpack_require__(101);
+    matchesStrictComparable = __webpack_require__(102);
 
 /**
  * The base implementation of `_.matches` which doesn't clone `source`.
@@ -18169,12 +21217,12 @@ module.exports = baseMatches;
 /* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqual = __webpack_require__(93),
+var baseIsEqual = __webpack_require__(94),
     get = __webpack_require__(261),
-    hasIn = __webpack_require__(104),
+    hasIn = __webpack_require__(105),
     isKey = __webpack_require__(60),
-    isStrictComparable = __webpack_require__(100),
-    matchesStrictComparable = __webpack_require__(101),
+    isStrictComparable = __webpack_require__(101),
+    matchesStrictComparable = __webpack_require__(102),
     toKey = __webpack_require__(43);
 
 /** Used to compose bitmasks for value comparisons. */
@@ -18228,7 +21276,7 @@ module.exports = baseProperty;
 /* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(92);
+var baseGet = __webpack_require__(93);
 
 /**
  * A specialized version of `baseProperty` which supports deep paths.
@@ -18440,7 +21488,7 @@ module.exports = createBaseFor;
 var Symbol = __webpack_require__(39),
     Uint8Array = __webpack_require__(185),
     eq = __webpack_require__(61),
-    equalArrays = __webpack_require__(97),
+    equalArrays = __webpack_require__(98),
     mapToArray = __webpack_require__(245),
     setToArray = __webpack_require__(252);
 
@@ -18672,7 +21720,7 @@ module.exports = getAllKeys;
 /* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isStrictComparable = __webpack_require__(100),
+var isStrictComparable = __webpack_require__(101),
     keys = __webpack_require__(64);
 
 /**
@@ -18796,7 +21844,7 @@ var DataView = __webpack_require__(180),
     Set = __webpack_require__(183),
     WeakMap = __webpack_require__(186),
     baseGetTag = __webpack_require__(24),
-    toSource = __webpack_require__(103);
+    toSource = __webpack_require__(104);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -18873,8 +21921,8 @@ module.exports = getValue;
 /* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var castPath = __webpack_require__(96),
-    isArguments = __webpack_require__(105),
+var castPath = __webpack_require__(97),
+    isArguments = __webpack_require__(106),
     isArray = __webpack_require__(16),
     isIndex = __webpack_require__(59),
     isLength = __webpack_require__(62),
@@ -19737,7 +22785,7 @@ module.exports = stackSet;
 /***/ (function(module, exports, __webpack_require__) {
 
 var asciiToArray = __webpack_require__(191),
-    hasUnicode = __webpack_require__(99),
+    hasUnicode = __webpack_require__(100),
     unicodeToArray = __webpack_require__(260);
 
 /**
@@ -19840,7 +22888,7 @@ module.exports = unicodeToArray;
 /* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(92);
+var baseGet = __webpack_require__(93);
 
 /**
  * Gets the value at `path` of `object`. If the resolved value is
@@ -19907,8 +22955,8 @@ module.exports = identity;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsRegExp = __webpack_require__(201),
-    baseUnary = __webpack_require__(95),
-    nodeUtil = __webpack_require__(102);
+    baseUnary = __webpack_require__(96),
+    nodeUtil = __webpack_require__(103);
 
 /* Node.js helper references. */
 var nodeIsRegExp = nodeUtil && nodeUtil.isRegExp;
@@ -19939,7 +22987,7 @@ module.exports = isRegExp;
 /* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayMap = __webpack_require__(91),
+var arrayMap = __webpack_require__(92),
     baseIteratee = __webpack_require__(203),
     baseMap = __webpack_require__(205),
     isArray = __webpack_require__(16);
@@ -20115,13 +23163,13 @@ module.exports = property;
 /* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(94),
+var baseToString = __webpack_require__(95),
     castSlice = __webpack_require__(213),
-    hasUnicode = __webpack_require__(99),
+    hasUnicode = __webpack_require__(100),
     isIterateeCall = __webpack_require__(231),
     isRegExp = __webpack_require__(263),
     stringToArray = __webpack_require__(258),
-    toString = __webpack_require__(109);
+    toString = __webpack_require__(110);
 
 /** Used as references for the maximum length and index of an array. */
 var MAX_ARRAY_LENGTH = 4294967295;
@@ -20241,7 +23289,7 @@ module.exports = stubFalse;
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(1);
   var warning = __webpack_require__(2);
-  var ReactPropTypesSecret = __webpack_require__(112);
+  var ReactPropTypesSecret = __webpack_require__(113);
   var loggedTypeFailures = {};
 }
 
@@ -20450,7 +23498,7 @@ module.exports = ARIADOMPropertyConfig;
 
 var ReactDOMComponentTree = __webpack_require__(6);
 
-var focusNode = __webpack_require__(87);
+var focusNode = __webpack_require__(88);
 
 var AutoFocusUtils = {
   focusDOMComponent: function () {
@@ -20867,14 +23915,14 @@ module.exports = BeforeInputEventPlugin;
 
 
 
-var CSSProperty = __webpack_require__(113);
+var CSSProperty = __webpack_require__(114);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(11);
 
-var camelizeStyleName = __webpack_require__(161);
+var camelizeStyleName = __webpack_require__(160);
 var dangerousStyleValue = __webpack_require__(333);
-var hyphenateStyleName = __webpack_require__(168);
-var memoizeStringOnly = __webpack_require__(171);
+var hyphenateStyleName = __webpack_require__(167);
+var memoizeStringOnly = __webpack_require__(170);
 var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -21091,7 +24139,7 @@ var SyntheticEvent = __webpack_require__(17);
 
 var getEventTarget = __webpack_require__(76);
 var isEventSupported = __webpack_require__(77);
-var isTextInputElement = __webpack_require__(131);
+var isTextInputElement = __webpack_require__(132);
 
 var eventTypes = {
   change: {
@@ -21438,7 +24486,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(27);
 var ExecutionEnvironment = __webpack_require__(7);
 
-var createNodesFromMarkup = __webpack_require__(164);
+var createNodesFromMarkup = __webpack_require__(163);
 var emptyFunction = __webpack_require__(9);
 var invariant = __webpack_require__(1);
 
@@ -21627,7 +24675,7 @@ var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(19);
 
-var getTextContentAccessor = __webpack_require__(129);
+var getTextContentAccessor = __webpack_require__(130);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -21966,10 +25014,10 @@ module.exports = HTMLDOMPropertyConfig;
 
 var ReactReconciler = __webpack_require__(28);
 
-var instantiateReactComponent = __webpack_require__(130);
+var instantiateReactComponent = __webpack_require__(131);
 var KeyEscapeUtils = __webpack_require__(68);
 var shouldUpdateReactComponent = __webpack_require__(78);
-var traverseAllChildren = __webpack_require__(133);
+var traverseAllChildren = __webpack_require__(134);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -22168,7 +25216,7 @@ var ReactCurrentOwner = __webpack_require__(14);
 var ReactErrorUtils = __webpack_require__(71);
 var ReactInstanceMap = __webpack_require__(35);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactNodeTypes = __webpack_require__(123);
+var ReactNodeTypes = __webpack_require__(124);
 var ReactReconciler = __webpack_require__(28);
 
 if (process.env.NODE_ENV !== 'production') {
@@ -23071,13 +26119,13 @@ module.exports = ReactCompositeComponent;
 
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDefaultInjection = __webpack_require__(302);
-var ReactMount = __webpack_require__(122);
+var ReactMount = __webpack_require__(123);
 var ReactReconciler = __webpack_require__(28);
 var ReactUpdates = __webpack_require__(13);
 var ReactVersion = __webpack_require__(317);
 
 var findDOMNode = __webpack_require__(334);
-var getHostComponentFromComposite = __webpack_require__(128);
+var getHostComponentFromComposite = __webpack_require__(129);
 var renderSubtreeIntoContainer = __webpack_require__(341);
 var warning = __webpack_require__(2);
 
@@ -23194,15 +26242,15 @@ var CSSPropertyOperations = __webpack_require__(275);
 var DOMLazyTree = __webpack_require__(27);
 var DOMNamespaces = __webpack_require__(66);
 var DOMProperty = __webpack_require__(18);
-var DOMPropertyOperations = __webpack_require__(115);
+var DOMPropertyOperations = __webpack_require__(116);
 var EventPluginHub = __webpack_require__(33);
 var EventPluginRegistry = __webpack_require__(46);
 var ReactBrowserEventEmitter = __webpack_require__(47);
-var ReactDOMComponentFlags = __webpack_require__(116);
+var ReactDOMComponentFlags = __webpack_require__(117);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMInput = __webpack_require__(291);
 var ReactDOMOption = __webpack_require__(294);
-var ReactDOMSelect = __webpack_require__(117);
+var ReactDOMSelect = __webpack_require__(118);
 var ReactDOMTextarea = __webpack_require__(297);
 var ReactInstrumentation = __webpack_require__(11);
 var ReactMultiChild = __webpack_require__(310);
@@ -24361,7 +27409,7 @@ module.exports = ReactDOMIDOperations;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var DOMPropertyOperations = __webpack_require__(115);
+var DOMPropertyOperations = __webpack_require__(116);
 var LinkedValueUtils = __webpack_require__(69);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(13);
@@ -24801,7 +27849,7 @@ var _assign = __webpack_require__(4);
 
 var React = __webpack_require__(29);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMSelect = __webpack_require__(117);
+var ReactDOMSelect = __webpack_require__(118);
 
 var warning = __webpack_require__(2);
 var didWarnInvalidOptionChildren = false;
@@ -24929,7 +27977,7 @@ module.exports = ReactDOMOption;
 var ExecutionEnvironment = __webpack_require__(7);
 
 var getNodeForCharacterOffset = __webpack_require__(338);
-var getTextContentAccessor = __webpack_require__(129);
+var getTextContentAccessor = __webpack_require__(130);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -25745,7 +28793,7 @@ var ReactHostOperationHistoryHook = __webpack_require__(306);
 var ReactComponentTreeHook = __webpack_require__(8);
 var ExecutionEnvironment = __webpack_require__(7);
 
-var performanceNow = __webpack_require__(173);
+var performanceNow = __webpack_require__(172);
 var warning = __webpack_require__(2);
 
 var hooks = [];
@@ -26333,14 +29381,14 @@ module.exports = ReactEventEmitterMixin;
 
 var _assign = __webpack_require__(4);
 
-var EventListener = __webpack_require__(86);
+var EventListener = __webpack_require__(87);
 var ExecutionEnvironment = __webpack_require__(7);
 var PooledClass = __webpack_require__(19);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(13);
 
 var getEventTarget = __webpack_require__(76);
-var getUnboundedScrollPosition = __webpack_require__(166);
+var getUnboundedScrollPosition = __webpack_require__(165);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -26534,9 +29582,9 @@ var DOMProperty = __webpack_require__(18);
 var EventPluginHub = __webpack_require__(33);
 var EventPluginUtils = __webpack_require__(67);
 var ReactComponentEnvironment = __webpack_require__(70);
-var ReactEmptyComponent = __webpack_require__(118);
+var ReactEmptyComponent = __webpack_require__(119);
 var ReactBrowserEventEmitter = __webpack_require__(47);
-var ReactHostComponent = __webpack_require__(120);
+var ReactHostComponent = __webpack_require__(121);
 var ReactUpdates = __webpack_require__(13);
 
 var ReactInjection = {
@@ -27256,10 +30304,10 @@ module.exports = ReactPropTypeLocationNames;
 
 var _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(114);
+var CallbackQueue = __webpack_require__(115);
 var PooledClass = __webpack_require__(19);
 var ReactBrowserEventEmitter = __webpack_require__(47);
-var ReactInputSelection = __webpack_require__(121);
+var ReactInputSelection = __webpack_require__(122);
 var ReactInstrumentation = __webpack_require__(11);
 var Transaction = __webpack_require__(49);
 var ReactUpdateQueue = __webpack_require__(72);
@@ -28102,11 +31150,11 @@ module.exports = SVGDOMPropertyConfig;
 var EventPropagators = __webpack_require__(34);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactInputSelection = __webpack_require__(121);
+var ReactInputSelection = __webpack_require__(122);
 var SyntheticEvent = __webpack_require__(17);
 
-var getActiveElement = __webpack_require__(88);
-var isTextInputElement = __webpack_require__(131);
+var getActiveElement = __webpack_require__(89);
+var isTextInputElement = __webpack_require__(132);
 var shallowEqual = __webpack_require__(54);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
@@ -28298,7 +31346,7 @@ module.exports = SelectEventPlugin;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventListener = __webpack_require__(86);
+var EventListener = __webpack_require__(87);
 var EventPropagators = __webpack_require__(34);
 var ReactDOMComponentTree = __webpack_require__(6);
 var SyntheticAnimationEvent = __webpack_require__(321);
@@ -29075,7 +32123,7 @@ module.exports = adler32;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactPropTypeLocationNames = __webpack_require__(312);
-var ReactPropTypesSecret = __webpack_require__(124);
+var ReactPropTypesSecret = __webpack_require__(125);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -29165,7 +32213,7 @@ module.exports = checkReactTypeSpec;
 
 
 
-var CSSProperty = __webpack_require__(113);
+var CSSProperty = __webpack_require__(114);
 var warning = __webpack_require__(2);
 
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -29256,7 +32304,7 @@ var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstanceMap = __webpack_require__(35);
 
-var getHostComponentFromComposite = __webpack_require__(128);
+var getHostComponentFromComposite = __webpack_require__(129);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -29318,7 +32366,7 @@ module.exports = findDOMNode;
 
 
 var KeyEscapeUtils = __webpack_require__(68);
-var traverseAllChildren = __webpack_require__(133);
+var traverseAllChildren = __webpack_require__(134);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -29767,7 +32815,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var ReactMount = __webpack_require__(122);
+var ReactMount = __webpack_require__(123);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
@@ -29780,7 +32828,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(12);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29840,7 +32888,7 @@ BrowserRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(12);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29909,7 +32957,7 @@ HashRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(135);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -30057,7 +33105,7 @@ NavLink.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createMemoryHistory__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createMemoryHistory__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_createMemoryHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Router__ = __webpack_require__(80);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30551,9 +33599,9 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(136);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -30589,9 +33637,18 @@ var withRouter = function withRouter(Component) {
 
 /***/ }),
 /* 360 */
+/***/ (function(module, exports) {
+
+module.exports = Array.isArray || function (arr) {
+  return Object.prototype.toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(179)
+var isarray = __webpack_require__(360)
 
 /**
  * Expose `pathToRegexp`.
@@ -31020,7 +34077,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31084,7 +34141,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31202,7 +34259,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31218,11 +34275,11 @@ module.exports = PooledClass;
 
 
 
-var PooledClass = __webpack_require__(362);
+var PooledClass = __webpack_require__(363);
 var ReactElement = __webpack_require__(20);
 
 var emptyFunction = __webpack_require__(9);
-var traverseAllChildren = __webpack_require__(373);
+var traverseAllChildren = __webpack_require__(374);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -31398,7 +34455,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31419,7 +34476,7 @@ var _prodInvariant = __webpack_require__(21),
 
 var ReactComponent = __webpack_require__(82);
 var ReactElement = __webpack_require__(20);
-var ReactPropTypeLocationNames = __webpack_require__(138);
+var ReactPropTypeLocationNames = __webpack_require__(139);
 var ReactNoopUpdateQueue = __webpack_require__(83);
 
 var emptyObject = __webpack_require__(31);
@@ -32127,7 +35184,7 @@ module.exports = ReactClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32152,7 +35209,7 @@ var ReactElement = __webpack_require__(20);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (process.env.NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(137);
+  var ReactElementValidator = __webpack_require__(138);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -32303,7 +35360,7 @@ module.exports = ReactDOMFactories;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32322,12 +35379,12 @@ module.exports = ReactDOMFactories;
 var _require = __webpack_require__(20),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(110);
+var factory = __webpack_require__(111);
 
 module.exports = factory(isValidElement);
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32349,7 +35406,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32396,7 +35453,7 @@ ReactPureComponent.prototype.isPureReactComponent = true;
 module.exports = ReactPureComponent;
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32415,7 +35472,7 @@ module.exports = ReactPureComponent;
 module.exports = '15.5.4';
 
 /***/ }),
-/* 370 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32433,8 +35490,8 @@ module.exports = '15.5.4';
 
 var _prodInvariant = __webpack_require__(21);
 
-var ReactPropTypeLocationNames = __webpack_require__(138);
-var ReactPropTypesSecret = __webpack_require__(367);
+var ReactPropTypeLocationNames = __webpack_require__(139);
+var ReactPropTypesSecret = __webpack_require__(368);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -32508,7 +35565,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 371 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32534,7 +35591,7 @@ function getNextDebugID() {
 module.exports = getNextDebugID;
 
 /***/ }),
-/* 372 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32578,7 +35635,7 @@ module.exports = onlyChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32597,11 +35654,11 @@ module.exports = onlyChild;
 var _prodInvariant = __webpack_require__(21);
 
 var ReactCurrentOwner = __webpack_require__(14);
-var REACT_ELEMENT_TYPE = __webpack_require__(136);
+var REACT_ELEMENT_TYPE = __webpack_require__(137);
 
-var getIteratorFn = __webpack_require__(139);
+var getIteratorFn = __webpack_require__(140);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(361);
+var KeyEscapeUtils = __webpack_require__(362);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -32760,7 +35817,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32836,7 +35893,7 @@ var resolvePathname = function resolvePathname(to) {
 module.exports = resolvePathname;
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, exports) {
 
 
@@ -32931,13 +35988,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(154);
+var content = __webpack_require__(153);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(30)(content, {});
@@ -32957,13 +36014,13 @@ if(false) {
 }
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(155);
+var content = __webpack_require__(154);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(30)(content, {});
@@ -32983,39 +36040,13 @@ if(false) {
 }
 
 /***/ }),
-/* 378 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(156);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(30)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../../node_modules/sass-loader/lib/loader.js!./styles.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../../node_modules/sass-loader/lib/loader.js!./styles.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
 /* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(157);
+var content = __webpack_require__(155);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(30)(content, {});
@@ -33041,7 +36072,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(158);
+var content = __webpack_require__(156);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(30)(content, {});
@@ -33067,7 +36098,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(159);
+var content = __webpack_require__(157);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(30)(content, {});
@@ -33088,24 +36119,50 @@ if(false) {
 
 /***/ }),
 /* 382 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(158);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(30)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../../node_modules/sass-loader/lib/loader.js!./styles.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../../node_modules/sass-loader/lib/loader.js!./styles.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 383 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "/images/cs_front.png?7cfbf2aab7519ebe87f092007b773ff6";
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33153,6 +36210,131 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
+
+/***/ }),
+/* 387 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,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"
+
+/***/ }),
+/* 388 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,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"
+
+/***/ }),
+/* 389 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _style = __webpack_require__(378);
+
+var _style2 = _interopRequireDefault(_style);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var front = __webpack_require__(384);
+var back = __webpack_require__(383);
+var wheel = __webpack_require__(385);
+
+var Cassette = function (_Component) {
+  _inherits(Cassette, _Component);
+
+  function Cassette() {
+    _classCallCheck(this, Cassette);
+
+    return _possibleConstructorReturn(this, (Cassette.__proto__ || Object.getPrototypeOf(Cassette)).apply(this, arguments));
+  }
+
+  _createClass(Cassette, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          width = _props.width,
+          speed = _props.speed,
+          rotation = _props.rotation,
+          percentage = _props.percentage;
+
+      var vc_tape_w = 586,
+          vc_tape_h = 379,
+          wheel_w_h = 125,
+          wheel_top = 110,
+          wheel_left = 109,
+          wheel_right = 113,
+          wheel_max_shadow = 90;
+
+      if (width < 600) {
+        var s = width / 600;
+        vc_tape_w = vc_tape_w * s;
+        vc_tape_h = vc_tape_h * s;
+        wheel_w_h = wheel_w_h * s;
+        wheel_top = wheel_top * s;
+        wheel_left = wheel_left * s;
+        wheel_right = wheel_right * s;
+        wheel_max_shadow = wheel_max_shadow * s;
+      }
+      var left_shadow = wheel_max_shadow * percentage;
+      var right_shadow = wheel_max_shadow * (1 - percentage);
+      var vc_tape = {
+        width: vc_tape_w + 'px',
+        height: vc_tape_h + 'px'
+      };
+
+      var vc_tape_wheel = {
+        width: wheel_w_h + 'px',
+        height: wheel_w_h + 'px',
+        top: wheel_top + 'px',
+        animationName: rotation,
+        animationIterationCount: 'infinite',
+        animationTimingFunction: 'linear',
+        animationDuration: speed + 's',
+        animationFillMode: 'forwards'
+      };
+
+      var vc_tape_wheel_left = {
+        left: wheel_left + 'px',
+        boxShadow: '0 0 0 ' + left_shadow + 'px #000'
+      };
+
+      var vc_tape_wheel_right = {
+        right: wheel_right + 'px',
+        boxShadow: '0 0 0 ' + right_shadow + 'px #000'
+      };
+
+      return _react2.default.createElement(
+        'div',
+        { style: vc_tape, className: _style2.default.vc_tape },
+        _react2.default.createElement('img', { src: back, className: _style2.default.vc_tape_back }),
+        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_left), className: '' + _style2.default.vc_tape_wheel }),
+        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_right), className: '' + _style2.default.vc_tape_wheel }),
+        _react2.default.createElement('img', { src: front, className: _style2.default.vc_tape_front })
+      );
+    }
+  }]);
+
+  return Cassette;
+}(_react.Component);
+
+exports.default = Cassette;
 
 /***/ })
 /******/ ]);

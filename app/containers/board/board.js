@@ -28,10 +28,16 @@ class Board extends Component {
   }
 
   render() {
+    const songs = [
+      {url: 'mp3/like.mp3'},
+      {url: 'mp3/BlankKyt_RSPN.ogg'},
+      {url: 'mp3/BlankKytt_ThursdaySnowReprise.mp3'},
+      {url: 'mp3/BlueDucks_FourFlossFiveSix.mp3'},
+    ]
     return (
       <div className="app-container" ref="cassetteBoard">
         <div className={styles.panel_playboard} ref="cassettePlayer">
-          <CassettePlayer width={this.state.width} />
+          <CassettePlayer width={this.state.width} songs={songs} />
         </div>
         <div className={styles.panel_playlist}>
           <Music className={''} />
