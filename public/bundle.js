@@ -13329,6 +13329,10 @@ var _cassette = __webpack_require__(389);
 
 var _cassette2 = _interopRequireDefault(_cassette);
 
+var _button_panel = __webpack_require__(390);
+
+var _button_panel2 = _interopRequireDefault(_button_panel);
+
 var _howler = __webpack_require__(177);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -13431,6 +13435,9 @@ var CassettePlayer = function (_Component) {
   }, {
     key: '_onPauseBtnClick',
     value: function _onPauseBtnClick() {
+      if (this.howler === undefined || this.howler === null) {
+        return;
+      }
       var isPause = !this.state.isPause;
       this.setState({ isPause: isPause });
       isPause ? this._pause() : this._play();
@@ -13438,11 +13445,17 @@ var CassettePlayer = function (_Component) {
   }, {
     key: '_onPrevBtnClick',
     value: function _onPrevBtnClick() {
+      if (this.howler === undefined || this.howler === null) {
+        return;
+      }
       this._prev();
     }
   }, {
     key: '_onNextBtnClick',
     value: function _onNextBtnClick() {
+      if (this.howler === undefined || this.howler === null) {
+        return;
+      }
       this._next();
     }
   }, {
@@ -13652,35 +13665,13 @@ var CassettePlayer = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_cassette2.default, { width: this.props.width, speed: this.state.speed, rotation: this.state.rotation, percentage: this.state.percentage }),
-        _react2.default.createElement(
-          'ul',
-          { className: _style2.default.vc_controls },
-          _react2.default.createElement(
-            'li',
-            { onClick: this._onPlayBtnClick },
-            'Play',
-            _react2.default.createElement('span', null)
-          ),
-          _react2.default.createElement(
-            'li',
-            { onClick: this._onPrevBtnClick },
-            'REW',
-            _react2.default.createElement('span', null)
-          ),
-          _react2.default.createElement(
-            'li',
-            { onClick: this._onNextBtnClick },
-            'FF',
-            _react2.default.createElement('span', null)
-          ),
-          _react2.default.createElement(
-            'li',
-            { onClick: this._onPauseBtnClick },
-            'STOP',
-            _react2.default.createElement('span', null)
-          )
-        )
+        _react2.default.createElement(_cassette2.default, { width: this.props.width, speed: this.state.speed, rotation: this.state.rotation, percentage: percent }),
+        _react2.default.createElement(_button_panel2.default, { isPlaying: isPlaying,
+          isPause: isPause,
+          isLoading: isLoading,
+          currentSongIndex: currentSongIndex, songCount: songCount,
+          onPlayBtnClick: this._onPlayBtnClick, onPauseBtnClick: this._onPauseBtnClick,
+          onPrevBtnClick: this._onPrevBtnClick, onNextBtnClick: this._onNextBtnClick })
       );
     }
   }]);
@@ -15761,7 +15752,7 @@ exports = module.exports = __webpack_require__(23)(undefined);
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n.app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  margin: 0 auto;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n\n.app-components-cassette_player-___style__vc_controls___1bqfv {\n  list-style: none;\n  padding: 0;\n  width: 440px;\n  position: absolute;\n  bottom: 18px;\n  left: 50%;\n  margin: 0 0 0 -170px;\n  background: -moz-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(170, 170, 170, 0.35)), color-stop(50%, rgba(255, 255, 255, 0.44)), color-stop(100%, rgba(255, 255, 255, 0.53)));\n  background: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -o-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -ms-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: linear-gradient(to bottom, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59aaaaaa', endColorstr='#87ffffff',GradientType=0 );\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  border-bottom-color: rgba(255, 255, 255, 0.6);\n  padding: 8px;\n  height: 54px;\n  box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.8), 0 -1px 0 rgba(255, 255, 255, 0.4), inset 0 2px 19px rgba(0, 0, 0, 0.05), 0 2px 1px rgba(0, 0, 0, 0.06);\n  -webkit-box-sizing: content-box;\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  border-radius: 12px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li {\n    display: block;\n    float: left;\n    width: 80px;\n    height: 50px;\n    line-height: 55px;\n    text-align: left;\n    padding: 10px;\n    margin: 0;\n    cursor: pointer;\n    background: #ddd url(" + __webpack_require__(387) + ") no-repeat center top;\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -6px 5px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.3), 0 4px 1px rgba(0, 0, 0, 0.5);\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:first-child {\n    border-radius: 8px 0 0 8px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:last-child {\n    border-radius: 0px 8px 8px 0px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-play___2ShHc {\n    width: 120px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-pause___1QHP2 span:before {\n    content: 'P'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-fforward___3XyS8 span:before {\n    content: '\\23E9'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-rewind___3a_zu span:before {\n    content: '\\23EA'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-stop___2mqtR span:before {\n    content: '\\25AA'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-play___2ShHc span:before {\n    content: 'p'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-off___1A3AP span:before {\n    content: '\\F0\\178\\201D\\2021'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-down___37BWn span:before {\n    content: '\\F0\\178\\201D\\2030'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-up___3l0rf span:before {\n    content: '\\F0\\178\\201D\\160'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li span:before {\n    font-size: 16px;\n    line-height: 50px;\n    text-align: center;\n    float: left;\n    color: #444;\n    font-family: 'playericons';\n    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);\n    font-style: normal;\n    font-weight: normal;\n    text-transform: none;\n    speak: none;\n    display: inline-block;\n    text-decoration: inherit;\n    width: 1em;\n    margin-right: 0.2em;\n    text-align: center; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:hover {\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -10px 15px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.3), 0 4px 1px rgba(0, 0, 0, 0.5); }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-active___3rqiQ {\n    height: 50px;\n    margin-top: 2px;\n    background-image: url(" + __webpack_require__(388) + ");\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18), inset 0 0 1px 2px rgba(255, 255, 255, 0.5), inset 0 -6px 5px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.3), 0 2px 1px rgba(0, 0, 0, 0.5); }\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n.app-components-cassette_player-___style__vc_container___3WQ5h {\n  text-align: center;\n  height: 500px;\n  margin-bottom: 50px;\n  position: relative; }\n\n/* Tape elements */\n.app-components-cassette_player-___style__vc_tape_wrapper___1KFoM {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  -ms-perspective: 800px;\n  perspective: 800px; }\n\n.app-components-cassette_player-___style__vc_tape___3V2y9 {\n  margin: 0 auto;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_back___2rqfO {\n  width: 100%;\n  height: 100%;\n  position: relative; }\n\n.app-components-cassette_player-___style__vc_tape_wheel___vayZY {\n  position: absolute;\n  background: transparent;\n  border-radius: 50%; }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px; }\n\n.app-components-cassette_player-___style__vc_tape_side_b___GR7Cp {\n  display: none;\n  -webkit-transform: rotate3d(0, 1, 0, 180deg);\n  -moz-transform: rotate3d(0, 1, 0, 180deg);\n  -o-transform: rotate3d(0, 1, 0, 180deg);\n  -ms-transform: rotate3d(0, 1, 0, 180deg);\n  transform: rotate3d(0, 1, 0, 180deg); }\n\n.app-components-cassette_player-___style__vc_tape_front___2sQ1Q span {\n  color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  top: 83px;\n  left: 67px;\n  font-family: Arial;\n  font-weight: bold;\n  font-size: 20px; }\n\n.app-components-cassette_player-___style__vc_controls___1bqfv {\n  list-style: none;\n  text-align: center;\n  padding: 0;\n  bottom: 18px;\n  background: -moz-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(170, 170, 170, 0.35)), color-stop(50%, rgba(255, 255, 255, 0.44)), color-stop(100%, rgba(255, 255, 255, 0.53)));\n  background: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -o-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: -ms-linear-gradient(top, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  background: linear-gradient(to bottom, rgba(170, 170, 170, 0.35) 0%, rgba(255, 255, 255, 0.44) 50%, rgba(255, 255, 255, 0.53) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59aaaaaa', endColorstr='#87ffffff',GradientType=0 );\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  border-bottom-color: rgba(255, 255, 255, 0.6);\n  padding: 8px;\n  height: 54px;\n  box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.8), 0 -1px 0 rgba(255, 255, 255, 0.4), inset 0 2px 19px rgba(0, 0, 0, 0.05), 0 2px 1px rgba(0, 0, 0, 0.06);\n  -webkit-box-sizing: content-box;\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  border-radius: 12px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li {\n    display: block;\n    float: left;\n    width: 80px;\n    height: 50px;\n    line-height: 55px;\n    text-align: left;\n    padding: 10px;\n    margin: 0;\n    cursor: pointer;\n    background: #ddd url(" + __webpack_require__(387) + ") no-repeat center top;\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 1px 2px rgba(255, 255, 255, 0.9), inset 0 -6px 5px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.3), 0 4px 1px rgba(0, 0, 0, 0.5);\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:first-child {\n    border-radius: 8px 0 0 8px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li:last-child {\n    border-radius: 0px 8px 8px 0px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-play___2ShHc {\n    width: 120px; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-pause___1QHP2 span:before {\n    content: 'P'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-fforward___3XyS8 span:before {\n    content: '\\23E9'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-rewind___3a_zu span:before {\n    content: '\\23EA'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-stop___2mqtR span:before {\n    content: '\\25AA'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-play___2ShHc span:before {\n    content: 'p'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-off___1A3AP span:before {\n    content: '\\F0\\178\\201D\\2021'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-down___37BWn span:before {\n    content: '\\F0\\178\\201D\\2030'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li.app-components-cassette_player-___style__vc-control-volume-up___3l0rf span:before {\n    content: '\\F0\\178\\201D\\160'; }\n  .app-components-cassette_player-___style__vc_controls___1bqfv li span:before {\n    font-size: 16px;\n    line-height: 50px;\n    text-align: center;\n    float: left;\n    color: #444;\n    font-family: 'playericons';\n    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);\n    font-style: normal;\n    font-weight: normal;\n    text-transform: none;\n    speak: none;\n    display: inline-block;\n    text-decoration: inherit;\n    width: 1em;\n    margin-right: 0.2em;\n    text-align: center; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -15780,8 +15771,7 @@ exports.locals = {
 	"vc-control-stop": "app-components-cassette_player-___style__vc-control-stop___2mqtR",
 	"vc-control-volume-off": "app-components-cassette_player-___style__vc-control-volume-off___1A3AP",
 	"vc-control-volume-down": "app-components-cassette_player-___style__vc-control-volume-down___37BWn",
-	"vc-control-volume-up": "app-components-cassette_player-___style__vc-control-volume-up___3l0rf",
-	"vc-control-active": "app-components-cassette_player-___style__vc-control-active___3rqiQ"
+	"vc-control-volume-up": "app-components-cassette_player-___style__vc-control-volume-up___3l0rf"
 };
 
 /***/ }),
@@ -36218,12 +36208,7 @@ exports.default = valueEqual;
 module.exports = "data:image/jpeg;base64,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"
 
 /***/ }),
-/* 388 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/jpeg;base64,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"
-
-/***/ }),
+/* 388 */,
 /* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36292,8 +36277,8 @@ var Cassette = function (_Component) {
         wheel_right = wheel_right * s;
         wheel_max_shadow = wheel_max_shadow * s;
       }
-      var left_shadow = wheel_max_shadow * percentage;
-      var right_shadow = wheel_max_shadow * (1 - percentage);
+      var right_shadow = wheel_max_shadow * percentage;
+      var left_shadow = wheel_max_shadow * (1 - percentage);
       var vc_tape = {
         width: vc_tape_w + 'px',
         height: vc_tape_h + 'px'
@@ -36335,6 +36320,99 @@ var Cassette = function (_Component) {
 }(_react.Component);
 
 exports.default = Cassette;
+
+/***/ }),
+/* 390 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _style = __webpack_require__(378);
+
+var _style2 = _interopRequireDefault(_style);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ButtonPanel = function (_Component) {
+  _inherits(ButtonPanel, _Component);
+
+  function ButtonPanel() {
+    _classCallCheck(this, ButtonPanel);
+
+    var _this = _possibleConstructorReturn(this, (ButtonPanel.__proto__ || Object.getPrototypeOf(ButtonPanel)).call(this));
+
+    _this.props = {
+      currentSongIndex: 0,
+      songCount: 0
+    };
+    return _this;
+  }
+
+  _createClass(ButtonPanel, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          isPlaying = _props.isPlaying,
+          isPause = _props.isPause,
+          isLoading = _props.isLoading,
+          songCount = _props.songCount,
+          onPlayBtnClick = _props.onPlayBtnClick,
+          onPauseBtnClick = _props.onPauseBtnClick,
+          currentSongIndex = _props.currentSongIndex;
+
+
+      return _react2.default.createElement(
+        'ul',
+        { className: _style2.default.vc_controls },
+        _react2.default.createElement(
+          'li',
+          { onClick: this._onPlayBtnClick },
+          'Play',
+          _react2.default.createElement('span', null)
+        ),
+        _react2.default.createElement(
+          'li',
+          { onClick: this._onPrevBtnClick },
+          'REW',
+          _react2.default.createElement('span', null)
+        ),
+        _react2.default.createElement(
+          'li',
+          { onClick: this._onNextBtnClick },
+          'FF',
+          _react2.default.createElement('span', null)
+        ),
+        _react2.default.createElement(
+          'li',
+          { onClick: this._onPauseBtnClick },
+          'STOP',
+          _react2.default.createElement('span', null)
+        )
+      );
+    }
+  }]);
+
+  return ButtonPanel;
+}(_react.Component);
+
+exports.default = ButtonPanel;
 
 /***/ })
 /******/ ]);

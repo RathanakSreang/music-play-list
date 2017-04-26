@@ -25,8 +25,8 @@ export default class Cassette extends Component {
       wheel_right = wheel_right * s;
       wheel_max_shadow = wheel_max_shadow * s;
     }
-    let left_shadow = wheel_max_shadow * percentage;
-    let right_shadow = wheel_max_shadow * (1 - percentage);
+    let right_shadow = wheel_max_shadow * percentage;
+    let left_shadow = wheel_max_shadow * (1 - percentage);
     var vc_tape = {
       width: vc_tape_w + 'px',
       height: vc_tape_h + 'px',

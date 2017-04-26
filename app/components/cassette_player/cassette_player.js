@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styles from './style.scss';
 import Cassette from './cassette.js';
+import ButtonPanel from './button_panel.js';
 import { Howl } from 'howler';
 
 export default class CassettePlayer extends Component {
@@ -75,16 +76,25 @@ export default class CassettePlayer extends Component {
   }
 
   _onPauseBtnClick() {
+    if(this.howler === undefined || this.howler === null) {
+      return;
+    }
     const isPause = !this.state.isPause;
     this.setState({ isPause: isPause });
     isPause ? this._pause() : this._play();
   }
 
   _onPrevBtnClick() {
+    if(this.howler === undefined || this.howler === null) {
+      return;
+    }
     this._prev();
   }
 
   _onNextBtnClick() {
+    if(this.howler === undefined || this.howler === null) {
+      return;
+    }
     this._next();
   }
 
@@ -263,13 +273,13 @@ export default class CassettePlayer extends Component {
 
     return(
       <div>
-        <Cassette width={this.props.width} speed={this.state.speed} rotation={this.state.rotation} percentage={this.state.percentage} />
-        <ul className={styles.vc_controls}>
-          <li onClick={this._onPlayBtnClick}>Play<span></span></li>
-          <li onClick={this._onPrevBtnClick}>REW<span></span></li>
-          <li onClick={this._onNextBtnClick}>FF<span></span></li>
-          <li onClick={this._onPauseBtnClick}>STOP<span></span></li>
-        </ul>
+        <Cassette width={this.props.width} speed={this.state.speed} rotation={this.state.rotation} percentage={percent} />
+        <ButtonPanel isPlaying={isPlaying}
+                     isPause={isPause}
+                     isLoading={isLoading}
+                     currentSongIndex={currentSongIndex} songCount={songCount}
+                     onPlayBtnClick={this._onPlayBtnClick} onPauseBtnClick={this._onPauseBtnClick}
+                     onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}/>
       </div>
     );
   }
