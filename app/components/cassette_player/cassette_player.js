@@ -72,6 +72,10 @@ export default class CassettePlayer extends Component {
     if (this.state.isPlaying && !this.state.isPause) {
       return;
     };
+    this.setState({
+      speed: 2.0,
+      rotation: 'rotateLeft',
+    });
     this.play();
   }
 
@@ -284,5 +288,3 @@ export default class CassettePlayer extends Component {
     );
   }
 }
-        // <span className={styles.vc_tape_side_a}>A</span>
-        // <span className={styles.vc_tape_side_b}>B</span>
