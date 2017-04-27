@@ -17,7 +17,7 @@ export default class CassettePlayer extends Component {
         volume: 0.5,
         speed: 0.0,
         rotation: 'rotateLeft',
-        percentage: 1,
+        percentage: 0,
     };
     this._onPlayBtnClick = this._onPlayBtnClick.bind(this);
     this._onPauseBtnClick = this._onPauseBtnClick.bind(this);

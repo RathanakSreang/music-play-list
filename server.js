@@ -3,6 +3,7 @@ const path = require('path')
 const port = process.env.PORT || 3330
 const app = express();
 
+
 // serve static assets normally
 app.use(express.static(__dirname + '/public'))
 

@@ -7,48 +7,48 @@ body {
   font-family: "Hanuman",Arial,serif !important;
 }
 
-.app-container {
+:global(.app-container) {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-@-webkit-keyframes rotateLeft {
+@-webkit-keyframes :global(rotateLeft) {
   0% { -webkit-transform: rotate(0deg) translateZ(-1px); }
   100% { -webkit-transform: rotate(-360deg) translateZ(-1px); }
 }
-@-webkit-keyframes rotateRight {
+@-webkit-keyframes :global(rotateRight) {
   0% { -webkit-transform: rotate(0deg) translateZ(-1px); }
   100% { -webkit-transform: rotate(360deg) translateZ(-1px); }
 }
-@-moz-keyframes rotateLeft {
+@-moz-keyframes :global(rotateLeft) {
   0% { -moz-transform: rotate(0deg) translateZ(-1px); }
   100% { -moz-transform: rotate(-360deg) translateZ(-1px); }
 }
-@-moz-keyframes rotateRight {
+@-moz-keyframes :global(rotateRight) {
   0% { -moz-transform: rotate(0deg) translateZ(-1px); }
   100% { -moz-transform: rotate(360deg) translateZ(-1px); }
 }
-@-o-keyframes rotateLeft {
+@-o-keyframes :global(rotateLeft) {
   0% { -o-transform: rotate(0deg) translateZ(-1px); }
   100% { -o-transform: rotate(-360deg) translateZ(-1px); }
 }
-@-o-keyframes rotateRight {
+@-o-keyframes :global(rotateRight) {
   0% { -o-transform: rotate(0deg) translateZ(-1px); }
   100% { -o-transform: rotate(360deg) translateZ(-1px); }
 }
-@-ms-keyframes rotateLeft {
+@-ms-keyframes :global(rotateLeft) {
   0% { -ms-transform: rotate(0deg) translateZ(-1px); }
   100% { -ms-transform: rotate(-360deg) translateZ(-1px); }
 }
-@-ms-keyframes rotateRight {
+@-ms-keyframes :global(rotateRight) {
   0% { -ms-transform: rotate(0deg) translateZ(-1px); }
   100% { -ms-transform: rotate(360deg) translateZ(-1px); }
 }
-@keyframes rotateLeft {
+@keyframes :global(rotateLeft) {
   0% { transform: rotate(0deg) translateZ(-1px); }
   100% { transform: rotate(-360deg) translateZ(-1px); }
 }
-@keyframes rotateRight {
+@keyframes (rotateRight) {
   0% { transform: rotate(0deg) translateZ(-1px); }
   100% { transform: rotate(360deg) translateZ(-1px); }
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import FontAwesome from 'react-fontawesome';
 import styles from './button_panel.scss';
 
 export default class ButtonPanel extends Component {
@@ -20,11 +21,11 @@ export default class ButtonPanel extends Component {
         <div className={styles.vc_volumes}>Volume</div>
         <div className={styles.vc_buttons}>
           <ul>
-            <li onClick={onPlayBtnClick}><span>Play</span></li>
-            <li onClick={onPrevBtnClick}><span>REW</span></li>
-            <li onClick={onNextBtnClick}><span>FF</span></li>
-            <li onClick={onPauseBtnClick}><span>STOP</span></li>
-            <li onClick={onPauseBtnClick}><span>SWITCH</span></li>
+            <li className={styles.vc_control_play} onClick={onPlayBtnClick}><FontAwesome  name='play' /></li>
+            <li className={styles.vc_control_rewind} onClick={onPrevBtnClick}><FontAwesome  name='backward' /></li>
+            <li className={styles.vc_control_fforward} onClick={onNextBtnClick}><FontAwesome  name='forward' /></li>
+            <li className={styles.vc_control_pause} onClick={onPauseBtnClick}><FontAwesome  name='pause' /></li>
+            <li className={styles.vc_control_pause} onClick={onPauseBtnClick}><FontAwesome  name='stop' /></li>
           </ul>
         </div>
       </div>
