@@ -12755,6 +12755,10 @@ var _button_panel = __webpack_require__(154);
 
 var _button_panel2 = _interopRequireDefault(_button_panel);
 
+var _volume_panel = __webpack_require__(405);
+
+var _volume_panel2 = _interopRequireDefault(_volume_panel);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12797,7 +12801,7 @@ var ButtonPanel = function (_Component) {
         _react2.default.createElement(
           'div',
           { className: _button_panel2.default.vc_volumes },
-          'Volume'
+          _react2.default.createElement(_volume_panel2.default, null)
         ),
         _react2.default.createElement(
           'div',
@@ -33894,6 +33898,139 @@ exports.default = valueEqual;
 __webpack_require__(141);
 module.exports = __webpack_require__(142);
 
+
+/***/ }),
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _volume = __webpack_require__(406);
+
+var _volume2 = _interopRequireDefault(_volume);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var VolumePanel = function (_Component) {
+  _inherits(VolumePanel, _Component);
+
+  function VolumePanel(props) {
+    _classCallCheck(this, VolumePanel);
+
+    return _possibleConstructorReturn(this, (VolumePanel.__proto__ || Object.getPrototypeOf(VolumePanel)).call(this, props));
+  }
+
+  _createClass(VolumePanel, [{
+    key: 'valueToRadian',
+    value: function valueToRadian(value) {
+      return Math.round(value / 100 * 270);
+    }
+
+    // <div className={`${styles.tick} ${activetick}`}></div>
+
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: _volume2.default.knob_surround },
+        _react2.default.createElement('div', { className: _volume2.default.knob }),
+        _react2.default.createElement(
+          'span',
+          { className: _volume2.default.min },
+          'Min'
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: _volume2.default.max },
+          'Max'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: _volume2.default.ticks },
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick }),
+          _react2.default.createElement('div', { className: _volume2.default.tick })
+        )
+      );
+    }
+  }]);
+
+  return VolumePanel;
+}(_react.Component);
+
+exports.default = VolumePanel;
+
+/***/ }),
+/* 406 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"knob_surround":"app-components-cassette_player-___volume__knob_surround___eGO_5"};
 
 /***/ })
 /******/ ]);

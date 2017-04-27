@@ -2556,6 +2556,14 @@
     border-radius: 8px 0 0 8px; }
   .app-components-cassette_player-___button_panel__vc_buttons___2jRwQ li:last-child {
     border-radius: 0px 8px 8px 0px; }
+.app-components-cassette_player-___volume__knob_surround___eGO_5 {
+  position: relative;
+  background-color: grey;
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+  border: solid 0.25em #0e0e0e;
+  margin: 5em auto; }
 @media (min-width: 850px) {
   .app-containers-board-___styles__panel_playboard___3PGIH {
     width: 65%;

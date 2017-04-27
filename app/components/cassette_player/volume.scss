@@ -1,0 +1,21 @@
+// https://codepen.io/blucube/pen/cudAz
+
+// colours
+$knob-colour: #181818;
+$light-colour: #a8d8f8;
+
+.knob_surround {
+  position: relative;
+  background-color: grey;
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+  border: solid .25em darken($knob-colour, 4%);
+  margin: 5em auto;
+  // .gradient($knob-colour, lighten($knob-colour, 2%), darken($knob-colour, 2%));
+  // .box-shadow(
+  //   0 .2em .1em .05em rgba(255,255,255,.1) inset,
+  //   0 -.2em .1em .05em rgba(0,0,0,.5) inset,
+  //   0 .5em .65em 0 rgba(0,0,0,.3);
+  // );
+}
