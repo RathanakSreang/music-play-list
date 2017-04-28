@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import styles from './style.scss';
-import Cassette from './cassette.js';
-import ButtonPanel from './button_panel.js';
+import styles from './cassette_player.scss';
+import Cassette from '../cassette/cassette.js';
+import ControlPanel from '../control_panel/control_panel.js';
 import { Howl } from 'howler';
 
 export default class CassettePlayer extends Component {
@@ -278,7 +278,7 @@ export default class CassettePlayer extends Component {
     return(
       <div>
         <Cassette width={this.props.width} speed={this.state.speed} rotation={this.state.rotation} percentage={percent} />
-        <ButtonPanel isPlaying={isPlaying}
+        <ControlPanel isPlaying={isPlaying}
                      isPause={isPause}
                      isLoading={isLoading}
                      currentSongIndex={currentSongIndex} songCount={songCount}

@@ -8087,13 +8087,7 @@ var Music = function (_Component) {
 exports.default = Music;
 
 /***/ }),
-/* 83 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"vc_container":"app-components-cassette_player-___style__vc_container___3WQ5h","vc_tape_wrapper":"app-components-cassette_player-___style__vc_tape_wrapper___1KFoM","vc_tape":"app-components-cassette_player-___style__vc_tape___3V2y9","vc_tape_back":"app-components-cassette_player-___style__vc_tape_back___2rqfO","vc_tape_wheel":"app-components-cassette_player-___style__vc_tape_wheel___vayZY","vc_tape_front":"app-components-cassette_player-___style__vc_tape_front___2sQ1Q","vc_tape_side_b":"app-components-cassette_player-___style__vc_tape_side_b___GR7Cp"};
-
-/***/ }),
+/* 83 */,
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12878,239 +12872,8 @@ var Header = function (_React$Component) {
 exports.default = Header;
 
 /***/ }),
-/* 146 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactFontawesome = __webpack_require__(132);
-
-var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
-
-var _button_panel = __webpack_require__(157);
-
-var _button_panel2 = _interopRequireDefault(_button_panel);
-
-var _volume_panel = __webpack_require__(150);
-
-var _volume_panel2 = _interopRequireDefault(_volume_panel);
-
-var _progress_bar = __webpack_require__(149);
-
-var _progress_bar2 = _interopRequireDefault(_progress_bar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ButtonPanel = function (_Component) {
-  _inherits(ButtonPanel, _Component);
-
-  function ButtonPanel(props) {
-    _classCallCheck(this, ButtonPanel);
-
-    return _possibleConstructorReturn(this, (ButtonPanel.__proto__ || Object.getPrototypeOf(ButtonPanel)).call(this, props));
-    // this.props = {
-    //   currentSongIndex: 0,
-    //   songCount: 0,
-    // };
-  }
-
-  _createClass(ButtonPanel, [{
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          isPlaying = _props.isPlaying,
-          isPause = _props.isPause,
-          isLoading = _props.isLoading,
-          songCount = _props.songCount,
-          onPlayBtnClick = _props.onPlayBtnClick,
-          onPauseBtnClick = _props.onPauseBtnClick,
-          onPrevBtnClick = _props.onPrevBtnClick,
-          onNextBtnClick = _props.onNextBtnClick,
-          currentSongIndex = _props.currentSongIndex;
-
-
-      return _react2.default.createElement(
-        'div',
-        { className: _button_panel2.default.vc_controls },
-        _react2.default.createElement(
-          'div',
-          { className: _button_panel2.default.vc_volumes },
-          _react2.default.createElement(_volume_panel2.default, null)
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: _button_panel2.default.vc_buttons },
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              { className: _button_panel2.default.vc_control_play, onClick: onPlayBtnClick },
-              _react2.default.createElement(_reactFontawesome2.default, { name: 'play' })
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: _button_panel2.default.vc_control_rewind, onClick: onPrevBtnClick },
-              _react2.default.createElement(_reactFontawesome2.default, { name: 'backward' })
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: _button_panel2.default.vc_control_fforward, onClick: onNextBtnClick },
-              _react2.default.createElement(_reactFontawesome2.default, { name: 'forward' })
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: _button_panel2.default.vc_control_pause, onClick: onPauseBtnClick },
-              _react2.default.createElement(_reactFontawesome2.default, { name: 'pause' })
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: _button_panel2.default.vc_control_pause, onClick: onPauseBtnClick },
-              _react2.default.createElement(_reactFontawesome2.default, { name: 'stop' })
-            )
-          ),
-          _react2.default.createElement(_progress_bar2.default, null)
-        )
-      );
-    }
-  }]);
-
-  return ButtonPanel;
-}(_react.Component);
-
-exports.default = ButtonPanel;
-
-/***/ }),
-/* 147 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _style = __webpack_require__(83);
-
-var _style2 = _interopRequireDefault(_style);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var front = __webpack_require__(382);
-var back = __webpack_require__(381);
-var wheel = __webpack_require__(383);
-
-var Cassette = function (_Component) {
-  _inherits(Cassette, _Component);
-
-  function Cassette() {
-    _classCallCheck(this, Cassette);
-
-    return _possibleConstructorReturn(this, (Cassette.__proto__ || Object.getPrototypeOf(Cassette)).apply(this, arguments));
-  }
-
-  _createClass(Cassette, [{
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          width = _props.width,
-          speed = _props.speed,
-          rotation = _props.rotation,
-          percentage = _props.percentage;
-
-      var vc_tape_w = 586,
-          vc_tape_h = 379,
-          wheel_w_h = 125,
-          wheel_top = 110,
-          wheel_left = 109,
-          wheel_right = 113,
-          wheel_max_shadow = 90;
-
-      if (width < 600) {
-        var s = width / 600;
-        vc_tape_w = vc_tape_w * s;
-        vc_tape_h = vc_tape_h * s;
-        wheel_w_h = wheel_w_h * s;
-        wheel_top = wheel_top * s;
-        wheel_left = wheel_left * s;
-        wheel_right = wheel_right * s;
-        wheel_max_shadow = wheel_max_shadow * s;
-      }
-      var right_shadow = wheel_max_shadow * percentage;
-      var left_shadow = wheel_max_shadow * (1 - percentage);
-      var vc_tape = {
-        width: vc_tape_w + 'px',
-        height: vc_tape_h + 'px'
-      };
-
-      var vc_tape_wheel = {
-        width: wheel_w_h + 'px',
-        height: wheel_w_h + 'px',
-        top: wheel_top + 'px',
-        animationName: rotation,
-        animationIterationCount: 'infinite',
-        animationTimingFunction: 'linear',
-        animationDuration: speed + 's',
-        animationFillMode: 'forwards'
-      };
-
-      var vc_tape_wheel_left = {
-        left: wheel_left + 'px',
-        boxShadow: '0 0 0 ' + left_shadow + 'px #000'
-      };
-
-      var vc_tape_wheel_right = {
-        right: wheel_right + 'px',
-        boxShadow: '0 0 0 ' + right_shadow + 'px #000'
-      };
-
-      return _react2.default.createElement(
-        'div',
-        { style: vc_tape, className: _style2.default.vc_tape },
-        _react2.default.createElement('img', { src: back, className: _style2.default.vc_tape_back }),
-        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_left), className: '' + _style2.default.vc_tape_wheel }),
-        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_right), className: '' + _style2.default.vc_tape_wheel }),
-        _react2.default.createElement('img', { src: front, className: _style2.default.vc_tape_front })
-      );
-    }
-  }]);
-
-  return Cassette;
-}(_react.Component);
-
-exports.default = Cassette;
-
-/***/ }),
+/* 146 */,
+/* 147 */,
 /* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13127,17 +12890,17 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _style = __webpack_require__(83);
+var _cassette_player = __webpack_require__(413);
 
-var _style2 = _interopRequireDefault(_style);
+var _cassette_player2 = _interopRequireDefault(_cassette_player);
 
-var _cassette = __webpack_require__(147);
+var _cassette = __webpack_require__(415);
 
 var _cassette2 = _interopRequireDefault(_cassette);
 
-var _button_panel = __webpack_require__(146);
+var _control_panel = __webpack_require__(430);
 
-var _button_panel2 = _interopRequireDefault(_button_panel);
+var _control_panel2 = _interopRequireDefault(_control_panel);
 
 var _howler = __webpack_require__(182);
 
@@ -13476,7 +13239,7 @@ var CassettePlayer = function (_Component) {
         'div',
         null,
         _react2.default.createElement(_cassette2.default, { width: this.props.width, speed: this.state.speed, rotation: this.state.rotation, percentage: percent }),
-        _react2.default.createElement(_button_panel2.default, { isPlaying: isPlaying,
+        _react2.default.createElement(_control_panel2.default, { isPlaying: isPlaying,
           isPause: isPause,
           isLoading: isLoading,
           currentSongIndex: currentSongIndex, songCount: songCount,
@@ -13492,143 +13255,8 @@ var CassettePlayer = function (_Component) {
 exports.default = CassettePlayer;
 
 /***/ }),
-/* 149 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _progress_bar = __webpack_require__(158);
-
-var _progress_bar2 = _interopRequireDefault(_progress_bar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ProgressBar = function (_Component) {
-  _inherits(ProgressBar, _Component);
-
-  function ProgressBar() {
-    _classCallCheck(this, ProgressBar);
-
-    return _possibleConstructorReturn(this, (ProgressBar.__proto__ || Object.getPrototypeOf(ProgressBar)).apply(this, arguments));
-  }
-
-  _createClass(ProgressBar, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: _progress_bar2.default.progress_bar_container },
-        _react2.default.createElement('span', { className: _progress_bar2.default.progress_bar }),
-        _react2.default.createElement(
-          'span',
-          { className: _progress_bar2.default.progress_status },
-          '00:00'
-        )
-      );
-    }
-  }]);
-
-  return ProgressBar;
-}(_react.Component);
-
-exports.default = ProgressBar;
-
-/***/ }),
-/* 150 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactFontawesome = __webpack_require__(132);
-
-var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
-
-var _volume = __webpack_require__(159);
-
-var _volume2 = _interopRequireDefault(_volume);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var VolumePanel = function (_Component) {
-  _inherits(VolumePanel, _Component);
-
-  function VolumePanel(props) {
-    _classCallCheck(this, VolumePanel);
-
-    return _possibleConstructorReturn(this, (VolumePanel.__proto__ || Object.getPrototypeOf(VolumePanel)).call(this, props));
-  }
-
-  _createClass(VolumePanel, [{
-    key: 'valueToRadian',
-    value: function valueToRadian(value) {
-      return Math.round(value / 100 * 270);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: _volume2.default.valume_panel },
-        _react2.default.createElement(
-          'div',
-          { className: _volume2.default.knob_surround },
-          _react2.default.createElement(
-            'div',
-            { className: _volume2.default.knob },
-            _react2.default.createElement('div', { className: _volume2.default.knob_base })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: _volume2.default.volume_surround },
-          _react2.default.createElement(_reactFontawesome2.default, { name: 'volume-down', className: _volume2.default.valume_minus }),
-          _react2.default.createElement('span', { className: _volume2.default.knob_value }),
-          _react2.default.createElement(_reactFontawesome2.default, { name: 'volume-up', className: _volume2.default.valume_plus })
-        )
-      );
-    }
-  }]);
-
-  return VolumePanel;
-}(_react.Component);
-
-exports.default = VolumePanel;
-
-/***/ }),
+/* 149 */,
+/* 150 */,
 /* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13967,27 +13595,9 @@ exports.default = Home;
 module.exports = {"nav":"app-blocks-header-___styles__nav___3vHRQ","active":"app-blocks-header-___styles__active___1WXKc","right_item":"app-blocks-header-___styles__right_item___LolCu"};
 
 /***/ }),
-/* 157 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"vc_controls":"app-components-cassette_player-___button_panel__vc_controls___lmZk8","vc_volumes":"app-components-cassette_player-___button_panel__vc_volumes___1jufI","vc_buttons":"app-components-cassette_player-___button_panel__vc_buttons___2jRwQ"};
-
-/***/ }),
-/* 158 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"progress_bar_container":"app-components-cassette_player-___progress_bar__progress_bar_container___11FYU","progress_bar":"app-components-cassette_player-___progress_bar__progress_bar___9Cqr7","progress_status":"app-components-cassette_player-___progress_bar__progress_status___1N0j5"};
-
-/***/ }),
-/* 159 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"valume_panel":"app-components-cassette_player-___volume__valume_panel___2RzDv","knob_surround":"app-components-cassette_player-___volume__knob_surround___eGO_5","knob":"app-components-cassette_player-___volume__knob___3LF4q","knob_base":"app-components-cassette_player-___volume__knob_base___3maXz","volume_surround":"app-components-cassette_player-___volume__volume_surround___hiZnJ","valume_minus":"app-components-cassette_player-___volume__valume_minus___3OhDX","valume_plus":"app-components-cassette_player-___volume__valume_plus___2F6BA","knob_value":"app-components-cassette_player-___volume__knob_value___3JhMW"};
-
-/***/ }),
+/* 157 */,
+/* 158 */,
+/* 159 */,
 /* 160 */
 /***/ (function(module, exports) {
 
@@ -34054,6 +33664,616 @@ exports.default = valueEqual;
 __webpack_require__(142);
 module.exports = __webpack_require__(143);
 
+
+/***/ }),
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 414 */,
+/* 415 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _cassette = __webpack_require__(416);
+
+var _cassette2 = _interopRequireDefault(_cassette);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var front = __webpack_require__(382);
+var back = __webpack_require__(381);
+var wheel = __webpack_require__(383);
+
+var Cassette = function (_Component) {
+  _inherits(Cassette, _Component);
+
+  function Cassette() {
+    _classCallCheck(this, Cassette);
+
+    return _possibleConstructorReturn(this, (Cassette.__proto__ || Object.getPrototypeOf(Cassette)).apply(this, arguments));
+  }
+
+  _createClass(Cassette, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          width = _props.width,
+          speed = _props.speed,
+          rotation = _props.rotation,
+          percentage = _props.percentage;
+
+      var vc_tape_w = 586,
+          vc_tape_h = 379,
+          wheel_w_h = 125,
+          wheel_top = 110,
+          wheel_left = 109,
+          wheel_right = 113,
+          wheel_max_shadow = 90;
+
+      if (width < 600) {
+        var s = width / 600;
+        vc_tape_w = vc_tape_w * s;
+        vc_tape_h = vc_tape_h * s;
+        wheel_w_h = wheel_w_h * s;
+        wheel_top = wheel_top * s;
+        wheel_left = wheel_left * s;
+        wheel_right = wheel_right * s;
+        wheel_max_shadow = wheel_max_shadow * s;
+      }
+      var right_shadow = wheel_max_shadow * percentage;
+      var left_shadow = wheel_max_shadow * (1 - percentage);
+      var vc_tape = {
+        width: vc_tape_w + 'px',
+        height: vc_tape_h + 'px'
+      };
+
+      var vc_tape_wheel = {
+        width: wheel_w_h + 'px',
+        height: wheel_w_h + 'px',
+        top: wheel_top + 'px',
+        animationName: rotation,
+        animationIterationCount: 'infinite',
+        animationTimingFunction: 'linear',
+        animationDuration: speed + 's',
+        animationFillMode: 'forwards'
+      };
+
+      var vc_tape_wheel_left = {
+        left: wheel_left + 'px',
+        boxShadow: '0 0 0 ' + left_shadow + 'px #000'
+      };
+
+      var vc_tape_wheel_right = {
+        right: wheel_right + 'px',
+        boxShadow: '0 0 0 ' + right_shadow + 'px #000'
+      };
+
+      return _react2.default.createElement(
+        'div',
+        { style: vc_tape, className: _cassette2.default.vc_tape },
+        _react2.default.createElement('img', { src: back, className: _cassette2.default.vc_tape_back }),
+        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_left), className: '' + _cassette2.default.vc_tape_wheel }),
+        _react2.default.createElement('img', { src: wheel, style: Object.assign({}, vc_tape_wheel, vc_tape_wheel_right), className: '' + _cassette2.default.vc_tape_wheel }),
+        _react2.default.createElement('img', { src: front, className: _cassette2.default.vc_tape_front })
+      );
+    }
+  }]);
+
+  return Cassette;
+}(_react.Component);
+
+exports.default = Cassette;
+
+/***/ }),
+/* 416 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"vc_tape":"app-components-cassette-___cassette__vc_tape___1bnPG","vc_tape_back":"app-components-cassette-___cassette__vc_tape_back___260W_","vc_tape_wheel":"app-components-cassette-___cassette__vc_tape_wheel___6aQpi","vc_tape_front":"app-components-cassette-___cassette__vc_tape_front___2sv0r"};
+
+/***/ }),
+/* 417 */,
+/* 418 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactFontawesome = __webpack_require__(132);
+
+var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+var _button_panel = __webpack_require__(419);
+
+var _button_panel2 = _interopRequireDefault(_button_panel);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ButtonPanel = function (_Component) {
+  _inherits(ButtonPanel, _Component);
+
+  function ButtonPanel() {
+    _classCallCheck(this, ButtonPanel);
+
+    return _possibleConstructorReturn(this, (ButtonPanel.__proto__ || Object.getPrototypeOf(ButtonPanel)).apply(this, arguments));
+  }
+
+  _createClass(ButtonPanel, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          isPlaying = _props.isPlaying,
+          isPause = _props.isPause,
+          isLoading = _props.isLoading,
+          songCount = _props.songCount,
+          onPlayBtnClick = _props.onPlayBtnClick,
+          onPauseBtnClick = _props.onPauseBtnClick,
+          onPrevBtnClick = _props.onPrevBtnClick,
+          onNextBtnClick = _props.onNextBtnClick,
+          currentSongIndex = _props.currentSongIndex;
+
+      return _react2.default.createElement(
+        'ul',
+        { className: _button_panel2.default.vc_buttons + ' container' },
+        _react2.default.createElement(
+          'li',
+          { className: _button_panel2.default.vc_control_play, onClick: onPlayBtnClick },
+          _react2.default.createElement(_reactFontawesome2.default, { name: 'play' })
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: _button_panel2.default.vc_control_rewind, onClick: onPrevBtnClick },
+          _react2.default.createElement(_reactFontawesome2.default, { name: 'backward' })
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: _button_panel2.default.vc_control_fforward, onClick: onNextBtnClick },
+          _react2.default.createElement(_reactFontawesome2.default, { name: 'forward' })
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: _button_panel2.default.vc_control_pause, onClick: onPauseBtnClick },
+          _react2.default.createElement(_reactFontawesome2.default, { name: 'pause' })
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: _button_panel2.default.vc_control_pause, onClick: onPauseBtnClick },
+          _react2.default.createElement(_reactFontawesome2.default, { name: 'stop' })
+        )
+      );
+    }
+  }]);
+
+  return ButtonPanel;
+}(_react.Component);
+
+exports.default = ButtonPanel;
+
+/***/ }),
+/* 419 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"vc_buttons":"app-components-button_panel-___button_panel__vc_buttons___2Kj9_"};
+
+/***/ }),
+/* 420 */,
+/* 421 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactFontawesome = __webpack_require__(132);
+
+var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+var _volume = __webpack_require__(422);
+
+var _volume2 = _interopRequireDefault(_volume);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var VolumePanel = function (_Component) {
+  _inherits(VolumePanel, _Component);
+
+  function VolumePanel(props) {
+    _classCallCheck(this, VolumePanel);
+
+    return _possibleConstructorReturn(this, (VolumePanel.__proto__ || Object.getPrototypeOf(VolumePanel)).call(this, props));
+  }
+
+  _createClass(VolumePanel, [{
+    key: 'valueToRadian',
+    value: function valueToRadian(value) {
+      return Math.round(value / 100 * 270);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: _volume2.default.valume_panel },
+        _react2.default.createElement(
+          'div',
+          { className: _volume2.default.knob_surround },
+          _react2.default.createElement(
+            'div',
+            { className: _volume2.default.knob },
+            _react2.default.createElement('div', { className: _volume2.default.knob_base })
+          )
+        )
+      );
+    }
+  }]);
+
+  return VolumePanel;
+}(_react.Component);
+
+exports.default = VolumePanel;
+
+/***/ }),
+/* 422 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"valume_panel":"app-components-volume_panel-___volume__valume_panel___2rh31","knob_surround":"app-components-volume_panel-___volume__knob_surround___QEYOE","knob":"app-components-volume_panel-___volume__knob___1Pf3D","knob_base":"app-components-volume_panel-___volume__knob_base___1XNDI"};
+
+/***/ }),
+/* 423 */,
+/* 424 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _progress_bar = __webpack_require__(426);
+
+var _progress_bar2 = _interopRequireDefault(_progress_bar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ProgressBar = function (_Component) {
+  _inherits(ProgressBar, _Component);
+
+  function ProgressBar() {
+    _classCallCheck(this, ProgressBar);
+
+    return _possibleConstructorReturn(this, (ProgressBar.__proto__ || Object.getPrototypeOf(ProgressBar)).apply(this, arguments));
+  }
+
+  _createClass(ProgressBar, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: _progress_bar2.default.progress_bar_container },
+        _react2.default.createElement(
+          'div',
+          { className: _progress_bar2.default.progress_bar },
+          _react2.default.createElement('span', { className: _progress_bar2.default.bar }),
+          _react2.default.createElement('span', { className: _progress_bar2.default.handler })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: _progress_bar2.default.progress_status },
+          '00:00'
+        )
+      );
+    }
+  }]);
+
+  return ProgressBar;
+}(_react.Component);
+
+exports.default = ProgressBar;
+
+/***/ }),
+/* 425 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactFontawesome = __webpack_require__(132);
+
+var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+
+var _volume_bar = __webpack_require__(428);
+
+var _volume_bar2 = _interopRequireDefault(_volume_bar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var VolumeBar = function (_Component) {
+  _inherits(VolumeBar, _Component);
+
+  function VolumeBar(props) {
+    _classCallCheck(this, VolumeBar);
+
+    return _possibleConstructorReturn(this, (VolumeBar.__proto__ || Object.getPrototypeOf(VolumeBar)).call(this, props));
+  }
+
+  _createClass(VolumeBar, [{
+    key: 'valueToRadian',
+    value: function valueToRadian(value) {
+      return Math.round(value / 100 * 270);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: _volume_bar2.default.valume_panel },
+        _react2.default.createElement(
+          'div',
+          { className: _volume_bar2.default.volume_surround },
+          _react2.default.createElement(_reactFontawesome2.default, { name: 'volume-down', className: _volume_bar2.default.valume_down }),
+          _react2.default.createElement(
+            'div',
+            { className: _volume_bar2.default.value },
+            _react2.default.createElement('span', { className: _volume_bar2.default.bar }),
+            _react2.default.createElement('span', { className: _volume_bar2.default.handler })
+          ),
+          _react2.default.createElement(_reactFontawesome2.default, { name: 'volume-up', className: _volume_bar2.default.valume_up })
+        )
+      );
+    }
+  }]);
+
+  return VolumeBar;
+}(_react.Component);
+
+exports.default = VolumeBar;
+
+/***/ }),
+/* 426 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"progress_bar_container":"app-components-progress_bar-___progress_bar__progress_bar_container___2fY7t","progress_bar":"app-components-progress_bar-___progress_bar__progress_bar___7RCvn","progress_status":"app-components-progress_bar-___progress_bar__progress_status___WB4PY","handler":"app-components-progress_bar-___progress_bar__handler___f_xp_"};
+
+/***/ }),
+/* 427 */,
+/* 428 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"valume_down":"app-components-volume_bar-___volume_bar__valume_down___TdUd-","valume_up":"app-components-volume_bar-___volume_bar__valume_up___34LEH","value":"app-components-volume_bar-___volume_bar__value___J_UC8","handler":"app-components-volume_bar-___volume_bar__handler___34H2Z"};
+
+/***/ }),
+/* 429 */,
+/* 430 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _control_panel = __webpack_require__(431);
+
+var _control_panel2 = _interopRequireDefault(_control_panel);
+
+var _button_panel = __webpack_require__(418);
+
+var _button_panel2 = _interopRequireDefault(_button_panel);
+
+var _volume_panel = __webpack_require__(421);
+
+var _volume_panel2 = _interopRequireDefault(_volume_panel);
+
+var _volume_bar = __webpack_require__(425);
+
+var _volume_bar2 = _interopRequireDefault(_volume_bar);
+
+var _progress_bar = __webpack_require__(424);
+
+var _progress_bar2 = _interopRequireDefault(_progress_bar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ControllPanel = function (_Component) {
+  _inherits(ControllPanel, _Component);
+
+  function ControllPanel(props) {
+    _classCallCheck(this, ControllPanel);
+
+    return _possibleConstructorReturn(this, (ControllPanel.__proto__ || Object.getPrototypeOf(ControllPanel)).call(this, props));
+  }
+
+  _createClass(ControllPanel, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          isPlaying = _props.isPlaying,
+          isPause = _props.isPause,
+          isLoading = _props.isLoading,
+          songCount = _props.songCount,
+          onPlayBtnClick = _props.onPlayBtnClick,
+          onPauseBtnClick = _props.onPauseBtnClick,
+          onPrevBtnClick = _props.onPrevBtnClick,
+          onNextBtnClick = _props.onNextBtnClick,
+          currentSongIndex = _props.currentSongIndex;
+
+
+      return _react2.default.createElement(
+        'div',
+        { className: _control_panel2.default.vc_controls + ' container' },
+        _react2.default.createElement(
+          'div',
+          { className: _control_panel2.default.vc_container + ' container' },
+          _react2.default.createElement(
+            'div',
+            { className: _control_panel2.default.vc_volumes },
+            _react2.default.createElement(_volume_panel2.default, null)
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: _control_panel2.default.vc_buttons },
+            _react2.default.createElement(_button_panel2.default, { isPlaying: isPlaying,
+              isPause: isPause,
+              isLoading: isLoading,
+              currentSongIndex: currentSongIndex, songCount: songCount,
+              onPlayBtnClick: onPlayBtnClick, onPauseBtnClick: onPauseBtnClick,
+              onPrevBtnClick: onPrevBtnClick, onNextBtnClick: onNextBtnClick })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: _control_panel2.default.vc_container + ' container' },
+          _react2.default.createElement(
+            'div',
+            { className: _control_panel2.default.vc_volumes_bar },
+            _react2.default.createElement(_volume_bar2.default, null)
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: _control_panel2.default.vc_progress_bar },
+            _react2.default.createElement(_progress_bar2.default, null)
+          )
+        )
+      );
+    }
+  }]);
+
+  return ControllPanel;
+}(_react.Component);
+
+exports.default = ControllPanel;
+
+/***/ }),
+/* 431 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"vc_controls":"app-components-control_panel-___control_panel__vc_controls___3Ouq5","vc_container":"app-components-control_panel-___control_panel__vc_container___NgOWg","vc_volumes":"app-components-control_panel-___control_panel__vc_volumes___2D2LR","vc_volumes_bar":"app-components-control_panel-___control_panel__vc_volumes_bar___2P7Pw","vc_progress_bar":"app-components-control_panel-___control_panel__vc_progress_bar___1Ebvj","vc_buttons":"app-components-control_panel-___control_panel__vc_buttons___awQj3"};
 
 /***/ })
 /******/ ]);

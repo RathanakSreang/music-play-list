@@ -12,6 +12,21 @@ body {
   margin: 0 auto;
 }
 
+:global(.container) {
+  position: relative;
+  display: block;
+}
+
+:global(.container):after {
+  clear: both;
+}
+
+:global(.container):before,
+:global(.container):after {
+  content: " ";
+  display: table;
+}
+
 @-webkit-keyframes :global(rotateLeft) {
   0% { -webkit-transform: rotate(0deg) translateZ(-1px); }
   100% { -webkit-transform: rotate(-360deg) translateZ(-1px); }

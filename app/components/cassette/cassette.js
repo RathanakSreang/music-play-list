@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styles from './style.scss';
+import styles from './cassette.scss';
 
 const front = require('assets/images/cs_front.png');
 const back = require('assets/images/cs_back.png');

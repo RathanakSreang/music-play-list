@@ -19,11 +19,6 @@ export default class VolumePanel extends Component {
             <div className={styles.knob_base}></div>
           </div>
         </div>
-        <div className={styles.volume_surround}>
-          <FontAwesome  name='volume-down' className={styles.valume_minus} />
-          <span className={styles.knob_value}></span>
-          <FontAwesome  name='volume-up' className={styles.valume_plus} />
-        </div>
       </div>
     );
   }
