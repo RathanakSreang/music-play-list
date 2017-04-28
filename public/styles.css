@@ -2535,6 +2535,11 @@
   .app-components-cassette_player-___button_panel__vc_buttons___2jRwQ ul {
     margin: 0;
     padding: 0; }
+  .app-components-cassette_player-___button_panel__vc_buttons___2jRwQ ul:before, .app-components-cassette_player-___button_panel__vc_buttons___2jRwQ ul:after {
+    content: " ";
+    display: table; }
+  .app-components-cassette_player-___button_panel__vc_buttons___2jRwQ ul:after {
+    clear: both; }
   .app-components-cassette_player-___button_panel__vc_buttons___2jRwQ li {
     display: block;
     float: left;
@@ -2556,6 +2561,9 @@
     border-radius: 8px 0 0 8px; }
   .app-components-cassette_player-___button_panel__vc_buttons___2jRwQ li:last-child {
     border-radius: 0px 8px 8px 0px; }
+.app-components-cassette_player-___volume__valume_panel___2RzDv {
+  text-align: center; }
+
 .app-components-cassette_player-___volume__knob_surround___eGO_5 {
   width: 100px;
   height: 100px;
@@ -2587,8 +2595,8 @@
 
 .app-components-cassette_player-___volume__knob___3LF4q:after {
   content: '';
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background-color: #666;
   position: absolute;
   top: 50%;
@@ -2610,6 +2618,37 @@
   position: absolute;
   z-index: 1;
   border-radius: 50%; }
+
+.app-components-cassette_player-___volume__volume_surround___hiZnJ {
+  width: 100%; }
+
+.app-components-cassette_player-___volume__valume_minus___3OhDX, .app-components-cassette_player-___volume__valume_plus___2F6BA {
+  float: left;
+  width: 10%; }
+
+.app-components-cassette_player-___volume__knob_value___3JhMW {
+  float: left;
+  width: 70%;
+  background: #555;
+  margin: 6px 3px 0;
+  height: 5px;
+  border-radius: 15px; }
+.app-components-cassette_player-___progress_bar__progress_bar_container___11FYU {
+  width: 100%;
+  margin-top: 20px; }
+
+.app-components-cassette_player-___progress_bar__progress_bar___9Cqr7 {
+  float: left;
+  width: 85%;
+  background: #555;
+  margin: 7px 3px 0;
+  height: 10px;
+  border-radius: 15px;
+  display: block; }
+
+.app-components-cassette_player-___progress_bar__progress_status___1N0j5 {
+  float: left;
+  width: 10%; }
 @media (min-width: 850px) {
   .app-containers-board-___styles__panel_playboard___3PGIH {
     width: 65%;

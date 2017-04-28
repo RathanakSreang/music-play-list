@@ -1,4 +1,7 @@
 // https://codepen.io/blucube/pen/cudAz
+.valume_panel {
+  text-align: center;
+}
 
 .knob_surround {
   width: 100px;
@@ -38,8 +41,8 @@
 
 .knob:after{
   content: '';
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background-color: #666;
   position: absolute;
   top: 50%;
@@ -51,7 +54,6 @@
     0 0 1px #5a5a5a inset,
     1px -1px 1px rgba(255,255,255,0.5);
 }
-
 
 .knob [draggable] {
   -moz-user-select:  none;
@@ -68,3 +70,20 @@
   border-radius: 50%;
 }
 
+.volume_surround {
+  width: 100%;
+}
+
+.valume_minus, .valume_plus {
+  float:left;
+  width: 10%;
+}
+
+.knob_value {
+  float:left;
+  width: 70%;
+  background: #555;
+  margin: 6px 3px 0;
+  height: 5px;
+  border-radius: 15px;
+}

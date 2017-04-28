@@ -42,6 +42,13 @@
     margin: 0;
     padding: 0;
   }
+  ul:before, ul:after {
+    content: " ";
+    display: table;
+  }
+  ul:after {
+    clear: both;
+  }
 
   li {
     display: block;
