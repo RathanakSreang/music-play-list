@@ -13,7 +13,8 @@ export default class ControllPanel extends Component {
   render() {
     const {isPlaying, isPause, isLoading, songCount,
             onPlayBtnClick, onPauseBtnClick, onPrevBtnClick,
-            onNextBtnClick, currentSongIndex} = this.props;
+            onNextBtnClick, currentSongIndex, volume, seekTo,
+            percent, adjustVolumeTo} = this.props;
 
     return(
       <div className={`${styles.vc_controls} container`}>
@@ -32,10 +33,10 @@ export default class ControllPanel extends Component {
         </div>
         <div className={`${styles.vc_container} container`}>
           <div className={styles.vc_volumes_bar}>
-            <VolumeBar />
+            <VolumeBar volume={volume} adjustVolumeTo={adjustVolumeTo} />
           </div>
           <div className={styles.vc_progress_bar}>
-            <ProgressBar />
+            <ProgressBar percent={percent} seekTo={seekTo} />
           </div>
         </div>
       </div>

@@ -283,7 +283,13 @@ export default class CassettePlayer extends Component {
                      isLoading={isLoading}
                      currentSongIndex={currentSongIndex} songCount={songCount}
                      onPlayBtnClick={this._onPlayBtnClick} onPauseBtnClick={this._onPauseBtnClick}
-                     onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}/>
+                     onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}
+                     volume={volume}
+                     seekTo={this._seekTo}
+                     percent={percent}
+                     seek={this.state.seek}
+                     duration={this.state.duration}
+                     adjustVolumeTo={this._adjustVolumeTo}/>
       </div>
     );
   }

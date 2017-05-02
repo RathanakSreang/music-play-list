@@ -1,6 +1,7 @@
 .valume_down, .valume_up {
   float:left;
   width: 10%;
+  cursor: pointer;
 }
 
 .value {
@@ -10,18 +11,13 @@
   background: #555;
   margin: 6px 3px 0;
   height: 5px;
-  border-radius: 15px;
+  // border-radius: 15px;
+  cursor: pointer;
 }
 
-.handler {
-  width: 12px;
-  height: 12px;
-  border-radius: 20px;
-  background: #118C4E;
+.volume_bar {
   position: absolute;
-  margin-left: 0px;
-  margin-top: -4px;
+  height: 5px;
+  background: #118C4E;
   cursor: pointer;
-  outline: none;
-  left: 10%;
 }

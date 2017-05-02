@@ -2587,7 +2587,8 @@
   border-radius: 50%; }
 .app-components-volume_bar-___volume_bar__valume_down___TdUd-, .app-components-volume_bar-___volume_bar__valume_up___34LEH {
   float: left;
-  width: 10%; }
+  width: 10%;
+  cursor: pointer; }
 
 .app-components-volume_bar-___volume_bar__value___J_UC8 {
   position: relative;
@@ -2596,19 +2597,13 @@
   background: #555;
   margin: 6px 3px 0;
   height: 5px;
-  border-radius: 15px; }
+  cursor: pointer; }
 
-.app-components-volume_bar-___volume_bar__handler___34H2Z {
-  width: 12px;
-  height: 12px;
-  border-radius: 20px;
-  background: #118C4E;
+.app-components-volume_bar-___volume_bar__volume_bar___1jqKh {
   position: absolute;
-  margin-left: 0px;
-  margin-top: -4px;
-  cursor: pointer;
-  outline: none;
-  left: 10%; }
+  height: 5px;
+  background: #118C4E;
+  cursor: pointer; }
 .app-components-progress_bar-___progress_bar__progress_bar_container___2fY7t {
   width: 100%; }
 
@@ -2617,28 +2612,21 @@
   float: left;
   width: 85%;
   background: #555;
-  margin: 5px 3px 0;
+  margin: 4px 3px 0;
   height: 10px;
-  border-radius: 15px;
-  display: block; }
+  display: block;
+  cursor: pointer; }
+
+.app-components-progress_bar-___progress_bar__bar_status___1I_cM {
+  background: #118C4E;
+  position: absolute;
+  height: 10px; }
 
 .app-components-progress_bar-___progress_bar__progress_status___WB4PY {
   position: relative;
   float: left;
   width: 10%;
   text-align: right; }
-
-.app-components-progress_bar-___progress_bar__handler___f_xp_ {
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  background: #118C4E;
-  position: absolute;
-  margin-left: 0px;
-  margin-top: -5px;
-  cursor: pointer;
-  outline: none;
-  left: 10%; }
 @media (min-width: 850px) {
   .app-containers-board-___styles__panel_playboard___3PGIH {
     width: 65%;

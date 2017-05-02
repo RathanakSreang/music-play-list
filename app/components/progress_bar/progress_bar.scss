@@ -6,27 +6,19 @@
   float: left;
   width: 85%;
   background: #555;
-  margin: 5px 3px 0;
+  margin: 4px 3px 0;
   height: 10px;
-  border-radius: 15px;
   display: block;
+  cursor: pointer;
+}
+.bar_status {
+  background: #118C4E;
+  position: absolute;
+  height: 10px;
 }
 .progress_status {
   position: relative;
   float: left;
   width: 10%;
   text-align: right;
-}
-
-.handler {
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  background: #118C4E;
-  position: absolute;
-  margin-left: 0px;
-  margin-top: -5px;
-  cursor: pointer;
-  outline: none;
-  left: 10%;
 }
