@@ -8,6 +8,48 @@ export default class VolumeBar extends Component {
     this.adjustVolumeTo = this.adjustVolumeTo.bind(this);
     this.volumeToMax = this.volumeToMax.bind(this);
     this.volumeToMin = this.volumeToMin.bind(this);
+    this.state = {
+      touched: false
+    }
+  }
+
+  componentDidMount() {
+    const el = this.refs.audioVolumePresentContainer;
+    el.addEventListener('touchstart', this.handleTouchStart, false);
+    el.addEventListener('touchmove', this.handleTouchMove, false);
+    el.addEventListener('touchend', this.handleTouchEnd, false);
+    el.addEventListener('mousedown', this.handleTouchStart, false);
+    el.addEventListener('mousemove', this.handleTouchMove, false);
+    document.addEventListener('mouseup', this.handleTouchEnd, false);
+  }
+
+  componentWillUnmount() {
+    const el = this.refs.audioVolumePresentContainer;
+    el.removeEventListener('touchstart', this.handleTouchStart, false);
+    el.removeEventListener('touchmove', this.handleTouchMove, false);
+    el.removeEventListener('touchend', this.handleTouchEnd, false);
+    el.removeEventListener('mousedown', this.handleTouchStart, false);
+    el.removeEventListener('mousemove', this.handleTouchMove, false);
+    document.removeEventListener('mouseup', this.handleTouchEnd, false);
+  }
+
+  handleTouchStart = (event) => {
+    event.preventDefault();
+    const touch = event.type.indexOf('touch') === 0 ? event.changedTouches[0] : event;
+    this.setState({touched: true});
+    this.adjustVolumeTo(touch);
+  }
+
+  handleTouchMove = (event) => {
+    if(!this.state.touched)return;
+    event.preventDefault();
+    const touch = event.type.indexOf('touch') === 0 ? event.changedTouches[0] : event;
+    this.adjustVolumeTo(touch);
+  }
+
+  handleTouchEnd = (event) => {
+    event.preventDefault();
+    this.setState({touched: false});
   }
 
   adjustVolumeTo(e) {
@@ -26,7 +68,6 @@ export default class VolumeBar extends Component {
   }
 
   volumeToMin() {
-    console.log(this.props.volume)
     if(this.props.volume <= 0){
       return;
     }
@@ -41,7 +82,7 @@ export default class VolumeBar extends Component {
       <div className={styles.valume_panel} ref="audioVolumeBarContainer">
         <div className={styles.volume_surround}>
           <FontAwesome  name='volume-down' className={styles.valume_down} onClick={this.volumeToMin} />
-          <div className={styles.value} ref="audioVolumePresentContainer" onClick={this.adjustVolumeTo}>
+          <div className={styles.value} ref="audioVolumePresentContainer">
             <span style={style} className={styles.volume_bar}></span>
           </div>
           <FontAwesome  name='volume-up' className={styles.valume_up} onClick={this.volumeToMax} />
