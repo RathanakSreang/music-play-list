@@ -18,6 +18,7 @@ export default class CassettePlayer extends Component {
         speed: 0.0,
         rotation: 'rotateLeft',
         percentage: 0,
+        isShowList: false,
     };
     this._onPlayBtnClick = this._onPlayBtnClick.bind(this);
     this._onPauseBtnClick = this._onPauseBtnClick.bind(this);
@@ -29,6 +30,7 @@ export default class CassettePlayer extends Component {
     this._initSoundObjectCompleted = this._initSoundObjectCompleted.bind(this);
     this._playEnd = this._playEnd.bind(this);
     this._onSongItemClick = this._onSongItemClick.bind(this);
+    this._onListBtnClick = this._onListBtnClick.bind(this);
   }
 
   componentWillMount() {
@@ -58,7 +60,11 @@ export default class CassettePlayer extends Component {
   }
 
   componentDidMount() {
-    // this.play();
+  }
+
+  componentWillUnmount() {
+    this._stop();
+    this._clearSoundObject();
   }
 
   componentDidUpdate(prevProps, prevState, prevContext) {
@@ -66,6 +72,11 @@ export default class CassettePlayer extends Component {
     if (isPlaying && currentSongIndex != prevState.currentSongIndex) {
       this._initSoundObject();
     }
+  }
+
+  _onListBtnClick() {
+    const isShowList = !this.state.isShowList;
+    this.setState({ isShowList: isShowList });
   }
 
   _onPlayBtnClick() {
@@ -269,7 +280,7 @@ export default class CassettePlayer extends Component {
   render() {
     const songCount = this.songCount();
     const { seek, duration, volume,
-            isPlaying, isPause, isLoading, currentSongIndex } = this.state;
+            isPlaying, isPause, isLoading, currentSongIndex, isShowList } = this.state;
     let percent = 0;
     if (seek && duration) {
       percent = seek / duration;
@@ -277,13 +288,23 @@ export default class CassettePlayer extends Component {
 
     return(
       <div>
-        <Cassette width={this.props.width} speed={this.state.speed} rotation={this.state.rotation} percentage={percent} />
+        <Cassette width={this.props.width}
+                  speed={this.state.speed}
+                  rotation={this.state.rotation}
+                  percentage={percent}
+                  songs={this.state.songs}
+                  currentSongIndex={currentSongIndex}
+                  isPlaying={isPlaying}
+                  isPause={isPause}
+                  isShowList={isShowList}
+                  onSongItemClick={this._onSongItemClick}/>
         <ControlPanel isPlaying={isPlaying}
                      isPause={isPause}
                      isLoading={isLoading}
                      currentSongIndex={currentSongIndex} songCount={songCount}
                      onPlayBtnClick={this._onPlayBtnClick} onPauseBtnClick={this._onPauseBtnClick}
                      onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}
+                     onListBtnClick={this._onListBtnClick}
                      volume={volume}
                      seekTo={this._seekTo}
                      percent={percent}

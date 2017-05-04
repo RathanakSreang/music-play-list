@@ -33,6 +33,22 @@ class Board extends Component {
       {url: 'mp3/BlankKyt_RSPN.ogg'},
       {url: 'mp3/BlankKytt_ThursdaySnowReprise.mp3'},
       {url: 'mp3/BlueDucks_FourFlossFiveSix.mp3'},
+      {url: 'mp3/like.mp3'},
+      {url: 'mp3/BlankKyt_RSPN.ogg'},
+      {url: 'mp3/BlankKytt_ThursdaySnowReprise.mp3'},
+      {url: 'mp3/BlueDucks_FourFlossFiveSix.mp3'},
+      {url: 'mp3/like.mp3'},
+      {url: 'mp3/BlankKyt_RSPN.ogg'},
+      {url: 'mp3/BlankKytt_ThursdaySnowReprise.mp3'},
+      {url: 'mp3/BlueDucks_FourFlossFiveSix.mp3'},
+      {url: 'mp3/like.mp3'},
+      {url: 'mp3/BlankKyt_RSPN.ogg'},
+      {url: 'mp3/BlankKytt_ThursdaySnowReprise.mp3'},
+      {url: 'mp3/BlueDucks_FourFlossFiveSix.mp3'},
+      {url: 'mp3/like.mp3'},
+      {url: 'mp3/BlankKyt_RSPN.ogg'},
+      {url: 'mp3/BlankKytt_ThursdaySnowReprise.mp3'},
+      {url: 'mp3/BlueDucks_FourFlossFiveSix.mp3'},
     ]
     return (
       <div className="app-container" ref="cassetteBoard">

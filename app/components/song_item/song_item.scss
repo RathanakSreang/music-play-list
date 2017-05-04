@@ -1,0 +1,28 @@
+.song_item {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.song_title {
+  padding-left: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.playing {
+  color: #118C4E;
+}
+
+.icon {
+  display: inline;
+}

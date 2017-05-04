@@ -14,7 +14,7 @@ export default class ControllPanel extends Component {
     const {isPlaying, isPause, isLoading, songCount,
             onPlayBtnClick, onPauseBtnClick, onPrevBtnClick,
             onNextBtnClick, currentSongIndex, volume, seekTo,
-            percent, adjustVolumeTo, seek, duration} = this.props;
+            percent, adjustVolumeTo, seek, duration, onListBtnClick} = this.props;
 
     return(
       <div className={`${styles.vc_controls} container`}>
@@ -28,7 +28,8 @@ export default class ControllPanel extends Component {
               isLoading={isLoading}
               currentSongIndex={currentSongIndex} songCount={songCount}
               onPlayBtnClick={onPlayBtnClick} onPauseBtnClick={onPauseBtnClick}
-              onPrevBtnClick={onPrevBtnClick} onNextBtnClick={onNextBtnClick}/>
+              onPrevBtnClick={onPrevBtnClick} onNextBtnClick={onNextBtnClick}
+              onListBtnClick={onListBtnClick}/>
           </div>
         </div>
         <div className={`${styles.vc_container} container`}>

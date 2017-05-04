@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import styles from './cassette.scss';
+import SongList from '../song_list/song_list.js';
 
 const front = require('assets/images/cs_front.png');
 const back = require('assets/images/cs_back.png');
 const wheel = require('assets/images/cs_wheel.png');
 export default class Cassette extends Component {
   render() {
-    const {width , speed, rotation, percentage} = this.props;
+    const {width , speed, rotation, percentage, songs, currentSongIndex,
+          isPlaying, isPause, onSongItemClick, isShowList} = this.props;
     let vc_tape_w = 586,
       vc_tape_h = 379,
       wheel_w_h = 125,
@@ -30,6 +32,7 @@ export default class Cassette extends Component {
     var vc_tape = {
       width: vc_tape_w + 'px',
       height: vc_tape_h + 'px',
+      padding: '8px',
     };
 
     var vc_tape_wheel = {
@@ -53,12 +56,22 @@ export default class Cassette extends Component {
       boxShadow: '0 0 0 ' + right_shadow + 'px #000',
     }
 
+    var songListStyle = {
+      display: isShowList ? 'block' : 'none'
+    }
+
     return(
-      <div style={vc_tape} className={styles.vc_tape}>
+      <div style={vc_tape} className={`${styles.vc_tape} container`}>
         <img src={back} className={styles.vc_tape_back} />
         <img src={wheel} style={Object.assign({}, vc_tape_wheel, vc_tape_wheel_left)} className={`${styles.vc_tape_wheel}`} />
         <img src={wheel} style={Object.assign({}, vc_tape_wheel, vc_tape_wheel_right)} className={`${styles.vc_tape_wheel}`} />
         <img src={front} className={styles.vc_tape_front} />
+        <SongList style={songListStyle}
+                  songs={songs}
+                  currentSongIndex={currentSongIndex}
+                  isPlaying={isPlaying}
+                  isPause={isPause}
+                  onSongItemClick={onSongItemClick}/>
       </div>
     );
   }
