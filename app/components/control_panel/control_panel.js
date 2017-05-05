@@ -11,8 +11,8 @@ export default class ControllPanel extends Component {
   }
 
   render() {
-    const {isPlaying, isPause, isLoading, songCount,
-            onPlayBtnClick, onPauseBtnClick, onPrevBtnClick,
+    const {isPlaying, isPause, isLoading, songCount, isShowList,
+            onPlayBtnClick, onStopBtnClick, onPrevBtnClick,
             onNextBtnClick, currentSongIndex, volume, seekTo,
             percent, adjustVolumeTo, seek, duration, onListBtnClick} = this.props;
 
@@ -26,8 +26,9 @@ export default class ControllPanel extends Component {
             <ButtonPanel isPlaying={isPlaying}
               isPause={isPause}
               isLoading={isLoading}
+              isShowList={isShowList}
               currentSongIndex={currentSongIndex} songCount={songCount}
-              onPlayBtnClick={onPlayBtnClick} onPauseBtnClick={onPauseBtnClick}
+              onPlayBtnClick={onPlayBtnClick} onStopBtnClick={onStopBtnClick}
               onPrevBtnClick={onPrevBtnClick} onNextBtnClick={onNextBtnClick}
               onListBtnClick={onListBtnClick}/>
           </div>

@@ -31,6 +31,7 @@ export default class CassettePlayer extends Component {
     this._playEnd = this._playEnd.bind(this);
     this._onSongItemClick = this._onSongItemClick.bind(this);
     this._onListBtnClick = this._onListBtnClick.bind(this);
+    this._onStopBtnClick = this._onStopBtnClick.bind(this);
   }
 
   componentWillMount() {
@@ -81,13 +82,32 @@ export default class CassettePlayer extends Component {
 
   _onPlayBtnClick() {
     if (this.state.isPlaying && !this.state.isPause) {
+      this.setState({ isPause: true, isPlaying: false });
+      this._pause();
+    } else {
+      this.setState({ isPause: false, isPlaying: true });
+      this.setState({
+        speed: 2.0,
+        rotation: 'rotateLeft',
+      });
+      this.play();
+    }
+  }
+
+  _onStopBtnClick() {
+    if(this.howler === undefined || this.howler === null) {
       return;
-    };
+    }
+    if(!this.state.isPlaying && !this.state.isPause) {
+      return;
+    }
+    this._stop();
+    this._clearSoundObject();
     this.setState({
-      speed: 2.0,
-      rotation: 'rotateLeft',
-    });
-    this.play();
+                duration: 0,
+                isPlaying: false,
+                isPause: false
+              });
   }
 
   _onPauseBtnClick() {
@@ -117,11 +137,7 @@ export default class CassettePlayer extends Component {
     const { currentSongIndex, isPause, isPlaying } = this.state;
     // handle pause/playing state.
     if (currentSongIndex == songIndex) {
-      if (isPause) {
-        this._onPauseBtnClick();
-      } else if (!isPlaying) {
-        this._onPlayBtnClick();
-      }
+      this._onPlayBtnClick();
       return;
     }
 
@@ -301,8 +317,9 @@ export default class CassettePlayer extends Component {
         <ControlPanel isPlaying={isPlaying}
                      isPause={isPause}
                      isLoading={isLoading}
+                     isShowList={isShowList}
                      currentSongIndex={currentSongIndex} songCount={songCount}
-                     onPlayBtnClick={this._onPlayBtnClick} onPauseBtnClick={this._onPauseBtnClick}
+                     onPlayBtnClick={this._onPlayBtnClick} onStopBtnClick={this._onStopBtnClick}
                      onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}
                      onListBtnClick={this._onListBtnClick}
                      volume={volume}

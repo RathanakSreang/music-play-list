@@ -4,14 +4,22 @@ import FontAwesome from 'react-fontawesome';
 
 export default class SongItem extends Component {
   render(){
-    const { currentSongIndex, eventKey, isPlaying, name, onSongItemClick } = this.props;
+    const { currentSongIndex, eventKey, isPlaying, isPause, name, onSongItemClick } = this.props;
     const isSelected = currentSongIndex === eventKey;
     const components = [];
-    if ( isSelected && isPlaying ) {
-      components[0] = <FontAwesome  name='pause' key="2" className={`${styles.playing} ${styles.icon}`} />
+    let icon_name, icon_classes;
+    if ( isSelected) {
+      icon_classes = `${styles.playing} ${styles.icon}`;
+      if(isPlaying) {
+        icon_name = 'pause';
+      }else {
+        icon_name = 'play';
+      }
     } else {
-      components[0] = <FontAwesome  name='play' key="2" className={`${styles.icon}`} />
+      icon_classes = `${styles.icon}`;
+      icon_name = 'play';
     }
+    components[0] = <FontAwesome  name={icon_name} key="2" className={icon_classes} />
     components[1] = <span key="1" className={`${styles.song_title}`} >{name}</span>;
 
     return(

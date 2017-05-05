@@ -7,6 +7,13 @@
   overflow: hidden;
 }
 
+.song_item:hover {
+  .icon {
+    color: #118C4E;
+  }
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .active {
   background: rgba(255, 255, 255, 0.4);
 }
