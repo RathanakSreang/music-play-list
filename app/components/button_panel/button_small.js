@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome';
 import styles from './button_panel.scss';
 import { Howl } from 'howler';
 
-export default class Button extends Component {
+export default class ButtonSmall extends Component {
     constructor(props) {
     super(props);
     this.state = {

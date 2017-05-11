@@ -314,20 +314,21 @@ export default class CassettePlayer extends Component {
                   isPause={isPause}
                   isShowList={isShowList}
                   onSongItemClick={this._onSongItemClick}/>
-        <ControlPanel isPlaying={isPlaying}
-                     isPause={isPause}
-                     isLoading={isLoading}
-                     isShowList={isShowList}
-                     currentSongIndex={currentSongIndex} songCount={songCount}
-                     onPlayBtnClick={this._onPlayBtnClick} onStopBtnClick={this._onStopBtnClick}
-                     onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}
-                     onListBtnClick={this._onListBtnClick}
-                     volume={volume}
-                     seekTo={this._seekTo}
-                     percent={percent}
-                     seek={this.state.seek}
-                     duration={this.state.duration}
-                     adjustVolumeTo={this._adjustVolumeTo}/>
+        <ControlPanel width={this.props.width}
+                      isPlaying={isPlaying}
+                      isPause={isPause}
+                      isLoading={isLoading}
+                      isShowList={isShowList}
+                      currentSongIndex={currentSongIndex} songCount={songCount}
+                      onPlayBtnClick={this._onPlayBtnClick} onStopBtnClick={this._onStopBtnClick}
+                      onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}
+                      onListBtnClick={this._onListBtnClick}
+                      volume={volume}
+                      seekTo={this._seekTo}
+                      percent={percent}
+                      seek={this.state.seek}
+                      duration={this.state.duration}
+                      adjustVolumeTo={this._adjustVolumeTo}/>
       </div>
     );
   }

@@ -11,13 +11,23 @@ export default class ControllPanel extends Component {
   }
 
   render() {
-    const {isPlaying, isPause, isLoading, songCount, isShowList,
+    const {width, isPlaying, isPause, isLoading, songCount, isShowList,
             onPlayBtnClick, onStopBtnClick, onPrevBtnClick,
             onNextBtnClick, currentSongIndex, volume, seekTo,
             percent, adjustVolumeTo, seek, duration, onListBtnClick} = this.props;
 
+    let vc_control_w = 586;
+    if(width < 600) {
+      let s = width / 600;
+      vc_control_w = vc_control_w * s;
+    }
+
+    let vc_control = {
+      width: vc_control_w + 'px',
+    }
+
     return(
-      <div className={`${styles.vc_controls} container`}>
+      <div className={`${styles.vc_controls} container`} style={vc_control}>
         <div className={`${styles.vc_container} container`}>
           <div className={styles.vc_volumes}>
             <VolumePanel volume={volume} adjustVolumeTo={adjustVolumeTo} />
