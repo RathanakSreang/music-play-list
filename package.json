@@ -17,7 +17,10 @@
     "react-dom": "^15.5.4",
     "react-fontawesome": "^1.6.1",
     "react-mixin": "^2.0.2",
+    "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6",
     "socket.io": "^1.7.3",
     "socket.io-client": "^1.7.3",
     "style-loader": "^0.16.1",
@@ -38,12 +41,14 @@
     "sass-loader": "^6.0.3",
     "url-loader": "^0.5.8",
     "webpack-dev-middleware": "^1.10.2",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "webpack-hot-middleware": "^2.18.1"
   },
   "scripts": {
     "build": "webpack",
     "prestart": "webpack",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "webpack-dev-server --hot --host 0.0.0.0 --inline --progress --profile --colors --content-base public/ --history-api-fallback"
   },
   "author": "Sreang Rathanak",
   "license": "MIT"

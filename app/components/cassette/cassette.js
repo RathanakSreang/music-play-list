@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import styles from './cassette.scss';
 import SongList from '../song_list/song_list.js';
 
-const front = require('assets/images/cs_front.png');
-const back = require('assets/images/cs_back.png');
-const wheel = require('assets/images/cs_wheel.png');
+const front = require('../../assets/images/cs_front.png');
+const back = require('../../assets/images/cs_back.png');
+const wheel = require('../../assets/images/cs_wheel.png');
 export default class Cassette extends Component {
   render() {
     const {width , speed, rotation, percentage, songs, currentSongIndex,
