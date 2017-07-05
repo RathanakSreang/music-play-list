@@ -2,10 +2,10 @@ import "font-awesome/css/font-awesome.css";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './blocks/header/header';
-import Footer from './blocks/footer/footer';
-import Home from './containers/home/home';
-import Board from './containers/board/board';
+import Header from './layouts/blocks/header/header';
+import Footer from './layouts/blocks/footer/footer';
+import Home from './layouts/containers/home/home';
+import Board from './layouts/containers/board/board';
 import { Provider } from "react-redux";
 import configureStore from "./store/store"
 

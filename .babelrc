@@ -1,6 +1,9 @@
 {
   "plugins": [
     "lodash",
+    "transform-decorators-legacy",
+    'react-html-attrs',
+    'transform-class-properties',
     ["module-resolver", {
       "root": ["./app"],
     }]
