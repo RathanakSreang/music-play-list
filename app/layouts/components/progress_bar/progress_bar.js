@@ -4,12 +4,12 @@ import reactMixin from 'react-mixin';
 import styles from './progress_bar.scss';
 // import TimeFormatterMixin from 'layouts/mixins/TimeFormatterMixin';
 
-// @connect((store) => {
-//   return {
-//     seek: store.cassette_player.seek,
-//     duration: store.cassette_player.duration
-//   };
-// })
+@connect((store) => {
+  return {
+    seek: store.cassette_player.seek,
+    duration: store.cassette_player.duration,
+  };
+})
 
 export default class ProgressBar extends Component {
   constructor(props) {
@@ -60,12 +60,14 @@ export default class ProgressBar extends Component {
   }
 
   _seekTo(e) {
-    if (!this.props.percent) return;
-    const container = this.refs.progressBar.getBoundingClientRect();
-    const containerStartX = container.left;
-    let percent = (e.clientX - containerStartX) / container.width;
-    percent = percent >= 1 ? 1 : percent;
-    this.props.seekTo(percent);
+    const { seek, duration } = this.props;
+    if (seek && duration) {
+      const container = this.refs.progressBar.getBoundingClientRect();
+      const containerStartX = container.left;
+      let percent = (e.clientX - containerStartX) / container.width;
+      percent = percent >= 1 ? 1 : percent;
+      this.props.seekTo(percent);
+    }
   }
 
     _secondsToTime(secs) {

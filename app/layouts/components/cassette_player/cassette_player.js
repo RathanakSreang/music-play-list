@@ -6,8 +6,8 @@ import ControlPanel from '../control_panel/control_panel.js';
 import { Howl } from 'howler';
 
 import {fetchSongs, toggleSongList,
-  togglePlaySong, stopSong,
-  togglePauseSong, selectSong,
+  togglePlaySong, stopSong, loadingSong,
+  togglePauseSong, selectSong, stopPlayAnimation,
   playSong, loadingSongCompleted, stopPlaying,
   updateCurrentSongIndex, updateSeek, updateValume} from 'actions/cassettePlayerAction';
 
@@ -17,8 +17,8 @@ import {fetchSongs, toggleSongList,
     ...store.cassette_player
   };
 }, {fetchSongs, toggleSongList, togglePlaySong, stopSong, togglePauseSong,
-selectSong, playSong, loadingSongCompleted, stopPlaying,
-updateCurrentSongIndex, updateSeek, updateValume})
+selectSong, playSong, loadingSongCompleted, stopPlaying, loadingSong,
+updateCurrentSongIndex, updateSeek, updateValume, stopPlayAnimation})
 export default class CassettePlayer extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +50,7 @@ export default class CassettePlayer extends Component {
 
   componentDidUpdate(prevProps, prevState, prevContext) {
     const { isPlaying, currentSongIndex } = this.props;
-    if (isPlaying && currentSongIndex != prevState.currentSongIndex) {
+    if (isPlaying && currentSongIndex != prevProps.currentSongIndex) {
       this._initSoundObject();
     }
   }
@@ -228,10 +228,6 @@ export default class CassettePlayer extends Component {
       this.howler.volume(percent);
     }
   }
-
-  // songCount() {
-  //   return this.props.songs ? this.props.songs.length : 0;
-  // }
 
   getCurrentSongName() {
     if (this.props.currentSongIndex < 0) return '';

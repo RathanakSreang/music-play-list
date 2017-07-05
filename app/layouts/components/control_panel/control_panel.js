@@ -20,7 +20,7 @@ export default class ControllPanel extends Component {
   render() {
     const {width, onPlayBtnClick, onStopBtnClick, onPrevBtnClick,
             onNextBtnClick, currentSongIndex, seekTo,
-            percent, adjustVolumeTo, onListBtnClick} = this.props;
+            adjustVolumeTo, onListBtnClick} = this.props;
 
     let vc_control_w = 586;
     if(width < 600) {
@@ -49,7 +49,7 @@ export default class ControllPanel extends Component {
             <VolumeBar adjustVolumeTo={adjustVolumeTo} />
           </div>
           <div className={styles.vc_progress_bar}>
-            <ProgressBar percent={percent} seekTo={seekTo} />
+            <ProgressBar seekTo={seekTo} />
           </div>
         </div>
       </div>

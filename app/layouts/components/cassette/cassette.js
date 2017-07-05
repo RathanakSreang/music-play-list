@@ -15,8 +15,12 @@ const wheel = require('../../assets/images/cs_wheel.png');
 })
 export default class Cassette extends Component {
   render() {
-    const {width , speed, rotation, percentage, songs, currentSongIndex,
+    const {width , speed, seek, duration, rotation, songs, currentSongIndex,
           isPlaying, isPause, onSongItemClick, isShowPlayList} = this.props;
+    let percentage = 0;
+    if (seek && duration) {
+      percentage = seek / duration;
+    }
     let vc_tape_w = 586,
       vc_tape_h = 379,
       wheel_w_h = 125,

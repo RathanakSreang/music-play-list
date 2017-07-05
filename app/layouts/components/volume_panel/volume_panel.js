@@ -64,8 +64,6 @@ export default class VolumePanel extends Component {
     deg = Math.atan2(a,b)*rad2deg + 45;
     if(deg<0) deg = 360 + deg;
 
-    console.log('....................')
-    console.log(this.props.minangle)
     if(deg >= this.props.minangle && deg <= this.props.maxangle) {
       let percent = deg / this.props.maxangle;
       percent = percent >= 1 ? 1 : percent;

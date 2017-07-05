@@ -8,7 +8,6 @@ export default function reducer(state={
     volume: 0.5,
     speed: 0.0,
     rotation: 'rotateLeft',
-    percentage: 0,
     isShowPlayList: false,
   }, action) {
 
