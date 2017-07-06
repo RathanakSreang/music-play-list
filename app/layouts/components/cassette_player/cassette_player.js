@@ -9,7 +9,8 @@ import {fetchSongs, toggleSongList,
   togglePlaySong, stopSong, loadingSong,
   togglePauseSong, selectSong, stopPlayAnimation,
   playSong, loadingSongCompleted, stopPlaying,
-  updateCurrentSongIndex, updateSeek, updateValume} from 'actions/cassettePlayerAction';
+  updateCurrentSongIndex, updateSeek, updateValume,
+  toggleSoundOnBtn, togglePlayLoop} from 'actions/cassettePlayerAction';
 
 @connect((store) => {
   return {
@@ -18,7 +19,8 @@ import {fetchSongs, toggleSongList,
   };
 }, {fetchSongs, toggleSongList, togglePlaySong, stopSong, togglePauseSong,
 selectSong, playSong, loadingSongCompleted, stopPlaying, loadingSong,
-updateCurrentSongIndex, updateSeek, updateValume, stopPlayAnimation})
+updateCurrentSongIndex, updateSeek, updateValume, stopPlayAnimation,
+toggleSoundOnBtn, togglePlayLoop})
 export default class CassettePlayer extends Component {
   constructor(props) {
     super(props);
@@ -34,6 +36,9 @@ export default class CassettePlayer extends Component {
     this._onSongItemClick = this._onSongItemClick.bind(this);
     this._onListBtnClick = this._onListBtnClick.bind(this);
     this._onStopBtnClick = this._onStopBtnClick.bind(this);
+    this._onStopBtnClick = this._onStopBtnClick.bind(this);
+    this._onLoopBtnClick = this._onLoopBtnClick.bind(this);
+    this._onSoundBtnClick = this._onSoundBtnClick.bind(this);
   }
 
   componentWillMount() {
@@ -166,7 +171,13 @@ export default class CassettePlayer extends Component {
   _playEnd() {
     this.props.stopPlayAnimation();
     if(this.props.currentSongIndex == this.props.songs.length - 1) {
-      this._stop();
+      if(this.props.isLooped) {
+        this._seekTo(0);
+        this._updateSongIndex(0);
+        this._play();
+      }else {
+        this._stop();
+      }
     } else {
       this._next();
     }
@@ -229,6 +240,14 @@ export default class CassettePlayer extends Component {
     }
   }
 
+  _onSoundBtnClick() {
+    this.props.toggleSoundOnBtn();
+  }
+
+  _onLoopBtnClick() {
+    this.props.togglePlayLoop();
+  }
+
   getCurrentSongName() {
     if (this.props.currentSongIndex < 0) return '';
     const song = this.props.songs[this.props.currentSongIndex];
@@ -241,8 +260,8 @@ export default class CassettePlayer extends Component {
         <Cassette onSongItemClick={this._onSongItemClick}/>
         <ControlPanel onPlayBtnClick={this._onPlayBtnClick} onStopBtnClick={this._onStopBtnClick}
                       onPrevBtnClick={this._onPrevBtnClick} onNextBtnClick={this._onNextBtnClick}
-                      onListBtnClick={this._onListBtnClick}
-                      seekTo={this._seekTo}
+                      onListBtnClick={this._onListBtnClick} onSoundBtnClick={this._onSoundBtnClick}
+                      onLoopBtnClick={this._onLoopBtnClick} seekTo={this._seekTo}
                       adjustVolumeTo={this._adjustVolumeTo}/>
       </div>
     );

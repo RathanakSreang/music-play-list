@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
+import { connect } from "react-redux";
 import FontAwesome from 'react-fontawesome';
 import styles from './button_panel.scss';
 import { Howl } from 'howler';
+
+@connect((store) => {
+  return {
+    isSoundOn: store.cassette_player.isSoundOn
+  };
+})
 
 export default class Button extends Component {
     constructor(props) {
@@ -32,8 +39,10 @@ export default class Button extends Component {
       iconClass: styles.vc_control_pressed,
       active: !this.state.active,
     });
-    this._initSoundObject()
-    this.howler.play();
+    if(this.props.isSoundOn) {
+      this._initSoundObject()
+      this.howler.play();
+    }
     this.props.onBtnClick(event);
   }
 

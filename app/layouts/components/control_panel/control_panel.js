@@ -20,7 +20,8 @@ export default class ControllPanel extends Component {
   render() {
     const {width, onPlayBtnClick, onStopBtnClick, onPrevBtnClick,
             onNextBtnClick, currentSongIndex, seekTo,
-            adjustVolumeTo, onListBtnClick} = this.props;
+            adjustVolumeTo, onListBtnClick, onLoopBtnClick,
+            onSoundBtnClick} = this.props;
 
     let vc_control_w = 586;
     if(width < 600) {
@@ -41,7 +42,8 @@ export default class ControllPanel extends Component {
           <div className={styles.vc_buttons}>
             <ButtonPanel onPlayBtnClick={onPlayBtnClick} onStopBtnClick={onStopBtnClick}
               onPrevBtnClick={onPrevBtnClick} onNextBtnClick={onNextBtnClick}
-              onListBtnClick={onListBtnClick}/>
+              onListBtnClick={onListBtnClick} onSoundBtnClick={onSoundBtnClick}
+              onLoopBtnClick={onLoopBtnClick} />
           </div>
         </div>
         <div className={`${styles.vc_container} container`}>

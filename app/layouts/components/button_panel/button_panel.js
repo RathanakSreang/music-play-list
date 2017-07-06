@@ -24,7 +24,7 @@ export default class ButtonPanel extends Component {
             onNextBtnClick, currentSongIndex, isShowPlayList,
             onLoopBtnClick, isLooped, onSoundBtnClick, isSoundOn} = this.props;
     let play_icon = isPlaying ? 'pause' : 'play';
-    let sound_icon = isSoundOn ? 'volume-on' : 'volume-off';
+    let sound_icon = isSoundOn ? 'volume-up' : 'volume-off';
     return(
       <div>
         <ul className={`${styles.vc_small_buttons} container`}>

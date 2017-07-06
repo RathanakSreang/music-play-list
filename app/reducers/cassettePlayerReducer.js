@@ -9,6 +9,8 @@ export default function reducer(state={
     speed: 0.0,
     rotation: 'rotateLeft',
     isShowPlayList: false,
+    isLooped: true,
+    isSoundOn: true
   }, action) {
 
   switch (action.type) {
@@ -58,6 +60,12 @@ export default function reducer(state={
     }
     case "UPDATE_VALUME": {
       return {...state, volume: action.payload}
+    }
+    case "TOGGLE_SOUND_BTN": {
+      return {...state, isSoundOn: !state.isSoundOn}
+    }
+    case "TOGGLE_PLAY_LOOP": {
+      return {...state, isLooped: !state.isLooped}
     }
   }
   return state

@@ -117,3 +117,16 @@ export function updateValume(volume) {
   }
 }
 
+export function toggleSoundOnBtn() {
+  return {
+    type: "TOGGLE_SOUND_BTN",
+    payload: ''
+  }
+}
+
+export function togglePlayLoop() {
+  return {
+    type: "TOGGLE_PLAY_LOOP",
+    payload: ''
+  }
+}
