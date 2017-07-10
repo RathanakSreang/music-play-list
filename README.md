@@ -5,5 +5,7 @@ Technology:
 - Redux
 
 To start dev server:
-`npm install`
-`npm run dev` then visit your browser 'http://localhost:8081' or 'http://localhost:8080'
+- `npm install`
+- `npm run dev`
+ 
+Then visit your browser 'http://localhost:8081' or 'http://localhost:8080'
