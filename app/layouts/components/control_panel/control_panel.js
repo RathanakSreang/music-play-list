@@ -38,6 +38,9 @@ export default class ControllPanel extends Component {
         <div className={`${styles.vc_container} container`}>
           <div className={styles.vc_volumes}>
             <VolumePanel adjustVolumeTo={adjustVolumeTo} />
+            <div className={styles.vc_volumes_bar_with_panel}>
+              <VolumeBar adjustVolumeTo={adjustVolumeTo} />
+            </div>
           </div>
           <div className={styles.vc_buttons}>
             <ButtonPanel onPlayBtnClick={onPlayBtnClick} onStopBtnClick={onStopBtnClick}

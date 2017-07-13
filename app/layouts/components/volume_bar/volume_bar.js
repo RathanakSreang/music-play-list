@@ -12,6 +12,7 @@ import {touchVolumeBar} from 'actions/valumeBarAction';
 }, {touchVolumeBar})
 
 export default class VolumeBar extends Component {
+  static defaultProps = { className: '' }
   constructor(props) {
     super(props);
     this.adjustVolumeTo = this.adjustVolumeTo.bind(this);
@@ -88,7 +89,7 @@ export default class VolumeBar extends Component {
       <div className={styles.valume_panel} ref="audioVolumeBarContainer">
         <div className={styles.volume_surround}>
           <FontAwesome  name='volume-down' className={styles.valume_down} onClick={this.volumeToMin} />
-          <div className={styles.value} ref="audioVolumePresentContainer">
+          <div className={`${styles.value_with_panel} volumeValue`} ref="audioVolumePresentContainer">
             <span style={style} className={styles.volume_bar}></span>
           </div>
           <FontAwesome  name='volume-up' className={styles.valume_up} onClick={this.volumeToMax} />

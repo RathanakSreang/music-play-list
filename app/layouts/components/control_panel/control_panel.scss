@@ -27,6 +27,12 @@
   display: block;
 }
 
+.vc_volumes_bar_with_panel {
+  :global(.volumeValue) {
+    width: 78%;
+  }
+}
+
 $break_point: 680px;
 
 @media (min-width: #{$break_point}) {
@@ -34,6 +40,9 @@ $break_point: 680px;
     display: block;
     width: 25%;
     float: left;
+  }
+  .vc_volumes_bar_with_panel {
+    display: none;
   }
 
   .vc_progress_bar, .vc_buttons {
@@ -43,16 +52,25 @@ $break_point: 680px;
   }
 }
 @media (max-width: #{$break_point}) {
-  .vc_volumes, .vc_volumes_bar {
+  .vc_volumes {
     display: block;
     width: 100%;
     float: left;
+  }
+  .vc_volumes_bar {
+    display: none;
+  }
+  .vc_volumes_bar_with_panel {
+    display: block;
   }
 
   .vc_progress_bar, .vc_buttons {
     display: block;
     width: 100%;
     float: left;
+  }
+  .vc_progress_bar {
+    margin-top: 10px;
   }
 
 }

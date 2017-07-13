@@ -8,4 +8,4 @@ To start dev server:
 - `npm install`
 - `npm run dev`
  
-Then visit your browser 'http://localhost:8081' or 'http://localhost:8080'
+Then visit your browser 'http://localhost:3330'
